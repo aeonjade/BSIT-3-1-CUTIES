@@ -77,8 +77,11 @@ footer {
     background-color: white;
     padding: 12px 30px;
 }
+footer p{
+    font-size: 14px;
+}
 
-footer p.group-name {
+footer p.sides {
     font-weight: bold;
 }
 
