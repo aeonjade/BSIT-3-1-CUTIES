@@ -11,9 +11,10 @@
 </head>
 
 <body>
+  <?php include "includes/nav.php" ?>
   <main>
     <section id="logIn-header">
-      <?php include "includes/nav.php" ?>
+
 
       <div class="background">
         <div class="shape"></div>

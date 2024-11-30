@@ -24,7 +24,7 @@ main {
 }
 
 /*NAVIGATION*/
-button > a{
+button>a {
     text-decoration: none;
     color: #e5e5e5;
 }
@@ -607,4 +607,3 @@ main .right .announcements-pane .announcements-new h2 {
     }
 
 }
-
