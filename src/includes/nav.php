@@ -7,8 +7,10 @@
 
   <div class="links">
     <a data-active="index" href="index.php">Home</a>
-    <a data-active="gallery" href="gallery.html">Gallery</a>
-    <a data-active="about" href="aboutUs.html">About</a>
+    <a data-active="gallery" href="gallery.php">Gallery</a>
+    <a data-active="about" href="about.php">About</a>
+    <a data-active="dashboard" href="dashboard.php">Dashboard</a>
+    <a data-active="bulletin" href="bulletin.php">Bulletin</a>
   </div>
   <button id="SignIn-button">Log In</button>
 
