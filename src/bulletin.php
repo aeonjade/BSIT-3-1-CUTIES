@@ -35,26 +35,41 @@
                 </div>
             </div>
         </section>
+ <!-- Posts Section -->
+ <section class="posts">
+            <h2>Posts</h2>
+            <div class="post-grid">
+                <?php
+                for ($i = 0; $i < 6; $i++) {
+                    echo '<div class="post" onclick="openPopup(' . $i . ')">';
+                    echo '<h3>Post Title ' . ($i + 1) . '</h3>';
+                    echo '<p>December 3, 2023</p>';
+                    echo '<p>Gusto ko na mamatayyyyy</p>';
+                    echo '</div>';
+                }
+                ?>
+            </div>
+        </section>
 
-      <!-- Posts Section -->
-<section class="posts">
-    <h2>Posts</h2>
-    <div class="post-grid">
-        <?php
-        for ($i = 0; $i < 9; $i++) {
-            echo '<div class="post">';
-            echo '<h3>Post Title ' . ($i + 1) . '</h3>';
-            echo '<p>December 3, 2023</p>';
-            echo '<p>Content placeholder...</p>';
-            echo '</div>';
-        }
-        ?>
-    </div>
-</section>
+        <!-- Popup Panel -->
+        <div id="popup-panel" class="popup hidden">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <h2 id="popup-title">Post Title</h2>
+                <p id="popup-date">December 3, 2023</p>
+                <p id="popup-content">Gusto ko na mamatayyyyy hell yeaaah</p>
+                <div class="popup-images">
+                    <div class="popup-image"></div>
+                    <div class="popup-image"></div>
+                </div>
+            </div>
+        </div>
 
     </main>
 
 <?php include "includes/footer.php" ?>
+
+<script src="script.js"></script>
 
 </body>
 

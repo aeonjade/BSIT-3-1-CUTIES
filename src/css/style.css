@@ -441,32 +441,79 @@ hr {
 /* Posts Section */
 .posts {
     margin: 20px;
-
 }
 
 .post-grid {
     display: flex;
-    /* Use flexbox for alignment */
     justify-content: center;
-    /* Horizontally center the boxes */
-    align-items: center;
-    /* Vertically center the boxes */
     gap: 20px;
-    /* Space between items */
     flex-wrap: wrap;
-    /* Allow wrapping for multiple boxes */
 }
 
 .post {
     background-color: red;
     color: white;
     width: 500px;
+    width: 500px;
     height: 350px;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Optional shadow */
+    cursor: pointer; 
+}
+
+/* Popup Styles */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup.hidden {
+    display: none; /* Hide the popup by default */
+}
+
+.popup-content {
+    background: blue;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.popup-content .close {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.popup-images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.popup-image {
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    border-radius: 5px;
 }
 
 
