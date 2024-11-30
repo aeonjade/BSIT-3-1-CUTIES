@@ -534,20 +534,30 @@ footer p.quote {
 
 main.dashboard {
     display: flex;
-    height: calc();
+    overflow: hidden;
 }
 
-main .tasks-pane {
+main .left {
     width: 28%;
     overflow-y: scroll;
 }
 
-main .tasks-pane h1 {
-    margin: 4%;
+main .left .tasks-header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    margin-bottom: 2%;
+    padding: 3% 5% 3%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 1;
 }
 
-main .tasks-pane .task {
-    margin: 4%;
+main .left h1 {
+    font-size: 3vh;
+}
+
+main .left .tasks-pane .task {
+    margin: 5%;
     padding: 4%;
     border-radius: 10px;
     border: 1px solid black;
@@ -555,7 +565,7 @@ main .tasks-pane .task {
     transition: 0.3s;
 }
 
-main .tasks-pane .task:hover {
+main .left .tasks-pane .task:hover {
     scale: 103%;
 }
 
@@ -604,4 +614,3 @@ main .right .announcements-pane .announcements-new p,
 main .right .announcements-pane .announcements-new h2 {
     white-space: pre-wrap;
 }
-
