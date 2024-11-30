@@ -384,3 +384,70 @@ hr {
 }
 
 /*BULLETIN*/
+
+
+
+/* Announcement Section */
+.announcement {
+    margin: 50px;
+    background-color: #d9d9d9;
+    padding:5px 20px 5px 20px ;
+    border-radius: 10px;
+}
+
+.announcement h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.announcement-scroll {
+    display: flex;
+    gap:7%;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 10px 0; /
+}
+
+.announcement-scroll .box {
+    background-color: #b9f9e6;
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    flex-shrink: 0; /* Prevent the box from shrinking */
+}
+
+/* Posts Section */
+.posts {
+    margin: 20px;
+}
+
+.post-grid {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 18%; /* Space between grid items */
+}
+
+.post {
+    background-color: red;
+    color: white;
+    width: 500px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+.post h3 {
+    margin: 10px 0;
+}
+
+.post p {
+    margin: 5px 0;
+}
