@@ -1,3 +1,4 @@
+<?php include "php/functions.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,43 +17,18 @@
                 <h1>Tasks</h1>
             </div>
             <div class="tasks-pane">
-                <div class="task">
-                    <h2>Task Name</h2>
-                    <h3>Date</h3>
-                    <h4>Time</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum vero reiciendis accusantium recusandae quos provident quas temporibus commodi aliquid omnis?</p>
-                </div>
-                <div class="task">
-                    <h2>Task Name</h2>
-                    <h3>Date</h3>
-                    <h4>Time</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum vero reiciendis accusantium recusandae quos provident quas temporibus commodi aliquid omnis?</p>
-                </div>
-                <div class="task">
-                    <h2>Task Name</h2>
-                    <h3>Date</h3>
-                    <h4>Time</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum vero reiciendis accusantium recusandae quos provident quas temporibus commodi aliquid omnis?</p>
-                </div>
-                <div class="task">
-                    <h2>Task Name</h2>
-                    <h3>Date</h3>
-                    <h4>Time</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum vero reiciendis accusantium recusandae quos provident quas temporibus commodi aliquid omnis?</p>
-                </div>
-                <div class="task">
-                    <h2>Task Name</h2>
-                    <h3>Date</h3>
-                    <h4>Time</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum vero reiciendis accusantium recusandae quos provident quas temporibus commodi aliquid omnis?</p>
-                </div>
-
-                <div class="task">
-                    <h2>Task Name</h2>
-                    <h3>Date</h3>
-                    <h4>Time</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum vero reiciendis accusantium recusandae quos provident quas temporibus commodi aliquid omnis?</p>
-                </div>
+                <?php
+                foreach (getTasks() as $tasks) {
+                ?>
+                    <div class="task">
+                        <h2><?= $tasks->task_title; ?></h2>
+                        <h4><?= date("F j, Y", strtotime($tasks->task_date)); ?></h4>
+                        <h4><?= date("g A", strtotime($tasks->task_time)); ?></h4>
+                        <p><?= $tasks->task_description; ?></p>
+                    </div>
+                <?php
+                }
+                ?>
             </div>
         </div>
         <div class="right">
@@ -64,25 +40,18 @@
                 <a href="bulletin.php">See other posts...</a>
             </div>
             <div class="announcements-pane">
-                <div class="announcements-new">
-                    <h2>Task NameTask Name</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam sunt voluptates consectetur adipisci quasi alias in facilis assumenda necessitatibus vel hic, iste dolorum ab modi delectus laudantium nulla molestias, sapiente exercitationem sequi. Corrupti sed repellat voluptas et, suscipit, vitae quaerat deserunt eaque maxime deleniti quis, nihil cupiditate ipsum fugit autem at commodi dolore quam magnam molestiae quas fugiat? Molestias veritatis quas ut vitae quis aperiam nobis, nihil quod perspiciatis est sapiente sunt vero consequuntur, et doloribus! Quidem saepe consequuntur hic dolore, dolorum nam nulla, molestiae porro, vel nihil culpa. Cumque quis, eveniet ex magni eos velit blanditiis? Vero, ducimus nihil.</p>
-                </div>
-                <div class="announcements-new">
-                    <h2>Task NameTask Name</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam sunt voluptates consectetur adipisci quasi alias in facilis assumenda necessitatibus vel hic, iste dolorum ab modi delectus laudantium nulla molestias, sapiente exercitationem sequi. Corrupti sed repellat voluptas et, suscipit, vitae quaerat deserunt eaque maxime deleniti quis, nihil cupiditate ipsum fugit autem at commodi dolore quam magnam molestiae quas fugiat? Molestias veritatis quas ut vitae quis aperiam nobis, nihil quod perspiciatis est sapiente sunt vero consequuntur, et doloribus! Quidem saepe consequuntur hic dolore, dolorum nam nulla, molestiae porro, vel nihil culpa. Cumque quis, eveniet ex magni eos velit blanditiis? Vero, ducimus nihil.</p>
-                </div>
-                <div class="announcements-new">
-                    <h2>Task NameTask Name</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam sunt voluptates consectetur adipisci quasi alias in facilis assumenda necessitatibus vel hic, iste dolorum ab modi delectus laudantium nulla molestias, sapiente exercitationem sequi. Corrupti sed repellat voluptas et, suscipit, vitae quaerat deserunt eaque maxime deleniti quis, nihil cupiditate ipsum fugit autem at commodi dolore quam magnam molestiae quas fugiat? Molestias veritatis quas ut vitae quis aperiam nobis, nihil quod perspiciatis est sapiente sunt vero consequuntur, et doloribus! Quidem saepe consequuntur hic dolore, dolorum nam nulla, molestiae porro, vel nihil culpa. Cumque quis, eveniet ex magni eos velit blanditiis? Vero, ducimus nihil.</p>
-                </div>
-                <div class="announcements-new">
-                    <h2>Task NameTask Name</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam sunt voluptates consectetur adipisci quasi alias in facilis assumenda necessitatibus vel hic, iste dolorum ab modi delectus laudantium nulla molestias, sapiente exercitationem sequi. Corrupti sed repellat voluptas et, suscipit, vitae quaerat deserunt eaque maxime deleniti quis, nihil cupiditate ipsum fugit autem at commodi dolore quam magnam molestiae quas fugiat? Molestias veritatis quas ut vitae quis aperiam nobis, nihil quod perspiciatis est sapiente sunt vero consequuntur, et doloribus! Quidem saepe consequuntur hic dolore, dolorum nam nulla, molestiae porro, vel nihil culpa. Cumque quis, eveniet ex magni eos velit blanditiis? Vero, ducimus nihil.</p>
-                </div>
+                <?php
+                foreach (getAnnouncements() as $announcement) {
+                ?>
+                    <div class="announcements-new">
+                        <h2><?= $announcement->announcement_title; ?></h2>
+                        <p><?= $announcement->announcement_description; ?></p>
+                    </div>
+                <?php
+                }
+                ?>
             </div>
         </div>
-
     </main>
     <?php include "includes/footer.php" ?>
 </body>

@@ -1,0 +1,30 @@
+<?php
+
+function getTasks()
+{
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $conn = new PDO("mysql:host=$servername;dbname=myDB", $username, $password);
+    // set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $stmt = $conn->prepare("SELECT task_title, task_date, task_time, task_description FROM tasks");
+    $stmt->execute();
+
+    $result = $stmt->fetchAll(PDO::FETCH_OBJ);
+    return $result;
+}
+
+function getAnnouncements(){
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $conn = new PDO("mysql:host=$servername;dbname=myDB", $username, $password);
+    // set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $stmt = $conn->prepare("SELECT announcement_title, announcement_description FROM announcements");
+    $stmt->execute();
+
+    $result = $stmt->fetchAll(PDO::FETCH_OBJ);
+    return $result;
+}
