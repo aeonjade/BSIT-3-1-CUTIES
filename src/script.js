@@ -1,4 +1,4 @@
-//array to
+// Open Popup
 function openPopup(index) {
     const posts = [
         {
@@ -18,23 +18,26 @@ function openPopup(index) {
         },
     ];
 
-
-
-    // kinukuha ko ung id
+    // Update popup content
     const popupTitle = document.getElementById("popup-title");
     const popupDate = document.getElementById("popup-date");
     const popupContent = document.getElementById("popup-content");
 
-    // dito ung index don sa array na post
     popupTitle.textContent = posts[index].title;
     popupDate.textContent = posts[index].date;
     popupContent.textContent = posts[index].content;
 
     // Show the popup
     document.getElementById("popup-panel").classList.remove("hidden");
+
+    document.body.classList.add("no-scroll");
 }
 
 // Close Popup
 function closePopup() {
+    // Hide the popup
     document.getElementById("popup-panel").classList.add("hidden");
+
+    // Enable scrolling on the body
+    document.body.classList.remove("no-scroll");
 }

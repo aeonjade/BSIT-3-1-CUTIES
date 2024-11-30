@@ -402,6 +402,11 @@ footer p.quote {
     background-color: lightgray;
     border-radius: 5px;
 }
+/* Prevent scrolling when no-scroll */
+.no-scroll {
+    overflow: hidden;
+    height: 100vh; 
+}
 
 
 /*Dashboard*/
