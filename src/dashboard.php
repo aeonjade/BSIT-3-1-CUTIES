@@ -14,12 +14,15 @@
         <div class="tasks-pane">
             fuck mah life
         </div>
-        <div class="calendar-pane">
-            fuck mah life
+        <div class="right">
+            <div class="calendar-pane">
+                fuck mah life
+            </div>
+            <div class="announcements-pane">
+                fuck mah life
+            </div>
         </div>
-        <div class="announcements-pane">
-            fuck mah life
-        </div>
+
     </main>
     <?php include "includes/footer.php" ?>
 </body>

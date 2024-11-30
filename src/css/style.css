@@ -11,6 +11,7 @@ body {
 }
 
 main {
+    display: flex;
     flex: 1;
 }
 
@@ -471,14 +472,23 @@ hr {
 
 /*Dashboard*/
 
+
+
 main .tasks-pane {
     background-color: red;
+    width: 28%;
 }
 
-main .calendar-pane {
+main .right {
+    width: 72%;
+}
+
+main .right .calendar-pane {
+    height: 65%;
     background-color: blue;
 }
 
-main .announcements-pane {
+main .right .announcements-pane {
+    height: 35%;
     background-color: green;
 }
