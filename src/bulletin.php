@@ -69,7 +69,7 @@
 
 <?php include "includes/footer.php" ?>
 
-<script src="script.js"></script>
+<script src="javascript/script.js"></script>
 
 </body>
 
