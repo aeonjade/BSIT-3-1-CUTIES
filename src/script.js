@@ -1,43 +1,67 @@
-// Open Popup
+// Posts array from PHP (dynamically passed into the script)
+const posts = [
+    {
+        title: "Post Title 1",
+        date: "December 3, 2023",
+        content: "This is the content for post 1.",
+    },
+    {
+        title: "Post Title 2",
+        date: "December 4, 2023",
+        content: "This is the content for post 2.",
+    },
+    {
+        title: "Post Title 3",
+        date: "December 5, 2023",
+        content: "This is the content for post 3.",
+    },
+    {
+        title: "Post Title 4",
+        date: "December 6, 2023",
+        content: "This is the content for post 4.",
+    },
+    {
+        title: "Post Title 5",
+        date: "December 7, 2023",
+        content: "This is the content for post 5.",
+    },
+    {
+        title: "Post Title 6",
+        date: "December 8, 2023",
+        content: "This is the content for post 6.",
+    },
+];
+
+// Function to open the popup
 function openPopup(index) {
-    const posts = [
-        {
-            title: "Uminom kami by brets",
-            date: "December 3, 2023",
-            content: "Gusto ko na mamatayyyyy hell yeaaah",
-        },
-        {
-            title: "Another Post Title",
-            date: "December 4, 2023",
-            content: "This is another placeholder content for the popup.",
-        },
-        {
-            title: "Final Post Title",
-            date: "December 5, 2023",
-            content: "Here is the final post's detailed description.",
-        },
-    ];
+    // Validate index
+    if (index < 0 || index >= posts.length) {
+        console.error("Invalid post index");
+        return;
+    }
+
+    // Get the selected post data
+    const post = posts[index];
 
     // Update popup content
-    const popupTitle = document.getElementById("popup-title");
-    const popupDate = document.getElementById("popup-date");
-    const popupContent = document.getElementById("popup-content");
-
-    popupTitle.textContent = posts[index].title;
-    popupDate.textContent = posts[index].date;
-    popupContent.textContent = posts[index].content;
+    document.getElementById("popup-title").textContent = post.title;
+    document.getElementById("popup-date").textContent = post.date;
+    document.getElementById("popup-content").textContent = post.content;
 
     // Show the popup
-    document.getElementById("popup-panel").classList.remove("hidden");
+    const popup = document.getElementById("popup-panel");
+    popup.classList.remove("hidden");
 
+    // Disable background scrolling
     document.body.classList.add("no-scroll");
 }
 
-// Close Popup
+// Function to close the popup
 function closePopup() {
     // Hide the popup
-    document.getElementById("popup-panel").classList.add("hidden");
+    const popup = document.getElementById("popup-panel");
+    popup.classList.add("hidden");
 
-    // Enable scrolling on the body
+    // Re-enable background scrolling
     document.body.classList.remove("no-scroll");
 }

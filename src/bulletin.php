@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<body  id="main-bg">
    
 <?php include "includes/nav.php" ?>
 
@@ -35,35 +35,68 @@
                 </div>
             </div>
         </section>
- <!-- Posts Section -->
- <section class="posts">
-            <h2>Posts</h2>
-            <div class="post-grid">
-                <?php
-                for ($i = 0; $i < 6; $i++) {
-                    echo '<div class="post" onclick="openPopup(' . $i . ')">';
-                    echo '<h3>Post Title ' . ($i + 1) . '</h3>';
-                    echo '<p>December 3, 2023</p>';
-                    echo '<p>Gusto ko na mamatayyyyy</p>';
-                    echo '</div>';
-                }
-                ?>
-            </div>
-        </section>
 
-        <!-- Popup Panel -->
-        <div id="popup-panel" class="popup hidden">
-            <div class="popup-content">
-                <span class="close" onclick="closePopup()">&times;</span>
-                <h2 id="popup-title">Post Title</h2>
-                <p id="popup-date">December 3, 2023</p>
-                <p id="popup-content">Gusto ko na mamatayyyyy hell yeaaah</p>
-                <div class="popup-images">
-                    <div class="popup-image"></div>
-                    <div class="popup-image"></div>
-                </div>
-            </div>
-        </div>
+        <section class="posts">
+    <h2>Posts</h2>
+    <div class="post-grid">
+        <?php
+        // Placeholder array for posts
+        $posts = [
+            [
+                "title" => "Post Title 1",
+                "date" => "December 3, 2023",
+                "content" => "This is the content for post 1."
+            ],
+            [
+                "title" => "Post Title 2",
+                "date" => "December 4, 2023",
+                "content" => "This is the content for post 2."
+            ],
+            [
+                "title" => "Post Title 3",
+                "date" => "December 5, 2023",
+                "content" => "This is the content for post 3."
+            ],
+            [
+                "title" => "Post Title 4",
+                "date" => "December 6, 2023",
+                "content" => "This is the content for post 4."
+            ],
+            [
+                "title" => "Post Title 5",
+                "date" => "December 7, 2023",
+                "content" => "This is the content for post 5."
+            ],
+            [
+                "title" => "Post Title 6",
+                "date" => "December 8, 2023",
+                "content" => "This is the content for post 6."
+            ]
+        ];
+
+        // Generate posts dynamically
+        foreach ($posts as $index => $post) {
+            echo '<div class="post" onclick="openPopup(' . $index . ')">';
+            echo '<h3>' . htmlspecialchars($post["title"]) . '</h3>';
+            echo '<p>' . htmlspecialchars($post["date"]) . '</p>';
+            echo '<p>' . htmlspecialchars($post["content"]) . '</p>';
+            echo '</div>';
+        }
+        ?>
+    </div>
+</section>
+
+
+          <!-- Popup Panel -->
+<div id="popup-panel" class="popup hidden">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2 id="popup-title">Post Title</h2>
+        <p id="popup-date">December 3, 2023</p>
+        <p id="popup-content">This is the content for the selected post.</p>
+    </div>
+</div>
+
 
     </main>
 
