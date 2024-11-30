@@ -10,9 +10,15 @@
 
 <body>
     <?php include "includes/nav.php" ?>
-    <main>
+    <main class="dashboard">
         <div class="tasks-pane">
-            fuck mah life
+            <h1>Tasks</h1>
+            <div class="task">
+                <h2>Task Name</h2>
+                <h3>Date</h3>
+                <h4>Time</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum vero reiciendis accusantium recusandae quos provident quas temporibus commodi aliquid omnis?</p>
+            </div>
         </div>
         <div class="right">
             <div class="calendar-pane">
