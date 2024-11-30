@@ -7,7 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: sans-serif;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 main {
@@ -525,20 +525,13 @@ hr {
 
 /*Dashboard*/
 
-body.dashboard {
-    flex-grow: 1;
-    overflow: hidden;
-}
-
 main.dashboard {
     display: flex;
-    flex: 1;
-    
+    height: calc();
 }
 
 main .tasks-pane {
     width: 28%;
-    
     overflow-y: scroll;
 }
 
