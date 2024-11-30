@@ -9,8 +9,19 @@
 </head>
 
 <body>
-    <?php include "includes/nav.php" ?>
+     <?php include "includes/nav.php" ?>
     <?php include "includes/footer.php" ?>
+<?php include "includes/nav.php" ?>
+
+    <main>
+
+    </main>
+   
+
+
+<?php include "includes/footer.php" ?>
+
+    
 </body>
 
 </html>
