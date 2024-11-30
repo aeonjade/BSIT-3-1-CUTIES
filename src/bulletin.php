@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+     
+<?php include "includes/nav.php" ?>
+
+    <main>
+
+    </main>
+   
+
+
+<?php include "includes/footer.php" ?>
+
     
 </body>
 </html>
