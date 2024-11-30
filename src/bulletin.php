@@ -36,22 +36,22 @@
             </div>
         </section>
 
-        <!-- Posts Section -->
-        <section class="posts">
-            <h2>Posts</h2>
-            <div class="post-grid">
-                <?php
-            
-                for ($i = 0; $i < 3; $i++) {
-                    echo '<div class="post">';
-                    echo '<h3>Post Title ' . ($i + 1) . '</h3>';
-                    echo '<p>December 3, 2023</p>';
-                    echo '<p>Content placeholder...</p>';
-                    echo '</div>';
-                }
-                ?>
-            </div>
-        </section>
+      <!-- Posts Section -->
+<section class="posts">
+    <h2>Posts</h2>
+    <div class="post-grid">
+        <?php
+        for ($i = 0; $i < 9; $i++) {
+            echo '<div class="post">';
+            echo '<h3>Post Title ' . ($i + 1) . '</h3>';
+            echo '<p>December 3, 2023</p>';
+            echo '<p>Content placeholder...</p>';
+            echo '</div>';
+        }
+        ?>
+    </div>
+</section>
+
     </main>
 
 <?php include "includes/footer.php" ?>
