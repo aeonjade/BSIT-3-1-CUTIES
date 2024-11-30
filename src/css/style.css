@@ -10,9 +10,13 @@ body {
     min-height: 100vh;
 }
 
+main {
+    flex: 1;
+}
+
 main.dashboard {
     display: flex;
-    flex: 1;
+    
 }
 
 /*do something about this Bretaña and Kurt*/
