@@ -26,19 +26,19 @@ main {
 /*NAVIGATION*/
 
 a.logo {
-    padding: 0px 20px;
+    padding-right: 30px;
 }
 
 /*logo image properties*/
 a.logo img {
-    width: 50px;
+    width: 30px;
 }
 
 /*site name*/
 
 .site-name a {
     padding-right: 50px;
-    font-size: 26px;
+    font-size: 20px;
     text-decoration: none;
     color: black;
     transition: color 0.5s;
@@ -52,7 +52,7 @@ nav {
     display: flex;
     align-items: center;
     background-color: rgba(90, 90, 90, 1);
-    padding: 10px 30px;
+    padding: 10px 40px;
     top: 0;
     box-shadow: 0px 0px 32px rgba(15, 15, 15, 0.877);
     position: sticky;
@@ -62,10 +62,10 @@ nav {
 nav .links a {
     text-decoration: none;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 8px 20px;
     transition: background-color 0.5s, color 0.3s;
     color: #fff;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 /*hover state for ALL links*/
@@ -79,6 +79,20 @@ nav .links a.active {
 nav button {
     margin-left: auto;
     margin-right: 15px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+    background: none;
+}
+
+nav button:hover {
+    border: 1px solid rgb(31, 30, 30);
+    background-color: rgb(31, 30, 30);
 }
 
 /*FOOTER*/
@@ -92,8 +106,8 @@ footer {
 }
 
 footer p {
-    font-size: 14px;
-    padding: 12px 30px;
+    font-size: 12px;
+    padding: 8px 45px;
 }
 
 footer p.sides {
@@ -365,20 +379,3 @@ hr {
     margin: 5px 15px 15px 5px;
 }
 
-#SignIn-button {
-    width: 80px;
-    height: 35px;
-    font-size: 1rem;
-    border-radius: 10px;
-    border: 1px solid #fff;
-    text-decoration: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #fff;
-    transition: 0.5s;
-    background: none;
-}
-
-#SignIn-button:hover {
-    border: 1px solid rgb(31, 30, 30);
-    background-color: rgb(31, 30, 30);
-}
