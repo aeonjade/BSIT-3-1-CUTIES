@@ -29,10 +29,17 @@ a.logo img {
 }
 
 /*site name*/
-.site-name {
-    font-size: 26px;
-    color: black;
+
+.site-name a {
     padding-right: 50px;
+    font-size: 26px;
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s;
+}
+
+.site-name a:hover {
+    color: #fff;
 }
 
 nav {
@@ -46,7 +53,7 @@ nav {
 }
 
 /*navigation links*/
-nav a {
+nav .links  a {
     text-decoration: none;
     display: inline-block;
     padding: 10px 20px;
@@ -56,8 +63,8 @@ nav a {
 }
 
 /*hover state for ALL links*/
-nav a:hover,
-nav a.active {
+nav .links a:hover,
+nav .links a.active {
     text-decoration: underline;
     color: red;
 }
@@ -65,6 +72,7 @@ nav a.active {
 /*For Login Button*/
 nav button {
     margin-left: auto;
+    margin-right: 15px;
 }
 
 /*FOOTER*/
