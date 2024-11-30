@@ -2,7 +2,7 @@
   <a class="logo" href=""><img class="logo" src="images/logo.png" /></a>
 
   <div class="site-name">
-    BSIT 3-1 | CUTIES
+    <b>CUTIES | </b>BSIT 3-1
   </div>
 
   <div class="links">
