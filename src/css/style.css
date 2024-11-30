@@ -405,7 +405,7 @@ hr {
 .announcement {
     margin: 50px;
     background-color: #d9d9d9;
-    padding:5px 20px 5px 20px ;
+    padding: 5px 20px 5px 20px;
     border-radius: 10px;
 }
 
@@ -416,9 +416,10 @@ hr {
 
 .announcement-scroll {
     display: flex;
-    gap:7%;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    padding: 10px 0; /
+    gap: 7%;
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    padding: 10px 0;/
 }
 
 .announcement-scroll .box {
@@ -432,8 +433,10 @@ hr {
     font-weight: bold;
     text-align: center;
     border-radius: 5px;
-    flex-shrink: 0; /* Prevent the box from shrinking */
+    flex-shrink: 0;
+    /* Prevent the box from shrinking */
 }
+
 /* Posts Section */
 .posts {
     margin: 20px;
@@ -449,6 +452,7 @@ hr {
 .post {
     background-color: red;
     color: white;
+    width: 500px;
     width: 500px;
     height: 350px;
     padding: 10px;
@@ -509,4 +513,19 @@ hr {
     height: 100px;
     background-color: lightgray;
     border-radius: 5px;
+}
+
+
+/*Dashboard*/
+
+main .tasks-pane {
+    background-color: red;
+}
+
+main .calendar-pane {
+    background-color: blue;
+}
+
+main .announcements-pane {
+    background-color: green;
 }
