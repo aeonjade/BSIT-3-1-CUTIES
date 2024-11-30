@@ -11,27 +11,28 @@
 </head>
 
 <body>
-  <section id="logIn-header">
-    <?php include "includes/nav.php" ?>
+  <main>
+    <section id="logIn-header">
+      <?php include "includes/nav.php" ?>
 
-    <div class="background">
-      <div class="shape"></div>
-      <div class="shape"></div>
-    </div>
+      <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+      </div>
 
-    <form>
-      <h3>Login Here Cutie</h3>
+      <form>
+        <h3>Login Here Cutie</h3>
 
-      <label for="username">Username</label>
-      <input type="text" placeholder="Email or Phone" id="username" />
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="username" />
 
-      <label for="password">Password</label>
-      <input type="password" placeholder="Password" id="password" />
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password" />
 
-      <button>Log In</button>
-    </form>
-  </section>
-
+        <button>Log In</button>
+      </form>
+    </section>
+  </main>
   <?php include "includes/footer.php" ?>
 </body>
 
