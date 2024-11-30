@@ -11,8 +11,8 @@
 </head>
 
 <body>
-  
-<?php include "includes/nav.php" ?>
+
+  <?php include "includes/nav.php" ?>
 
   <section id="society">
     <div class="text-box">

@@ -12,6 +12,7 @@
     <a data-active="dashboard" href="dashboard.php">Dashboard</a>
     <a data-active="bulletin" href="bulletin.php">Bulletin</a>
   </div>
-  <button id="SignIn-button">Log In</button>
+
+  <button id="SignIn-button"><a data-active="logIn" href="logIn.php">Log In</a></button>
 
 </nav>
