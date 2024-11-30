@@ -10,15 +10,19 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 </head>
 
+
 <body>
-  <main>
-    <section id="logIn-header">
-      <?php include "includes/nav.php" ?>
+  <?php include "includes/nav.php" ?>
 
       <div class="background">
         <div class="shape"></div>
         <div class="shape"></div>
       </div>
+  <section class="vh-100" id="logIn-header">
+    <div class="background">
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
 
       <form>
         <h3>Login Here Cutie</h3>
