@@ -18,7 +18,6 @@
         <section class="announcement">
             <div class="announcement-header">
                 <h1>Announcements</h1>
-                <a href="bulletin.php">See other posts...</a>
             </div>
             <div class="announcements-pane">
                 <?php
@@ -31,9 +30,18 @@
                 <?php
                 }
                 ?>
+                <?php
+                foreach (getAnnouncements() as $announcement) {
+                ?>
+                    <div class="announcements-new">
+                        <h2><?= $announcement->announcement_title; ?></h2>
+                        <p><?= $announcement->announcement_description; ?></p>
+                    </div>
+                <?php
+                }
+                ?>
             </div>
         </section>
-
         <section class="posts">
             <h2>Posts</h2>
             <div class="post-grid">
