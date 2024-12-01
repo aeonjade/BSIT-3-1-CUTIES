@@ -356,43 +356,15 @@ footer p.quote {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-   
+
 }
 
 .announcement {
     margin: 50px;
     background-color: #ffffff;
-    padding: 5px 20px 5px 20px;
     border-radius: 10px;
 }
 
-.announcement h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.announcement-scroll {
-    display: flex;
-    gap: 7%;
-    overflow-x: auto;
-    /* Enable horizontal scrolling */
-    padding: 10px 0;/
-}
-
-.announcement-scroll .box {
-    background-color: #b9f9e6;
-    width: 500px;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 5px;
-    flex-shrink: 0;
-    /* Prevent the box from shrinking */
-}
 /* Posts Section */
 .posts {
     margin: 20px;
@@ -605,12 +577,6 @@ footer p.quote {
 }
 
 @media (max-width: 400px) {
-    .announcement-scroll .box {
-        font-size: 14px;
-        /* Adjust font size for announcement content */
-        padding: 10px;
-    }
-
     .popup-content {
         width: 95%;
         /* Use maximum screen width */
@@ -622,10 +588,6 @@ footer p.quote {
         /* Adjust close button size */
     }
 }
-
-
-
-
 
 /*Dashboard*/
 
@@ -661,6 +623,7 @@ main .left .tasks-pane .task {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: 0.3s;
 }
+
 main .left .tasks-pane .task:hover {
     scale: 103%;
 }
@@ -940,7 +903,7 @@ main .right .calendar-pane {
     background-color: #ececec;
     border-radius: 5px;
     overflow: hidden;
-    height:  500px;
+    height: 500px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2),
         0 4px 12px rgba(0, 0, 0, 0.1);
 }

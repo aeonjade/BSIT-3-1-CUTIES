@@ -16,17 +16,21 @@
     <main>
         <!-- Announcement Section -->
         <section class="announcement">
-            <h2>Announcement</h2>
-            <?php
-            foreach (getAnnouncements() as $announcement) {
-            ?>
-                <div class="announcements-new">
-                    <h2><?= $announcement->announcement_title; ?></h2>
-                    <p><?= $announcement->announcement_description; ?></p>
-                </div>
-            <?php
-            }
-            ?>
+            <div class="announcement-header">
+                <h1>Announcements</h1>
+            </div>
+            <div class="announcements-pane">
+                <?php
+                foreach (getAnnouncements() as $announcement) {
+                ?>
+                    <div class="announcements-new">
+                        <h2><?= $announcement->announcement_title; ?></h2>
+                        <p><?= $announcement->announcement_description; ?></p>
+                    </div>
+                <?php
+                }
+                ?>
+            </div>
         </section>
         <section class="posts">
             <h2>Posts</h2>
