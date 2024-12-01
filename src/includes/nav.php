@@ -29,4 +29,4 @@
   </div>
 </nav>
 
-<script src="script.js"></script>
+<script src="./javascript/script.js"></script>

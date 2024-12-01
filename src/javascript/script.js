@@ -163,48 +163,5 @@ document.addEventListener('DOMContentLoaded', function () {
               .then(data => alert('Event updated successfully!'));
         }
     });
-
     calendar.render();
 });
-
-const express = require('express');
-const app = express();
-app.use(express.json());
-
-// Mock event data
-let events = [
-    { id: '1', title: 'Sample Event', start: '2024-12-05', end: '2024-12-07' }
-];
-
-// Get events
-app.get('/api/get-events', (req, res) => {
-    res.json(events);
-});
-
-// Create event
-app.post('/api/create-event', (req, res) => {
-    const newEvent = { id: Date.now().toString(), ...req.body };
-    events.push(newEvent);
-    res.json(newEvent);
-});
-
-// Update event
-app.put('/api/update-event', (req, res) => {
-    const { id, start, end } = req.body;
-    const event = events.find(event => event.id === id);
-    if (event) {
-        event.start = start;
-        event.end = end;
-        res.json(event);
-    } else {
-        res.status(404).send('Event not found');
-    }
-});
-
-// Delete event
-app.delete('/api/delete-event/:id', (req, res) => {
-    events = events.filter(event => event.id !== req.params.id);
-    res.json({ success: true });
-});
-
-app.listen(3000, () => console.log('Server running on port 3000'));
