@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
-
-    <?php include "includes/nav.php" ?>
+<body id="main-bg">
+   
+<?php include "includes/nav.php" ?>
 
     <main class="about">
         <section class="header">

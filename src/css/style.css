@@ -8,10 +8,13 @@ body {
     flex-direction: column;
     font-family: sans-serif;
     height: 100vh;
+
 }
 
 main {
     flex: 1;
+    height: 100vh;
+    width: 100%;
 }
 
 /*do something about this Bretaña and Kurt*/
@@ -99,6 +102,62 @@ nav button {
 nav button:hover {
     border: 1px solid rgb(31, 30, 30);
     background-color: rgb(31, 30, 30);
+}
+
+/* Sidebar Styles */
+.sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 250px;
+    background-color: rgba(90, 90, 90, 1);
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease;
+    z-index: 1000;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.sidebar a {
+    color: #fff;
+    padding: 15px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    border-bottom: 1px solid #fff;
+}
+
+.sidebar a:hover {
+    color: red;
+}
+
+/* Sidebar Toggle Button */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .links {
+        display: none;
+        /* Hide the top navigation */
+    }
+
+    .menu-toggle {
+        display: block;
+        /* Show menu toggle button */
+    }
+
+    .sidebar {
+        display: flex;
+    }
 }
 
 /*FOOTER*/
@@ -289,9 +348,20 @@ footer p.quote {
 
 /*BULLETIN*/
 /* Announcement Section */
+/*Dito naka ano mga bg ng bullrtin stka about*/
+#main-bg {
+    min-height: 160vh;
+    width: 100%;
+    background: linear-gradient(rgba(50, 11, 221, 0.829), rgba(186, 186, 55, 0.595));
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
 .announcement {
     margin: 50px;
-    background-color: #d9d9d9;
+    background-color: #ffffff;
     padding: 5px 20px 5px 20px;
     border-radius: 10px;
 }
@@ -334,18 +404,61 @@ footer p.quote {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    color: #000;
 }
 
+/* Individual Post Card */
 .post {
-    background-color: red;
-    color: white;
+    background-color: #f2f2f2;
+    /* Softer, lighter background */
+    color: #333;
+    /* Darker text for better readability */
     width: 500px;
-    width: 500px;
-    height: 350px;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
+    /* Adjusted for a cleaner look */
+    height: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    /* Slightly rounded corners */
+    text-align: left;
+    /* Align text to the left for a professional look */
     cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth hover transition */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2),
+        0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Modern shadow effect */
+}
+
+.post:hover {
+    transform: translateY(-10px);
+    /* Lift effect on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3),
+        0 6px 16px rgba(0, 0, 0, 0.15);
+    /* Stronger shadow on hover */
+}
+
+/* Post Title */
+.post h3 {
+    font-size: 24px;
+    color: #333;
+    /* Darker text */
+    margin-bottom: 10px;
+}
+
+/* Post Date */
+.post p:first-of-type {
+    font-size: 14px;
+    color: #666;
+    /* Subtle color for the date */
+    margin-bottom: 15px;
+}
+
+/* Post Content */
+.post p:last-of-type {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+    /* Slightly darker text for content */
 }
 
 /* Popup Styles */
@@ -409,6 +522,123 @@ footer p.quote {
     height: 100vh;
 }
 
+/* Base styles are retained */
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .announcement-scroll .box {
+        width: 400px;
+        /* Adjust width for smaller screens */
+        height: 200px;
+    }
+
+    .post {
+        width: 400px;
+        /* Reduce post width */
+        height: auto;
+        /* Allow height to adjust based on content */
+        padding: 15px;
+    }
+
+    .popup-content {
+        width: 70%;
+        /* Adjust popup width */
+        height: auto;
+        /* Allow height to adjust dynamically */
+        padding: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .post-grid {
+        flex-direction: column;
+        /* Stack posts vertically */
+        align-items: center;
+    }
+
+    .post {
+        width: 90%;
+        /* Use most of the screen width */
+        margin-bottom: 20px;
+    }
+
+    .announcement-scroll {
+        flex-direction: column;
+        /* Stack announcements vertically */
+        align-items: center;
+    }
+
+    .announcement-scroll .box {
+        width: 90%;
+        /* Use most of the screen width */
+        height: auto;
+        /* Allow height to adjust dynamically */
+    }
+}
+
+@media (max-width: 768px) {
+
+    .announcement h2,
+    .posts h2 {
+        font-size: 20px;
+        /* Adjust heading font size */
+    }
+
+    .post h3 {
+        font-size: 20px;
+        /* Adjust post title font size */
+    }
+
+    .popup-content {
+        width: 90%;
+        /* Maximize width usage */
+    }
+}
+
+@media (max-width: 576px) {
+    .announcement-scroll {
+        gap: 20px;
+        /* Reduce gap between announcement boxes */
+    }
+
+    .post {
+        padding: 10px;
+        /* Reduce padding for posts */
+    }
+
+    .post h3 {
+        font-size: 18px;
+        /* Adjust title font size */
+    }
+
+    .post p {
+        font-size: 14px;
+        /* Reduce font size for smaller screens */
+    }
+}
+
+@media (max-width: 400px) {
+    .announcement-scroll .box {
+        font-size: 14px;
+        /* Adjust font size for announcement content */
+        padding: 10px;
+    }
+
+    .popup-content {
+        width: 95%;
+        /* Use maximum screen width */
+        padding: 10px;
+    }
+
+    .popup-content .close {
+        font-size: 25px;
+        /* Adjust close button size */
+    }
+}
+
+
+
+
 
 /*Dashboard*/
 
@@ -455,7 +685,7 @@ main .right {
 
 main .right .calendar-pane {
     height: 65%;
-    background-color: blue;
+    background-color: rgb(255, 255, 255);
 }
 
 /* main .right .announcements-pane h1 {
@@ -515,6 +745,8 @@ main .right .announcements-pane .announcements-new:hover {
 main .right .announcements-pane .announcements-new h2 {
     padding-bottom: 5%;
 }
+
+
 
 /*LOGIN PAGE*/
 
@@ -727,10 +959,12 @@ main .right .announcements-pane .announcements-new h2 {
 
 .developer-card {
     text-align: center;
-    background-color: #b9f9e6;
+    background-color: #ececec;
     border-radius: 5px;
     overflow: hidden;
-    height: 500px;
+    height:  500px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2),
+        0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .developer-card .picture {
@@ -764,10 +998,10 @@ main .right .announcements-pane .announcements-new h2 {
 
 .officer-card {
     text-align: center;
-    background-color: #b9f9e6;
+    background-color: #f3f5f4;
     border-radius: 5px;
     overflow: hidden;
-    height: 250px;
+    height: 290px;
 }
 
 .officer-card .picture {

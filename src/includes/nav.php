@@ -15,4 +15,18 @@
 
   <button id="SignIn-button"><a data-active="logIn" href="logIn.php">Log In</a></button>
 
+  <!-- Sidebar toggle button for tablets/mobile -->
+  <button class="menu-toggle" id="menu-toggle">☰</button>
+
+  <!-- Sidebar Menu -->
+  <div class="sidebar" id="sidebar">
+    <a href="index.php">Home</a>
+    <a href="gallery.php">Gallery</a>
+    <a href="about.php">About</a>
+    <a href="dashboard.php">Dashboard</a>
+    <a href="bulletin.php">Bulletin</a>
+    <a href="logIn.php">Log In</a>
+  </div>
 </nav>
+
+<script src="script.js"></script>
