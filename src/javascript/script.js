@@ -81,9 +81,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const calendar = new FullCalendar.Calendar(calendarEl, {
     initialView: "dayGridMonth", // Week view
     headerToolbar: {
-      start: "prev,next", // Navigation buttons
+      start: "prev", // Navigation buttons
       center: "title", // Calendar title
-      end: "today", // View buttons
+      end: "today next", // View buttons
     },
     editable: true, // Enables drag-and-drop
     selectable: true, // Enables selection
