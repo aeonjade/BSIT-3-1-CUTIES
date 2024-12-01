@@ -8,7 +8,6 @@ body {
     flex-direction: column;
     font-family: sans-serif;
     height: 100vh;
-
 }
 
 main {
@@ -617,10 +616,15 @@ main .left .tasks-pane .task:hover {
 }
 
 main .right {
+    display: flex;
+    flex-direction: column;
     width: 72%;
 }
 
 main .right .calendar-pane {
+    display: flex;
+    flex: none;
+    padding: 2vh;
     height: 65%;
     background-color: rgb(255, 255, 255);
 }
