@@ -83,15 +83,15 @@ document.addEventListener('DOMContentLoaded', function () {
     const calendar = new FullCalendar.Calendar(calendarEl, {
         initialView: 'dayGridMonth', // Week view
         headerToolbar: {
-            start: 'prev,next today', // Navigation buttons
+            start: 'prev,next', // Navigation buttons
             center: 'title',          // Calendar title
-            end: 'dayGridMonth,timeGridWeek,timeGridDay' // View buttons
+            end: 'today' // View buttons
         },
         editable: true,             // Enables drag-and-drop
         selectable: true,           // Enables selection
         eventStartEditable: true,   // Allows event dragging
         eventDurationEditable: true, // Allows resizing
-        events: '/api/get-events',  // Fetch events dynamically
+        events: '',  // Fetch events dynamically
         select: function (info) {
             // Create a new event
             const title = prompt("Enter Task Title");
