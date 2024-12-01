@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const calendarEl = document.getElementById('calendar');
 
     const calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'timeGridWeek', // Week view
+        initialView: 'dayGridMonth', // Week view
         headerToolbar: {
             start: 'prev,next today', // Navigation buttons
             center: 'title',          // Calendar title
