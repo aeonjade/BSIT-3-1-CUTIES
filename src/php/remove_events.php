@@ -7,23 +7,18 @@ $conn = new PDO("mysql:host=$servername;dbname=cutiesdb", $username, $password);
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 $title = $_POST['title'];
-$time = $_POST['time'];
-$desc = $_POST['desc'];
-$startDate = date("y-m-d", strtotime($_POST['startDate']));
 
-$sql = "INSERT INTO tasks (task_title, task_date, task_time, task_description)
-VALUES ('" . $title . "', '" . $startDate . "', '" . $time . "', '" . $desc . "')
-";
+$sql = "DELETE FROM tasks WHERE task_title = '$title'";
 
 if ($conn->exec($sql)) {
     $data = array(
         'status' => true,
-        'msg' => 'Event added successfully!'
+        'msg' => 'Event removed successfully!'
     );
 } else {
     $data = array(
         'status' => false,
-        'msg' => 'Sorry, Event not added.'
+        'msg' => 'Sorry, Event not removed.'
     );
 }
 echo json_encode($data);

@@ -15,7 +15,7 @@ if ($count > 0) {
     $i = 0;
 
     foreach ($result as $tasks) {
-        $data_arr[$i]['title'] = ($tasks->task_title) . " - " . (date("g A", strtotime($tasks->task_time)));
+        $data_arr[$i]['title'] = $tasks->task_title;
         $data_arr[$i]['start'] = date("Y-m-d", strtotime($tasks->task_date));
         $i++;
     }

@@ -98,17 +98,18 @@ document.addEventListener("DOMContentLoaded", function () {
       const startDate = info.startStr;
       if (title) {
         calendar.addEvent({
-          title: title + " - " + time,
+          title: title,
           start: info.startStr,
           allDay: info.allDay,
+          description: title,
         });
-    
+
         // Optional: Save event to backend
         $.ajax({
           url: "./php/save_events.php",
           type: "POST",
           dataType: "json",
-          data: { title, time, desc, startDate},
+          data: { title, time, desc, startDate },
           success: function (response) {
             if (response.status == true) {
               alert(response.msg);
@@ -123,14 +124,24 @@ document.addEventListener("DOMContentLoaded", function () {
     eventClick: function (info) {
       // Delete event
       if (confirm(`Do you want to delete the event '${info.event.title}'?`)) {
+        const title = info.event.title;
         info.event.remove();
 
         // Optional: Remove event from backend
-        fetch(`/api/delete-event/${info.event.id}`, {
-          method: "DELETE",
-        })
-          .then((response) => response.json())
-          .then((data) => alert("Event deleted successfully!"));
+        $.ajax({
+          url: "./php/remove_events.php",
+          type: "POST",
+          dataType: "json",
+          data: { title },
+          success: function (response) {
+            if (response.status == true) {
+              alert(response.msg);
+              location.reload();
+            } else {
+              alert(response.msg);
+            }
+          },
+        });
       }
     },
     eventResize: function (info) {
