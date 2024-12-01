@@ -166,7 +166,6 @@ document.addEventListener('DOMContentLoaded', function () {
     calendar.render();
 });
 
-
 const express = require('express');
 const app = express();
 app.use(express.json());
@@ -208,4 +207,3 @@ app.delete('/api/delete-event/:id', (req, res) => {
 });
 
 app.listen(3000, () => console.log('Server running on port 3000'));
-
