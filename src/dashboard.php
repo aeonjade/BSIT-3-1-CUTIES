@@ -41,7 +41,6 @@ header("Access-Control-Allow-Origin: *");
 
             <div class="announcement-header">
                 <h1>Announcements</h1>
-                <a href="bulletin.php">See posts...</a>
             </div>
             <div class="announcements-pane">
                 <?php
