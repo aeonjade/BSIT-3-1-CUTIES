@@ -881,19 +881,19 @@ main .right .announcements-pane .announcements-new h2 {
 
 /* General Styles */
 
-h1,
-h2 {
+.about h1,
+.about h2 {
     text-align: center;
     margin: 20px 0;
 }
 
-p {
+.about p {
     text-align: center;
     margin: 0 20px;
 }
 
 /* Header Section */
-.header {
+.about .header {
     text-align: center;
     padding: 20px;
 }
@@ -962,7 +962,7 @@ p {
     background-color: #ececec;
     border-radius: 5px;
     overflow: hidden;
-    height: 500px;
+    height:  500px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2),
         0 4px 12px rgba(0, 0, 0, 0.1);
 }

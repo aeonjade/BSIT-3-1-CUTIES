@@ -12,24 +12,24 @@
    
 <?php include "includes/nav.php" ?>
 
-    <main>
-    <section class="header">
-    <div class="about-container">
-        <img class="abt-img" src="images/logo.png" alt="Logo">  
-        <div class="about-text">
-            <h1>3-1 CUTIES</h1>
-            <p class="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sed nemo magnam quia minus distinctio voluptas aut eaque. Quod inventore iusto aliquam unde, iste animi exercitationem ipsam perspiciatis quo saepe quos velit dignissimos tenetur consequuntur,
-        </div>
-    </div>
-</section>
+    <main class="about">
+        <section class="header">
+            <div class="about-container">
+                <img class="abt-img" src="images/logo.png" alt="Logo">
+                <div class="about-text">
+                    <h1>3-1 CUTIES</h1>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sed nemo magnam quia minus distinctio voluptas aut eaque. Quod inventore iusto aliquam unde, iste animi exercitationem ipsam perspiciatis quo saepe quos velit dignissimos tenetur consequuntur,
+                </div>
+            </div>
+        </section>
 
 
         <!-- Meet the Developers Section -->
         <section class="developers">
             <h2>Meet the Developers</h2>
             <div class="developer-grid">
-                <?php 
+                <?php
                 // Developers array with image and description
                 $developers = [
                     ['image' => 'images/bretz.jpg', 'description' => 'Jhonn Michael Bretana  <br> <span> The Food Expert </span> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, eligendi nam qui nesciunt unde corrupti sed praesentium repellendus iure! '],
@@ -54,7 +54,7 @@
         <section class="officers">
             <h2>The 3-1 Officers</h2>
             <div class="officer-grid">
-                <?php 
+                <?php
                 // Officers array with image, role, and description
                 $officers = [
                     ['role' => 'P', 'image' => 'images/officer1.jpg', 'description' => 'President '],
@@ -74,7 +74,7 @@
         </section>
     </main>
 
-<?php include "includes/footer.php" ?>
+    <?php include "includes/footer.php" ?>
 
 </body>
 
