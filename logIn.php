@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 include("connection.php");
 include("functions.php");
 
@@ -24,9 +26,9 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
           die;
         }
       }
-      echo '<script>alert("wrong username or password!")</script>';
+      echo "wrong username or password!";
     }else{
-      echo '<script>alert"wrong username or password!"</script>';
+      echo "wrong username or password!";
     }
   }
 }
