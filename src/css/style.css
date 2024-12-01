@@ -8,7 +8,7 @@ body {
     flex-direction: column;
     font-family: sans-serif;
     height: 100vh;
-    
+
 }
 
 main {
@@ -146,17 +146,20 @@ nav button:hover {
 /* Media Queries */
 @media (max-width: 768px) {
     .links {
-        display: none; /* Hide the top navigation */
+        display: none;
+        /* Hide the top navigation */
     }
 
     .menu-toggle {
-        display: block; /* Show menu toggle button */
+        display: block;
+        /* Show menu toggle button */
     }
 
     .sidebar {
         display: flex;
     }
 }
+
 /*FOOTER*/
 
 footer {
@@ -353,7 +356,7 @@ footer p.quote {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-   
+
 }
 
 .announcement {
@@ -406,36 +409,47 @@ footer p.quote {
 
 /* Individual Post Card */
 .post {
-    background-color: #f2f2f2; /* Softer, lighter background */
-    color: #333; /* Darker text for better readability */
-    width: 500px; /* Adjusted for a cleaner look */
+    background-color: #f2f2f2;
+    /* Softer, lighter background */
+    color: #333;
+    /* Darker text for better readability */
+    width: 500px;
+    /* Adjusted for a cleaner look */
     height: 300px;
     padding: 20px;
-    border-radius: 15px; /* Slightly rounded corners */
-    text-align: left; /* Align text to the left for a professional look */
+    border-radius: 15px;
+    /* Slightly rounded corners */
+    text-align: left;
+    /* Align text to the left for a professional look */
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2), 
-                0 4px 12px rgba(0, 0, 0, 0.1); /* Modern shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth hover transition */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2),
+        0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Modern shadow effect */
 }
 
 .post:hover {
-    transform: translateY(-10px); /* Lift effect on hover */
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3), 
-                0 6px 16px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+    transform: translateY(-10px);
+    /* Lift effect on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3),
+        0 6px 16px rgba(0, 0, 0, 0.15);
+    /* Stronger shadow on hover */
 }
 
 /* Post Title */
 .post h3 {
     font-size: 24px;
-    color: #333; /* Darker text */
+    color: #333;
+    /* Darker text */
     margin-bottom: 10px;
 }
 
 /* Post Date */
 .post p:first-of-type {
     font-size: 14px;
-    color: #666; /* Subtle color for the date */
+    color: #666;
+    /* Subtle color for the date */
     margin-bottom: 15px;
 }
 
@@ -443,7 +457,8 @@ footer p.quote {
 .post p:last-of-type {
     font-size: 16px;
     line-height: 1.6;
-    color: #444; /* Slightly darker text for content */
+    color: #444;
+    /* Slightly darker text for content */
 }
 
 /* Popup Styles */
@@ -500,10 +515,11 @@ footer p.quote {
     background-color: lightgray;
     border-radius: 5px;
 }
+
 /* Prevent scrolling when no-scroll */
 .no-scroll {
     overflow: hidden;
-    height: 100vh; 
+    height: 100vh;
 }
 
 /* Base styles are retained */
@@ -511,95 +527,116 @@ footer p.quote {
 /* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
     .announcement-scroll .box {
-        width: 400px; /* Adjust width for smaller screens */
+        width: 400px;
+        /* Adjust width for smaller screens */
         height: 200px;
     }
 
     .post {
-        width: 400px; /* Reduce post width */
-        height: auto; /* Allow height to adjust based on content */
+        width: 400px;
+        /* Reduce post width */
+        height: auto;
+        /* Allow height to adjust based on content */
         padding: 15px;
     }
 
     .popup-content {
-        width: 70%; /* Adjust popup width */
-        height: auto; /* Allow height to adjust dynamically */
+        width: 70%;
+        /* Adjust popup width */
+        height: auto;
+        /* Allow height to adjust dynamically */
         padding: 15px;
     }
 }
 
 @media (max-width: 992px) {
     .post-grid {
-        flex-direction: column; /* Stack posts vertically */
+        flex-direction: column;
+        /* Stack posts vertically */
         align-items: center;
     }
 
     .post {
-        width: 90%; /* Use most of the screen width */
+        width: 90%;
+        /* Use most of the screen width */
         margin-bottom: 20px;
     }
 
     .announcement-scroll {
-        flex-direction: column; /* Stack announcements vertically */
+        flex-direction: column;
+        /* Stack announcements vertically */
         align-items: center;
     }
 
     .announcement-scroll .box {
-        width: 90%; /* Use most of the screen width */
-        height: auto; /* Allow height to adjust dynamically */
+        width: 90%;
+        /* Use most of the screen width */
+        height: auto;
+        /* Allow height to adjust dynamically */
     }
 }
 
 @media (max-width: 768px) {
+
     .announcement h2,
     .posts h2 {
-        font-size: 20px; /* Adjust heading font size */
+        font-size: 20px;
+        /* Adjust heading font size */
     }
 
     .post h3 {
-        font-size: 20px; /* Adjust post title font size */
+        font-size: 20px;
+        /* Adjust post title font size */
     }
 
     .popup-content {
-        width: 90%; /* Maximize width usage */
+        width: 90%;
+        /* Maximize width usage */
     }
 }
 
 @media (max-width: 576px) {
     .announcement-scroll {
-        gap: 20px; /* Reduce gap between announcement boxes */
+        gap: 20px;
+        /* Reduce gap between announcement boxes */
     }
 
     .post {
-        padding: 10px; /* Reduce padding for posts */
+        padding: 10px;
+        /* Reduce padding for posts */
     }
 
     .post h3 {
-        font-size: 18px; /* Adjust title font size */
+        font-size: 18px;
+        /* Adjust title font size */
     }
 
     .post p {
-        font-size: 14px; /* Reduce font size for smaller screens */
+        font-size: 14px;
+        /* Reduce font size for smaller screens */
     }
 }
 
 @media (max-width: 400px) {
     .announcement-scroll .box {
-        font-size: 14px; /* Adjust font size for announcement content */
+        font-size: 14px;
+        /* Adjust font size for announcement content */
         padding: 10px;
     }
 
     .popup-content {
-        width: 95%; /* Use maximum screen width */
+        width: 95%;
+        /* Use maximum screen width */
         padding: 10px;
     }
 
     .popup-content .close {
-        font-size: 25px; /* Adjust close button size */
+        font-size: 25px;
+        /* Adjust close button size */
     }
 }
 
- 
+
 
 
 
@@ -842,7 +879,8 @@ main .right .announcements-pane .announcements-new h2 {
 
 /* General Styles */
 
- h1 ,h2 {
+h1,
+h2 {
     text-align: center;
     margin: 20px 0;
 }
@@ -860,31 +898,41 @@ p {
 
 /* Container for logo and text */
 .about-container {
-    display: flex; /* Align items horizontally */
-    align-items: center; /* Vertically align items */
-    justify-content: center; /* Center both elements */
-    gap: 20px; 
-    max-width: 800px; /* Optional: Limit the total width */
-    margin: 0 auto; /* Center the container on the page */
+    display: flex;
+    /* Align items horizontally */
+    align-items: center;
+    /* Vertically align items */
+    justify-content: center;
+    /* Center both elements */
+    gap: 20px;
+    max-width: 800px;
+    /* Optional: Limit the total width */
+    margin: 0 auto;
+    /* Center the container on the page */
 }
 
 /* Logo */
 .abt-img {
-    width: 440px; /* Adjust logo width */
-    height: 380px; /* Adjust logo height */
-    border-radius: 50%; /* Make it circular */
+    width: 440px;
+    /* Adjust logo width */
+    height: 380px;
+    /* Adjust logo height */
+    border-radius: 50%;
+    /* Make it circular */
 }
 
 /* Text */
 .about-text {
-    text-align: left; /* Align the text to the left */
+    text-align: left;
+    /* Align the text to the left */
 }
 
 .description {
-    max-width: 400px; /* Optional: Limit description width */
+    max-width: 400px;
+    /* Optional: Limit description width */
     line-height: 1.6;
     font-size: 18px;
-   padding: 10px;
+    padding: 10px;
 }
 
 
@@ -892,7 +940,7 @@ p {
 .developers {
     padding: 20px;
     height: 50vh;
-    margin-bottom:5%;
+    margin-bottom: 5%;
 }
 
 .developer-grid {
@@ -902,7 +950,7 @@ p {
     margin: 20px;
 }
 
-.developer-grid span{
+.developer-grid span {
     font-weight: 600;
     font-size: 20px;
 }
@@ -912,9 +960,9 @@ p {
     background-color: #ececec;
     border-radius: 5px;
     overflow: hidden;
-    height:500px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2), 
-    0 4px 12px rgba(0, 0, 0, 0.1);
+    height: 500px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2),
+        0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .developer-card .picture {
@@ -929,7 +977,8 @@ p {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-bottom: 2px solid #fff; /* Optional styling for separation */
+    border-bottom: 2px solid #fff;
+    /* Optional styling for separation */
 }
 
 
@@ -965,7 +1014,8 @@ p {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-bottom: 2px solid #fff; /* Optional styling for separation */
+    border-bottom: 2px solid #fff;
+    /* Optional styling for separation */
 }
 
 .officer-card .description {
@@ -976,5 +1026,3 @@ p {
     font-size: 14px;
     color: black;
 }
-
-
