@@ -636,15 +636,15 @@ main .right .calendar-pane {
 }
 
 .announcement-header h1 {
-    margin-left: 2vw;
-    padding-top: 2vh;
+    margin-left: 1.5vw;
+    padding: 0.8vh;
     font-size: 3vh;
 }
 
 .announcement-header a {
     margin-left: auto;
     margin-right: 2vw;
-    padding-top: 2vh;
+    padding: 1vh;
     font-size: 2vh;
     text-decoration: none;
     color: black;

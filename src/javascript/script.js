@@ -80,7 +80,6 @@ document.getElementById("menu-toggle").addEventListener("click", function () {
 // Initialize the FullCalendar instance
 document.addEventListener('DOMContentLoaded', function () {
     const calendarEl = document.getElementById('calendar');
-
     const calendar = new FullCalendar.Calendar(calendarEl, {
         initialView: 'dayGridMonth', // Week view
         headerToolbar: {
@@ -95,7 +94,9 @@ document.addEventListener('DOMContentLoaded', function () {
         events: '/api/get-events',  // Fetch events dynamically
         select: function (info) {
             // Create a new event
-            const title = prompt("Enter Event Title");
+            const title = prompt("Enter Task Title");
+            const time = prompt("Enter Task Time");
+            const desc = prompt("Enter Task Description");
             if (title) {
                 calendar.addEvent({
                     title: title,
