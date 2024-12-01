@@ -1,4 +1,7 @@
-<?php include "php/functions.php" ?>
+<?php include "php/functions.php";
+header("Access-Control-Allow-Origin: *");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body class="dashboard">
@@ -54,7 +58,6 @@
         </div>
     </main>
     <?php include "includes/footer.php" ?>
-
 
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js'></script>
     <script src="javascript/script.js"></script>

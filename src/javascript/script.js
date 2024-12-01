@@ -95,20 +95,28 @@ document.addEventListener("DOMContentLoaded", function () {
       const title = prompt("Enter Task Title");
       const time = prompt("Enter Task Time");
       const desc = prompt("Enter Task Description");
+      const startDate = info.startStr;
       if (title) {
         calendar.addEvent({
           title: title + " - " + time,
           start: info.startStr,
-          end: info.endStr,
           allDay: info.allDay,
         });
-
+    
         // Optional: Save event to backend
         $.ajax({
-          url: "save_events.php",
+          url: "/php/save_events.php",
           type: "POST",
           dataType: "json",
-          data: {title, time, desc}
+          data: { title, time, desc, startDate},
+          success: function (response) {
+            if (response.status == true) {
+              alert(response.msg);
+              location.reload();
+            } else {
+              alert(response.msg);
+            }
+          },
         });
       }
     },
