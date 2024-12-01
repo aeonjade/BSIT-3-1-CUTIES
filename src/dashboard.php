@@ -54,7 +54,7 @@
                     <h4>Time</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum vero reiciendis accusantium recusandae quos provident quas temporibus commodi aliquid omnis?</p>
                 </div>
-            </div>
+            </div> 
         </div>
         <div class="right">
 
