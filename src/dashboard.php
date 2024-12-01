@@ -33,7 +33,7 @@
             </div>
         </div>
         <div class="right">
-                
+
             <div class="calendar-pane" id="calendar"></div>
 
             <div class="announcement-header">
