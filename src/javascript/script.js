@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
     selectable: true, // Enables selection
     eventStartEditable: true, // Allows event dragging
     eventDurationEditable: true, // Allows resizing
-    events: "", // Fetch events dynamically
+    events: "./php/display_events.php", // Fetch events dynamically
     select: function (info) {
       // Create a new event
       const title = prompt("Enter Task Title");
