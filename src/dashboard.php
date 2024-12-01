@@ -56,7 +56,7 @@
     </main>
     <?php include "includes/footer.php" ?>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.7/index.global.min.js"></script>
-    <script src="js/calendar.js"></script>
+    <script src="javascript/calendar.js"></script>
 
 </body>
 
