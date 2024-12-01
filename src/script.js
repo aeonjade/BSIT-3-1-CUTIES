@@ -65,3 +65,13 @@ function closePopup() {
     // Re-enable background scrolling
     document.body.classList.remove("no-scroll");
 }
+
+
+document.getElementById("menu-toggle").addEventListener("click", function () {
+    const sidebar = document.getElementById("sidebar");
+    if (sidebar.style.left === "0px") {
+        sidebar.style.left = "-100%"; // Hide the sidebar
+    } else {
+        sidebar.style.left = "0px"; // Show the sidebar
+    }
+});

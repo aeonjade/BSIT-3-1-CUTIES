@@ -72,6 +72,7 @@
                 "date" => "December 8, 2023",
                 "content" => "This is the content for post 6."
             ]
+            
         ];
 
         // Generate posts dynamically
