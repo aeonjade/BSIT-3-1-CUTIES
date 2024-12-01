@@ -674,7 +674,6 @@ main .left .tasks-pane .task {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: 0.3s;
 }
-
 main .left .tasks-pane .task:hover {
     scale: 103%;
 }
@@ -688,24 +687,19 @@ main .right .calendar-pane {
     background-color: rgb(255, 255, 255);
 }
 
-/* main .right .announcements-pane h1 {
-    margin-top: 2%;
-    margin-left: 2%;
-    font-size: 3vh;
-} */
-main .right .announcement-header {
+.announcement-header {
     height: 5%;
     display: flex;
     flex-direction: row;
 }
 
-main .right .announcement-header h1 {
+.announcement-header h1 {
     margin-left: 3%;
     padding-top: 2vh;
     font-size: 3vh;
 }
 
-main .right .announcement-header a {
+.announcement-header a {
     margin-left: auto;
     margin-right: 2vw;
     padding-top: 2vh;
@@ -715,18 +709,18 @@ main .right .announcement-header a {
     transition: 0.5s;
 }
 
-main .right .announcement-header a:hover {
+.announcement-header a:hover {
     color: red;
 }
 
-main .right .announcements-pane {
+.announcements-pane {
     height: 29%;
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
 }
 
-main .right .announcements-pane .announcements-new {
+.announcements-pane .announcements-new {
     width: 300px;
     flex: none;
     overflow: hidden;
@@ -738,19 +732,16 @@ main .right .announcements-pane .announcements-new {
     transition: 0.3s;
 }
 
-main .right .announcements-pane .announcements-new:hover {
+.announcements-pane .announcements-new:hover {
     scale: 103%;
 }
 
-main .right .announcements-pane .announcements-new h2 {
+.announcements-pane .announcements-new h2 {
     padding-bottom: 5%;
 }
 
-
-
 /*LOGIN PAGE*/
 
-/*LogIn page*/
 #logIn-header {
     min-height: 100vh;
     width: 100%;
