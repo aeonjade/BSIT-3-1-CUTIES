@@ -531,18 +531,6 @@ footer p.quote {
         margin-bottom: 20px;
     }
 
-    .announcement-scroll {
-        flex-direction: column;
-        /* Stack announcements vertically */
-        align-items: center;
-    }
-
-    .announcement-scroll .box {
-        width: 90%;
-        /* Use most of the screen width */
-        height: auto;
-        /* Allow height to adjust dynamically */
-    }
 }
 
 @media (max-width: 768px) {
