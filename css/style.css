@@ -4,7 +4,7 @@
 }
 
 body {
-    display: flex;
+    display: flex; 
     flex-direction: column;
     font-family: sans-serif;
     height: 100vh;
@@ -752,7 +752,7 @@ main .right .announcements-pane .announcements-new h2 {
 #logIn-header {
     min-height: 100vh;
     width: 100%;
-    background: linear-gradient(rgba(50, 11, 221, 0.76), rgba(150, 150, 91, 0.664)), url(/src/images/3-1pics/pic1.png);
+    background: linear-gradient(rgba(50, 11, 221, 0.76), rgba(150, 150, 91, 0.664)), url(/BSIT-3-1-CUTIES/images/3-1pics/pic1.png);
     background-position: center;
     background-size: cover;
 
@@ -786,7 +786,6 @@ main .right .announcements-pane .announcements-new h2 {
     }
 
     form {
-        height: 470px;
         width: 400px;
         background-color: rgba(255, 255, 255, 0.13);
         position: absolute;
@@ -822,7 +821,7 @@ main .right .announcements-pane .announcements-new h2 {
         font-weight: 500;
     }
 
-    button {
+    #button {
         margin-top: 50px;
         width: 100%;
         color: #e5e5e5;
@@ -836,12 +835,12 @@ main .right .announcements-pane .announcements-new h2 {
         border: 1px solid #fff;
     }
 
-    button:hover {
+    #button:hover {
         border: 1px solid rgb(31, 30, 30);
         background-color: rgb(31, 30, 30);
     }
 
-    input {
+    .input {
         display: block;
         height: 50px;
         width: 100%;
@@ -855,8 +854,8 @@ main .right .announcements-pane .announcements-new h2 {
         /* Smooth transition for all properties */
     }
 
-    input:hover,
-    input:focus {
+    .input:hover,
+    .input:focus {
         background-color: white;
         /* White background when hovered or focused */
         color: black;
