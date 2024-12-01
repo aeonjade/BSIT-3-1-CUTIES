@@ -16,21 +16,23 @@
 
   <main>
         <div class="banner">
-            <img src= "images\3-1pics\429418526_751298306966469_4919992842754078699_n.jpg" alt="Background Image" class="banner-image">
+            <img src="images\3-1pics\429418526_751298306966469_4919992842754078699_n.jpg" alt="Background Image" class="banner-image">
             <div class="overlay">
-              <div class="text-content">
-                <h1>For the students,<br>by the students.</h1>
-                
-                <div class="buttons">
-                    <p>Insert introduction here. Insert introduction here. Insert introduction here.</p>
-                  <button class="btn">WHAT WE DO</button>
-                  <button class="btn">WHO WE ARE</button>
+                <div class="left-content">
+                    <h1>For the students,<br>by the students.</h1>
                 </div>
-              </div>
+                <div class="right-content">
+                    <p class="introduction">
+                        Insert introduction here. Insert introduction here. Insert introduction here. Insert introduction here. Insert introduction here.
+                    </p>
+                    <div class="buttons">
+                        <button class="btn">WHAT WE DO</button>
+                        <button class="btn">WHO WE ARE</button>
+                    </div>
+                </div>
             </div>
-          </div>
-        </section>
-
+        </div>
+    </main>
         <section class="developerss">
             <p>FEATURES OF THE WEEK</p>
         </section>
@@ -120,11 +122,9 @@
                 </div>
             </div>
         </section>
-    </main>
-
     
-</body>
-</html>
+
+
 
 
   <?php include "includes/footer.php" ?>
