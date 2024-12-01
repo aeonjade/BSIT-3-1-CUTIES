@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
         // Optional: Save event to backend
         $.ajax({
-          url: "../php/save_events.php",
+          url: "./php/save_events.php",
           type: "POST",
           dataType: "json",
           data: { title, time, desc, startDate},

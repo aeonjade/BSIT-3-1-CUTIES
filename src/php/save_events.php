@@ -15,4 +15,15 @@ $sql = "INSERT INTO tasks (task_title, task_date, task_time, task_description)
 VALUES ('" . $title . "', '" . $startDate . "', '" . $time . "', '" . $desc . "')
 ";
 
-$conn->exec($sql);
+if ($conn->exec($sql)) {
+    $data = array(
+        'status' => true,
+        'msg' => 'Event added successfully!'
+    );
+} else {
+    $data = array(
+        'status' => false,
+        'msg' => 'Sorry, Event not added.'
+    );
+}
+echo json_encode($data);
