@@ -497,12 +497,6 @@ footer p.quote {
 
 /* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
-    .announcement-scroll .box {
-        width: 400px;
-        /* Adjust width for smaller screens */
-        height: 200px;
-    }
-
     .post {
         width: 400px;
         /* Reduce post width */
@@ -537,7 +531,6 @@ footer p.quote {
 
 @media (max-width: 768px) {
 
-    .announcement h2,
     .posts h2 {
         font-size: 20px;
         /* Adjust heading font size */
@@ -555,11 +548,6 @@ footer p.quote {
 }
 
 @media (max-width: 576px) {
-    .announcement-scroll {
-        gap: 20px;
-        /* Reduce gap between announcement boxes */
-    }
-
     .post {
         padding: 10px;
         /* Reduce padding for posts */
@@ -644,7 +632,7 @@ main .right .calendar-pane {
 }
 
 .announcement-header h1 {
-    margin-left: 3%;
+    margin-left: 2vw;
     padding-top: 2vh;
     font-size: 3vh;
 }
