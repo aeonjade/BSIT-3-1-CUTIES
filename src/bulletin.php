@@ -16,24 +16,26 @@
     <main>
         <!-- Announcement Section -->
         <section class="announcement">
-            <div class="announcement-header">
-                <h1>Announcements</h1>
-                <a href="bulletin.php">See other posts...</a>
-            </div>
-            <div class="announcements-pane">
-                <?php
-                foreach (getAnnouncements() as $announcement) {
-                ?>
-                    <div class="announcements-new">
-                        <h2><?= $announcement->announcement_title; ?></h2>
-                        <p><?= $announcement->announcement_description; ?></p>
-                    </div>
-                <?php
-                }
-                ?>
+            <h2>Announcement</h2>
+            <div class="announcement-scroll">
+                <div class="box">
+                    <p>Bayad kayo</p>
+                    <small>may fucking ambagan</small>
+                </div>
+                <div class="box">
+                    <p>Another announcement</p>
+                    <small>Placeholder text</small>
+                </div>
+                <div class="box">
+                    <p>More announcements</p>
+                    <small>Placeholder text</small>
+                </div>
+                <div class="box">
+                    <p>Final announcement</p>
+                    <small>Placeholder text</small>
+                </div>
             </div>
         </section>
-
         <section class="posts">
             <h2>Posts</h2>
             <div class="post-grid">

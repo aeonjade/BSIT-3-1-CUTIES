@@ -348,7 +348,6 @@ footer p.quote {
 
 /*BULLETIN*/
 /* Announcement Section */
-/*Dito naka ano mga bg ng bullrtin stka about*/
 #main-bg {
     min-height: 160vh;
     width: 100%;
@@ -356,42 +355,12 @@ footer p.quote {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 .announcement {
     margin: 50px;
     background-color: #ffffff;
-    padding: 5px 20px 5px 20px;
     border-radius: 10px;
-}
-
-.announcement h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.announcement-scroll {
-    display: flex;
-    gap: 7%;
-    overflow-x: auto;
-    /* Enable horizontal scrolling */
-    padding: 10px 0;/
-}
-
-.announcement-scroll .box {
-    background-color: #b9f9e6;
-    width: 500px;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 5px;
-    flex-shrink: 0;
-    /* Prevent the box from shrinking */
 }
 
 /* Posts Section */
