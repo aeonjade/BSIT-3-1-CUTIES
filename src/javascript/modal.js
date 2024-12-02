@@ -23,3 +23,32 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+
+function save_announcement(params) {
+  var announcement_title = $("#announcement_title").val();
+  var announcement_description = $("#announcement_description").val();
+  if (announcement_title == "" || announcement_description == "") {
+    alert("Please enter all details to make an announcement.");
+    return false;
+  }
+  $.ajax({
+    url: "./php/save_announcements.php",
+    type: "POST",
+    dataType: "json",
+    data: { announcement_title, announcement_description },
+    success: function (response) {
+      modal.style.display = "none";
+      if (response.status == true) {
+        alert(response.msg);
+        location.reload();
+      } else {
+        alert(response.msg);
+      }
+    },
+    error: function (xhr, status) {
+      console.log("ajax error = " + xhr.statusText);
+      alert(response.msg);
+    },
+  });
+  return false;
+}

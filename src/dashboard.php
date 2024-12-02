@@ -56,15 +56,26 @@ header("Access-Control-Allow-Origin: *");
 
                 <!-- MODAL START -->
                 <!-- Trigger/Open The Modal -->
-                <button id="myBtn">Open Modal</button>
+                <button id="myBtn">Add Announcement</button>
 
                 <!-- The Modal -->
                 <div id="myModal" class="modal">
 
                     <!-- Modal content -->
                     <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <h1>Add Announcement</h1>
+                        <div class="modal-header">
+                            <h1>Add Announcement</h1>
+                            <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <label for="announcement_name">Announcement Title:</label>
+                            <input type="text" name="announcement_title" id="announcement_title" class="announcement_title" maxlength="50" placeholder="Enter announcement title...">
+                            <label for="announcement_name">Announcement Description:</label>
+                            <textarea name="announcement_description" id="announcement_description" class="announcement_description" maxlength="200" placeholder="Enter announcement description..."></textarea>
+                        </div>
+                        <div class="modal-submit">
+                            <button type="button" class="submit-button" onclick="save_announcement()">Add Announcement</button>
+                        </div>
                     </div>
 
                 </div>

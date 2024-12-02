@@ -17,9 +17,6 @@
     height: 100%;
     /* Full height */
 
-    overflow: auto;
-    /* Enable scroll if needed */
-
     background-color: rgb(0, 0, 0);
     /* Fallback color */
 
@@ -31,27 +28,65 @@
 /* Modal Content/Box */
 .modal-content {
     background-color: white;
-    margin: 15% auto;
+    margin: 11% auto;
     /* 15% from the top and centered */
-    
-    padding: 15px;
+
+    padding: 3vh 4vh;
     border: 1px solid #888;
     border-radius: 15px;
-    width: 50%;
+    width: 35%;
     /* Could be more or less, depending on screen size */
 }
 
-.modal-content h1 {
+.modal-content .modal-header {
+    display: flex;
+}
+
+.modal-content .modal-header h1 {
     margin: 0px;
+    padding: 0.5vh 2vh 1vh 0vh;
+}
+
+.modal-content .modal-submit {
+    display: flex;
+}
+
+.modal-content .modal-submit .submit-button {
+    margin-left: auto;
+    margin-top: 3vh;
+    padding: 1.5vh;
+}
+
+.modal-content .modal-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content .modal-body label {
+    padding: 2vh 0vh;
+    font-weight: bold;
+}
+
+.modal-content .modal-body .announcement_title {
+    padding: 1vh;
+    font-size: 1.2em;
+    margin-bottom: 1vh;
+}
+
+.modal-content .modal-body .announcement_description {
+    font-family: sans-serif;
+    height: 7vh;
+    padding: 1vh;
+    font-size: 1em;
+    resize: none;
 }
 
 /* The Close Button */
 .close {
+    margin-left: auto;
     color: #aaa;
-    float: right;
     font-size: 4vh;
     font-weight: bold;
-    padding-right: 18x;
 }
 
 .close:hover,
