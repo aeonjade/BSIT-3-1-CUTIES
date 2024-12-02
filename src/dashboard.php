@@ -19,7 +19,7 @@ header("Access-Control-Allow-Origin: *");
         <div class="left">
             <div class="tasks-header">
                 <h1>Tasks</h1>
-                <h4 class="hint">Click a date on the calendar to add!</h4>
+                <h4 class="hint">Click a date on the calendar to add.</h4>
             </div>
             <div class="tasks-pane">
                 <?php
@@ -27,7 +27,16 @@ header("Access-Control-Allow-Origin: *");
                 ?>
                     <div class="task">
                         <h2><?= $tasks->task_title; ?></h2>
-                        <h4><?= date("F j, Y", strtotime($tasks->task_start_date)); ?></h4>
+                        <h4><?php
+                            $startDate = date("F j, Y", strtotime($tasks->task_start_date));
+                            $endDate = date("F j, Y", strtotime('-1 day', strtotime($tasks->task_end_date)));
+
+                            if ($startDate == $endDate) {
+                                echo $startDate;
+                            } else {
+                                echo $startDate . ' - ' . $endDate;
+                            }
+                            ?></h4>
                         <h4><?= date("g A", strtotime($tasks->task_time)); ?></h4>
                         <p><?= $tasks->task_description; ?></p>
                     </div>
