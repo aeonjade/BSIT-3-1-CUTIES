@@ -532,6 +532,11 @@ main .left h1 {
     font-size: 3vh;
 }
 
+main .left h4.hint {
+    font-weight: normal;
+    padding-top: 0.5vh;
+}
+
 main .left .tasks-pane .task {
     margin: 5%;
     padding: 4%;
