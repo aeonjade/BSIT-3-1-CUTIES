@@ -27,7 +27,7 @@ header("Access-Control-Allow-Origin: *");
                 ?>
                     <div class="task">
                         <h2><?= $tasks->task_title; ?></h2>
-                        <h4><?= date("F j, Y", strtotime($tasks->task_date)); ?></h4>
+                        <h4><?= date("F j, Y", strtotime($tasks->task_start_date)); ?></h4>
                         <h4><?= date("g A", strtotime($tasks->task_time)); ?></h4>
                         <p><?= $tasks->task_description; ?></p>
                     </div>

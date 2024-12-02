@@ -96,12 +96,12 @@ document.addEventListener("DOMContentLoaded", function () {
       const time = prompt("Enter Task Time");
       const desc = prompt("Enter Task Description");
       const startDate = info.startStr;
+      const endDate = info.endStr;
       if (title) {
         calendar.addEvent({
           title: title,
           start: info.startStr,
-          allDay: info.allDay,
-          description: title,
+          end: info.endStr,
         });
 
         // Optional: Save event to backend
@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
           url: "./php/save_events.php",
           type: "POST",
           dataType: "json",
-          data: { title, time, desc, startDate },
+          data: { title, time, desc, startDate, endDate },
           success: function (response) {
             if (response.status == true) {
               alert(response.msg);
@@ -146,35 +146,43 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     eventResize: function (info) {
       // Update event duration on resize
-      fetch("/api/update-event", {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
+      const id = info.event.id;
+      const start = info.event.startStr;
+      const end = info.event.endStr;
+      $.ajax({
+        url: "./php/update_events.php",
+        type: "POST",
+        dataType: "json",
+        data: { id, start, end },
+        success: function (response) {
+          if (response.status == true) {
+            alert(response.msg);
+            location.reload();
+          } else {
+            alert(response.msg);
+          }
         },
-        body: JSON.stringify({
-          id: info.event.id,
-          start: info.event.start.toISOString(),
-          end: info.event.end.toISOString(),
-        }),
-      })
-        .then((response) => response.json())
-        .then((data) => alert("Event updated successfully!"));
+      });
     },
     eventDrop: function (info) {
       // Update event position on drag-and-drop
-      fetch("/api/update-event", {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
+      const id = info.event.id;
+      const start = info.event.startStr;
+      const end = info.event.endStr;
+      $.ajax({
+        url: "./php/update_events.php",
+        type: "POST",
+        dataType: "json",
+        data: { id, start, end },
+        success: function (response) {
+          if (response.status == true) {
+            alert(response.msg);
+            location.reload();
+          } else {
+            alert(response.msg);
+          }
         },
-        body: JSON.stringify({
-          id: info.event.id,
-          start: info.event.start.toISOString(),
-          end: info.event.end.toISOString(),
-        }),
-      })
-        .then((response) => response.json())
-        .then((data) => alert("Event updated successfully!"));
+      });
     },
   });
   calendar.render();

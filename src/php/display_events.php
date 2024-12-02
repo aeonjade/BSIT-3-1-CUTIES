@@ -6,7 +6,7 @@ $conn = new PDO("mysql:host=$servername;dbname=cutiesdb", $username, $password);
 // set the PDO error mode to exception
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-$stmt = $conn->prepare("SELECT task_title, task_date, task_time FROM tasks");
+$stmt = $conn->prepare("SELECT task_id, task_title, task_start_date, task_end_date, task_time FROM tasks");
 $stmt->execute();
 $result = $stmt->fetchAll(PDO::FETCH_OBJ);
 $count = count($result);
@@ -15,8 +15,10 @@ if ($count > 0) {
     $i = 0;
 
     foreach ($result as $tasks) {
+        $data_arr[$i]['id'] = $tasks->task_id;
         $data_arr[$i]['title'] = $tasks->task_title;
-        $data_arr[$i]['start'] = date("Y-m-d", strtotime($tasks->task_date));
+        $data_arr[$i]['start'] = date("Y-m-d", strtotime($tasks->task_start_date));
+        $data_arr[$i]['end'] = date("Y-m-d", strtotime($tasks->task_end_date));
         $i++;
     }
 }

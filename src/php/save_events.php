@@ -10,9 +10,10 @@ $title = $_POST['title'];
 $time = $_POST['time'];
 $desc = $_POST['desc'];
 $startDate = date("y-m-d", strtotime($_POST['startDate']));
+$endDate = date("y-m-d", strtotime($_POST['endDate']));
 
-$sql = "INSERT INTO tasks (task_title, task_date, task_time, task_description)
-VALUES ('" . $title . "', '" . $startDate . "', '" . $time . "', '" . $desc . "')
+$sql = "INSERT INTO tasks (task_title, task_start_date, task_end_date, task_time, task_description)
+VALUES ('" . $title . "', '" . $startDate . "', '" . $endDate . "', '" . $time . "', '" . $desc . "')
 ";
 
 if ($conn->exec($sql)) {
