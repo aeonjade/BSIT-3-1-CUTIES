@@ -298,7 +298,7 @@ footer p.quote {
 .posts {
     margin: 20px;
 }
-.posts, h2{
+.posts h2{
  text-align: center;
  margin-bottom: 10px;
 
