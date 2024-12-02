@@ -19,7 +19,7 @@ header("Access-Control-Allow-Origin: *");
         <div class="left">
             <div class="tasks-header">
                 <h1>Tasks</h1>
-                <h4 class="hint">Click a date on the calendar to add!</h4>
+                <h4 class="hint">Click a date on the calendar to add.</h4>
             </div>
             <div class="tasks-pane">
                 <?php
