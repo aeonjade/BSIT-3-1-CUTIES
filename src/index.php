@@ -1,3 +1,12 @@
+<?php 
+session_start();
+
+	include("connection.php");
+	include("functions.php");
+
+	$user_data = check_login($con);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,7 +33,7 @@
                 </div>
                 <div class="right-content">
                     <p class="introduction">
-                        Insert introduction here. Insert introduction here. Insert introduction here. Insert introduction here. Insert introduction here.
+                        Hello, <?php echo $user_data['user_name']; ?>
                     </p>
                     <div class="buttons">
                         <button class="btn">WHAT WE DO</button>

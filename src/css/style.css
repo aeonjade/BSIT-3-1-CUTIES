@@ -661,7 +661,6 @@ main .right .calendar-pane {
     }
 
     form {
-        height: 470px;
         width: 400px;
         background-color: rgba(255, 255, 255, 0.13);
         position: absolute;
@@ -697,7 +696,7 @@ main .right .calendar-pane {
         font-weight: 500;
     }
 
-    button {
+    #button {
         margin-top: 50px;
         width: 100%;
         color: #e5e5e5;
@@ -711,12 +710,12 @@ main .right .calendar-pane {
         border: 1px solid #fff;
     }
 
-    button:hover {
+    #button:hover {
         border: 1px solid rgb(31, 30, 30);
         background-color: rgb(31, 30, 30);
     }
 
-    input {
+    .input {
         display: block;
         height: 50px;
         width: 100%;
@@ -730,8 +729,8 @@ main .right .calendar-pane {
         /* Smooth transition for all properties */
     }
 
-    input:hover,
-    input:focus {
+    .input:hover,
+    .input:focus {
         background-color: white;
         /* White background when hovered or focused */
         color: black;
