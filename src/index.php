@@ -16,8 +16,9 @@
   <?php include "includes/nav.php" ?>
 
   <main>
-        <div class="banner">
-            <img src="images\3-1pics\429418526_751298306966469_4919992842754078699_n.jpg" alt="Background Image" class="banner-image">
+
+        <section class="banner">
+            
             <div class="overlay">
                 <div class="left-content">
                     <h1>For the students,<br>by the students.</h1>
@@ -32,8 +33,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
+        </section>
+
         <section class="developerss">
             <p>FEATURES OF THE WEEK</p>
         </section>
@@ -43,12 +44,31 @@
                 <!-- Content Section -->
                 <div class="content">
                     <!-- Images Section -->
-                    <div class="images">
-                        <img src="images\aeons.jpg" alt="Image 1" class="side-image left">
-                        <img src="images\bretz.jpg" alt="Image 2" class="main-image">
-                        <img src="images\pongs.jpeg" alt="Image 3" class="side-image right">
-                    </div>
-    
+                     <!-- Carousel Section -->
+                        <section class="carousel-section">
+                            <div class="carousel-container">
+                                <div class="carousel">
+                                    <div class="card">
+                                        <img src="images/bretz.jpg" alt="Image 1">
+                                    </div>
+                                    <div class="card">
+                                        <img src="images/aeons.jpg" alt="Image 2">
+                                    </div>
+                                    <div class="card">
+                                        <img src="images/drews.jpg" alt="Image 3">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Modal Popup -->
+                        <div class="modal" id="modal">
+                            <div class="modal-content">
+                                <span class="close-btn" id="close-btn">&times;</span>
+                                <img id="modal-image" src="" alt="Modal Image">
+                            </div>
+                        </div>
+                        
                     <!-- Text Section -->
                     <div class="text-content">
                         <h1>THIS IS THEIR PROJECT</h1>
@@ -65,7 +85,9 @@
                 </div>
             </div>
         </section>
-          
+    
+       
+      
         <section class="projecttoowan-showcase">
             <div class="container">
                 <!-- Content Layout -->
@@ -123,12 +145,14 @@
                 </div>
             </div>
         </section>
+    </main>
+        
     
 
 
+<script src="javascript/carousel.js"></script>
 
 
-  <?php include "includes/footer.php" ?>
 
 </body>
 
