@@ -298,11 +298,16 @@ footer p.quote {
 .posts {
     margin: 20px;
 }
+.posts, h2{
+ text-align: center;
+ margin-bottom: 10px;
 
+
+}
 .post-grid {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 50px;
     flex-wrap: wrap;
     color: #000;
 }
@@ -313,9 +318,9 @@ footer p.quote {
     /* Softer, lighter background */
     color: #333;
     /* Darker text for better readability */
-    width: 500px;
+    width: 300px;
     /* Adjusted for a cleaner look */
-    height: 300px;
+    height: 30vh;
     padding: 20px;
     border-radius: 15px;
     /* Slightly rounded corners */

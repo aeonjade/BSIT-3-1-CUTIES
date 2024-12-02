@@ -26,7 +26,7 @@
                         "content" => "This is the content for post 1."
                     ],
                     [
-                        "title" => "Post Title 2",
+                         "title" => "Post Title 2",
                         "date" => "December 4, 2023",
                         "content" => "This is the content for post 2."
                     ],
@@ -44,6 +44,21 @@
                         "title" => "Post Title 5",
                         "date" => "December 7, 2023",
                         "content" => "This is the content for post 5."
+                    ],
+                    [
+                        "title" => "Post Title 6",
+                        "date" => "December 8, 2023",
+                        "content" => "This is the content for post 6."
+                    ],
+                    [
+                        "title" => "Post Title 6",
+                        "date" => "December 8, 2023",
+                        "content" => "This is the content for post 6."
+                    ],
+                    [
+                        "title" => "Post Title 6",
+                        "date" => "December 8, 2023",
+                        "content" => "This is the content for post 6."
                     ],
                     [
                         "title" => "Post Title 6",
