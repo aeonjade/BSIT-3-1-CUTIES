@@ -52,6 +52,25 @@ header("Access-Control-Allow-Origin: *");
 
             <div class="announcement-header">
                 <h1>Announcements</h1>
+
+
+                <!-- MODAL START -->
+                <!-- Trigger/Open The Modal -->
+                <button id="myBtn">Open Modal</button>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h1>Add Announcement</h1>
+                    </div>
+
+                </div>
+                <!-- MODAL END -->
+
+
             </div>
             <div class="announcements-pane">
                 <?php
