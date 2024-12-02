@@ -10,6 +10,7 @@ header("Access-Control-Allow-Origin: *");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/modal.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
@@ -70,6 +71,7 @@ header("Access-Control-Allow-Origin: *");
 
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js'></script>
     <script src="javascript/script.js"></script>
+    <script src="javascript/modal.js"></script>
 
 </body>
 
