@@ -1,6 +1,6 @@
 /*Dashboard*/
 /*moved 4:50PM*/
-body.dashboard{
+body.dashboard {
     height: 100vh;
 }
 
@@ -96,7 +96,7 @@ main .right .calendar-pane {
 }
 
 .announcements-pane .announcements-new {
-    width: 300px;
+    width: 32.5vh;
     display: flex;
     flex-direction: column;
     flex: none;
@@ -114,22 +114,22 @@ main .right .calendar-pane {
 }
 
 .announcements-pane .announcements-new .announcement-title {
-    height: 2.6vh;
-    display: flex
+    display: flex;
 }
 
 .announcements-pane .announcements-new .announcement-title h2 {
-    width: 80%;
+    display: inline-block;
     font-size: 2.6vh;
     padding: 0.5vh 2vh 1vh 0vh;
     overflow: hidden;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
 }
 
 .announcements-pane .announcements-new .announcement-body {
-    flex: none;
     padding-top: 2%;
     margin-bottom: auto;
-    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .announcements-pane .announcements-new p {
