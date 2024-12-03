@@ -18,7 +18,7 @@ $user_data = check_login($con);
 
 <body id="main-bg">
 
-    <?php include "includes/nav.php" ?>
+    <?php include "includes/navFunction.php" ?>
 
     <main>
         <section class="posts">

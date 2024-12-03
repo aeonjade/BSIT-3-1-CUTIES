@@ -12,18 +12,20 @@
     <a data-active="dashboard" href="dashboard.php">Dashboard</a>
     <a data-active="bulletin" href="bulletin.php">Bulletin</a>
   </div>
-  <button id="SignIn-button" style="opacity:0;"></button>
 
-  <!-- Conditionally display the Log In or Log Out button 
-  <//?php if (isset($_SESSION['user_id'])): ?>
+  <!--<button id="SignIn-button"><a data-active="logIn" href="logIn.php">Log In</a></button>
+  <button id="SignIn-button"><a data-active="logout" href="logout.php">Log Out</a></button>-->
+
+  <!-- Conditionally display the Log In or Log Out button -->
+  <?php if (isset($_SESSION['user_id'])): ?>
       <button id="SignIn-button">
         <a data-active="logout" href="logout.php">Log Out</a>
       </button>
-    <//?php else: ?>
+    <?php else: ?>
       <button id="SignIn-button">
         <a data-active="logIn" href="logIn.php">Log In</a>
       </button>
-  <//?php endif; ?>-->
+  <?php endif; ?>
 
   <!-- Sidebar toggle button for tablets/mobile -->
   <button class="menu-toggle" id="menu-toggle">☰</button>
