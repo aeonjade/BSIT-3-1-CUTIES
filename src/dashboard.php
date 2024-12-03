@@ -98,15 +98,32 @@ $user_data = check_login($con);
                 <?php
                 foreach (getAnnouncements() as $announcement) {
                 ?>
+                    <!-- The Modal -->
+                    <div id="announcement-modal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1>ANNOUNCEMENT</h1>
+                                <span id="close-announcement-modal" class="close">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <h2 class="expanded-title" id="announcement-modal-title"></h2>
+                                <h3 class="expanded-description" id="announcement-modal-description"></h3>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="announcements-new">
                         <div class="announcement-title">
-                            <h2><?= $announcement->announcement_title; ?></h2>
-                            <span class="close-announcement" onclick="deleteAnnouncement(<?= $announcement->announcement_id  ?>)">&times;</span>
+                            <h2 onclick="clickAnnouncement('<?= $announcement->announcement_title  ?>', '<?= $announcement->announcement_description  ?>')"><?= $announcement->announcement_title; ?></h2>
+                            <span class="delete-announcement" onclick="deleteAnnouncement(<?= $announcement->announcement_id  ?>)">&times;</span>
                         </div>
-                        <div class="announcement-body">
+                        <div onclick="clickAnnouncement('<?= $announcement->announcement_title  ?>', '<?= $announcement->announcement_description  ?>')" class="announcement-body">
                             <p><?= $announcement->announcement_description; ?></p>
                         </div>
                     </div>
+
                 <?php
                 }
                 ?>

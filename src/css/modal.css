@@ -43,6 +43,7 @@
 }
 
 .modal-content .modal-header h1 {
+    font-size: 1.5vw;
     margin: 0px;
     padding: 0.5vh 2vh 1vh 0vh;
 }
@@ -81,11 +82,22 @@
     resize: none;
 }
 
+.modal-content .modal-body .expanded-title {
+    font-size: 1.25vw;
+    padding: 2vh 0vh 1vh 0vh;
+}
+
+.modal-content .modal-body .expanded-description {
+    font-size: 0.938vw;
+    padding-top: 1.6vh;
+    font-weight: normal;
+}
+
 /* The Close Button */
 .close {
     margin-left: auto;
     color: #aaa;
-    font-size: 4vh;
+    font-size: 2vw;
     font-weight: bold;
 }
 

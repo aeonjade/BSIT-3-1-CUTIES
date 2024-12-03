@@ -141,26 +141,34 @@ main .right .calendar-pane {
     text-overflow: ellipsis;
 }
 
+.announcements-pane .announcements-new .announcement-title h2:hover{
+    cursor: pointer;
+}
+
 .announcements-pane .announcements-new .announcement-body {
     padding-top: 2%;
-    margin-bottom: auto;
     overflow: hidden;
+    height: 100%;
+}
+
+.announcements-pane .announcements-new .announcement-body {
+    cursor: pointer;
 }
 
 .announcements-pane .announcements-new p {
     font-size: 1.7vh;
 }
 
-.close-announcement {
+.delete-announcement {
     margin-left: auto;
     color: #aaa;
     font-size: 3vh;
     font-weight: bold;
 }
 
-.close-announcement:hover,
-.close-announcement:focus {
-    color: black;
+.delete-announcement:hover,
+.delete-announcement:focus {
+    color: red;
     text-decoration: none;
     cursor: pointer;
 }

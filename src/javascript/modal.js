@@ -39,7 +39,6 @@ function save_announcement(params) {
     success: function (response) {
       modal.style.display = "none";
       if (response.status == true) {
-        alert(response.msg);
         location.reload();
       } else {
         alert(response.msg);
@@ -75,3 +74,18 @@ function deleteAnnouncement(announcement_id) {
   });
   return false;
 }
+
+var announcementModal = document.getElementById("announcement-modal");
+var announcementSpan = document.getElementById("close-announcement-modal");
+
+function clickAnnouncement(announcement_title, announcement_description) {
+  document.getElementById("announcement-modal-title").innerHTML =
+    announcement_title;
+  document.getElementById("announcement-modal-description").innerHTML =
+    announcement_description;
+  announcementModal.style.display = "block";
+}
+
+announcementSpan.onclick = function () {
+  announcementModal.style.display = "none";
+};
