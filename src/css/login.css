@@ -20,7 +20,7 @@
 
 .background .shape {
     height: 200px;
-    width: 200px;
+    width: 200px; 
     position: absolute;
     border-radius: 50%;
 }
