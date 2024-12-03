@@ -12,11 +12,8 @@
 .banner .overlay {
     background: rgba(0, 0, 0, 0.6);
     color: white;
-    padding: 40px;
+    padding: 20px;
     display: flex;
-    position: absolute;
-    width: 100%;
-    bottom: 0px;
 }
 
 .banner .overlay .left-content {
@@ -210,18 +207,14 @@
 }
 
 @keyframes autoScale {
-
-    0%,
-    100% {
+    0%, 100% {
         transform: scale(1);
         opacity: 0.8;
     }
-
     33% {
         transform: scale(1.1);
         opacity: 1;
     }
-
     66% {
         transform: scale(1);
         opacity: 0.8;
@@ -275,8 +268,7 @@
     cursor: pointer;
 }
 
-.close:hover,
-.close:focus {
+.close:hover, .close:focus {
     color: #ccc;
     text-decoration: none;
     cursor: pointer;
@@ -286,7 +278,7 @@
 @media (max-width: 768px) {
 
     .banner {
-
+        
         height: 40vh;
         margin: 0;
         padding: 0;
@@ -294,6 +286,8 @@
         position: relative;
     }
 
+   
+    
     .banner .overlay h1 {
         font-size: 36px;
     }
@@ -330,14 +324,13 @@
     .btn {
         padding: 12px 24px;
         font-size: 14px;
-
+       
     }
 
     .modal-content {
         max-width: 100%;
     }
 }
-
 /* Project Showcase Section */
 .projecttoowan-showcase {
     background-color: #333535;
@@ -365,6 +358,90 @@
     align-items: center;
     width: 100%;
 }
+
+/**/
+/* style.css */
+
+/* 3D carousel container */
+.carousel-container {
+    position: relative;
+    width: 100px;
+    height: 500px;
+    margin: 100px auto;
+    perspective: 3000px;  /* Creates a 3D space */
+}
+
+/* The carousel images container */
+.carousel-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform-style: preserve-3d;
+    transform-origin: 50% 50%;
+    animation: rotateCarousel 20s infinite linear; /* Rotate animation */
+}
+
+/* Style for each image */
+.carousel-images img {
+    position: absolute;
+    width: 290px; /* Size of each image */
+    height: 390px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer; /* Change cursor to indicate clickable image */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Define the 3D rotation animation */
+@keyframes rotateCarousel {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg); /* Rotate full 360 degrees around Y axis */
+    }
+}
+
+/* Optional: Hover effect to slow down rotation */
+.carousel-container:hover .carousel-images {
+    animation-play-state: paused;
+}
+
+/* Modal (popup) styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Position it fixed in the viewport */
+    z-index: 1000; /* Make sure it's on top */
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal content (image inside modal) */
+.modal-content {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+/* Close button style */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 
 /* Images Layout */
 .projecttoowan-showcase .images {

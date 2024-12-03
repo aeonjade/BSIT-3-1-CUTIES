@@ -115,10 +115,20 @@
                     </div>
 
                     <!-- Images Layout -->
-                    <div class="images">
-                        <img src="images\drews.jpg" alt="Image 1" class="side-image left">
-                        <img src="images\vics.jpg" alt="Image 2" class="main-image">
-                        <img src="images\zads.jpg" alt="Image 3" class="side-image right">
+                    
+                    <div class="carousel-container">
+                        <div class="carousel-images">
+                            <img src="images/seminar/434657482_831188179023732_7376574398251475307_n.jpg" alt="Image 1">
+                            <img src="images/seminar/434659768_831224775686739_112226980921197929_n.jpg" alt="Image 2">
+                            <img src="images/seminar/434668960_831183939024156_1935776699275189465_n.jpg" alt="Image 3">
+                            <!-- Add more images as needed -->
+                        </div>
+                    </div>
+
+                    <!-- Modal (Popup) -->
+                    <div class="modal">
+                        <button class="close-btn">×</button>
+                        <img src="" alt="Image in Modal" class="modal-content">
                     </div>
                 </div>
             </div>
@@ -155,6 +165,8 @@
                 </div>
             </div>
         </section>
+
+        <script src="javascript/homepage.js"></script>
     </main>
 
     <?php include "includes/footer.php" ?>
