@@ -94,7 +94,7 @@ main .right .calendar-pane {
     width: 300px;
     flex: none;
     overflow: hidden;
-    margin: 2%;
+    margin: 2% 1% 2% 2%;
     padding: 2%;
     border-radius: 10px;
     border: 1px solid black;
