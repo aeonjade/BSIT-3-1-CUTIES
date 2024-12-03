@@ -1,4 +1,10 @@
-<?php include "php/functions.php" ?>
+<?php
+session_start();
+include "php/functions.php";
+include("connection.php");
+$user_data = check_login($con);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,7 +33,7 @@
                         "content" => "This is the content for post 1."
                     ],
                     [
-                         "title" => "Post Title 2",
+                        "title" => "Post Title 2",
                         "date" => "December 4, 2023",
                         "content" => "This is the content for post 2."
                     ],

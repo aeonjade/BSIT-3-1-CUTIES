@@ -1,5 +1,8 @@
-<?php include "php/functions.php";
-header("Access-Control-Allow-Origin: *");
+<?php
+session_start();
+include "php/functions.php";
+include("connection.php");
+$user_data = check_login($con);
 ?>
 
 <!DOCTYPE html>
