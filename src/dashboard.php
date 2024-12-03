@@ -82,7 +82,7 @@ $user_data = check_login($con);
                             <label for="announcement_title">Announcement Title:</label>
                             <input type="text" name="announcement_title" id="announcement_title" class="announcement_title" maxlength="50" placeholder="Enter announcement title...">
                             <label for="announcement_description">Announcement Description:</label>
-                            <textarea name="announcement_description" id="announcement_description" class="announcement_description" maxlength="200" placeholder="Enter announcement description..."></textarea>
+                            <textarea name="announcement_description" id="announcement_description" class="announcement_description" maxlength="700" placeholder="Enter announcement description..."></textarea>
                         </div>
                         <div class="modal-submit">
                             <button type="button" class="submit-button" onclick="save_announcement()">Add Announcement</button>

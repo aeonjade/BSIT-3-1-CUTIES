@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
           data: { title, time, desc, startDate, endDate },
           success: function (response) {
             if (response.status == true) {
-              alert(response.msg);
+              //place popup here
               location.reload();
             } else {
               alert(response.msg);
@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
           data: { id },
           success: function (response) {
             if (response.status == true) {
-              alert(response.msg);
+              //place popup here
               location.reload();
             } else {
               alert(response.msg);
@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function () {
         data: { id, start, end },
         success: function (response) {
           if (response.status == true) {
-            alert(response.msg);
+            //place popup here
             location.reload();
           } else {
             alert(response.msg);
@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", function () {
         data: { id, start, end },
         success: function (response) {
           if (response.status == true) {
-            alert(response.msg);
+            //place popup here
             location.reload();
           } else {
             alert(response.msg);

@@ -39,6 +39,7 @@ function save_announcement(params) {
     success: function (response) {
       modal.style.display = "none";
       if (response.status == true) {
+        //place popup here
         location.reload();
       } else {
         alert(response.msg);
@@ -61,7 +62,7 @@ function deleteAnnouncement(announcement_id) {
     success: function (response) {
       modal.style.display = "none";
       if (response.status == true) {
-        alert(response.msg);
+        //place popup here
         location.reload();
       } else {
         alert(response.msg);
