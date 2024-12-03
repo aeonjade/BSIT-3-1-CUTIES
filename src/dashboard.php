@@ -19,7 +19,7 @@ $user_data = check_login($con);
 </head>
 
 <body class="dashboard">
-    <?php include "includes/nav.php" ?>
+    <?php include "includes/navFunction.php" ?>
     <main class="dashboard">
         <div class="left">
             <div class="tasks-header">
