@@ -46,22 +46,26 @@ a.logo img {
 }
 
 nav {
-    
+
     position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      padding: 20px;
-      background: transparent; /* No background */
-      color: white;
-      z-index: 2;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: rgba(0, 0, 0, 0.39); /* Semi-transparent background */
-      backdrop-filter: blur(10px); /* Frosted glass blur effect */
-      -webkit-backdrop-filter: blur(10px); /* For Safari */
-      position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: transparent;
+    /* No background */
+    color: white;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.39);
+    /* Semi-transparent background */
+    backdrop-filter: blur(10px);
+    /* Frosted glass blur effect */
+    -webkit-backdrop-filter: blur(10px);
+    /* For Safari */
+    position: fixed;
 }
 
 /*navigation links*/
@@ -145,7 +149,8 @@ nav button:hover {
 
 @media (max-width: 1024px) {
     nav button {
-        display: none; /* Hides the login button on smaller screens */
+        display: none;
+        /* Hides the login button on smaller screens */
     }
 }
 
@@ -153,6 +158,7 @@ nav button:hover {
 
 /* Tablets and smaller screens (mobile-first approach) */
 @media (max-width: 768px) {
+
     /* Hide the navigation links */
     .links {
         display: none;
