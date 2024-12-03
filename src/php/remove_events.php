@@ -6,9 +6,9 @@ $conn = new PDO("mysql:host=$servername;dbname=cutiesdb", $username, $password);
 // set the PDO error mode to exception
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-$title = $_POST['title'];
+$id = $_POST['id'];
 
-$sql = "DELETE FROM tasks WHERE task_title = '$title'";
+$sql = "DELETE FROM tasks WHERE task_id = '$id'";
 
 if ($conn->exec($sql)) {
     $data = array(

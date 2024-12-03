@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function () {
     eventClick: function (info) {
       // Delete event
       if (confirm(`Do you want to delete the event '${info.event.title}'?`)) {
-        const title = info.event.title;
+        const id = info.event.id;
         info.event.remove();
 
         // Optional: Remove event from backend
@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
           url: "./php/remove_events.php",
           type: "POST",
           dataType: "json",
-          data: { title },
+          data: { id },
           success: function (response) {
             if (response.status == true) {
               alert(response.msg);
