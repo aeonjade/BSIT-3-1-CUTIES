@@ -17,13 +17,6 @@ span.onclick = function () {
   modal.style.display = "none";
 };
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
-
 function save_announcement(params) {
   var announcement_title = $("#announcement_title").val();
   var announcement_description = $("#announcement_description").val();
