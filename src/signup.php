@@ -2,7 +2,7 @@
 session_start();
 
 	include("connection.php");
-	include("functions.php");
+	include("./php/functions.php");
 
 
 	if($_SERVER['REQUEST_METHOD'] == "POST")
@@ -37,6 +37,7 @@ session_start();
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shorthand icon" href="images/VITS LOGO.png" />
   <title>Signup - VITS</title>
+  <link rel="stylesheet" href="css/login.css" />
   <link rel="stylesheet" href="css/style.css" />
 
 </head>
@@ -65,7 +66,7 @@ session_start();
       <input class="input" type="password" placeholder="Password" id="password" name="password" />
  
       <input id="button" type="submit" value="Sign Up"></input>
-      <a data-active="logIn" href="login.php">Click to Log In</a>
+      <span style="color:white;">Baka may account ka na boss? <a data-active="logIn" href="login.php">Log In ka dito</a></span>
     </form>
   </section>
   </main>

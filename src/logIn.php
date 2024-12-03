@@ -53,7 +53,8 @@ session_start();
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shorthand icon" href="images/VITS LOGO.png" />
   <title>Login - VITS</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/login.css" />
+	<link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -79,7 +80,7 @@ session_start();
       <input class="input" type="password" placeholder="Password" id="password" name="password" />
  
       <input id="button" type="submit" value="Log In"></input>
-      <a data-active="signup" href="signup.php">Signup here</a>
+      <span style="color:white;">Wala ka ba account bossing? <a data-active="signup" href="signup.php">Signup ka dito</a></span>
     </form>
   </section>
   </main>
