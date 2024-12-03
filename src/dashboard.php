@@ -72,9 +72,9 @@ $user_data = check_login($con);
                             <span class="close">&times;</span>
                         </div>
                         <div class="modal-body">
-                            <label for="announcement_name">Announcement Title:</label>
+                            <label for="announcement_title">Announcement Title:</label>
                             <input type="text" name="announcement_title" id="announcement_title" class="announcement_title" maxlength="50" placeholder="Enter announcement title...">
-                            <label for="announcement_name">Announcement Description:</label>
+                            <label for="announcement_description">Announcement Description:</label>
                             <textarea name="announcement_description" id="announcement_description" class="announcement_description" maxlength="200" placeholder="Enter announcement description..."></textarea>
                         </div>
                         <div class="modal-submit">
@@ -92,8 +92,13 @@ $user_data = check_login($con);
                 foreach (getAnnouncements() as $announcement) {
                 ?>
                     <div class="announcements-new">
-                        <h2><?= $announcement->announcement_title; ?></h2>
-                        <p><?= $announcement->announcement_description; ?></p>
+                        <div class="announcement-title">
+                            <h2><?= $announcement->announcement_title; ?></h2>
+                            <span class="close-announcement">&times;</span>
+                        </div>
+                        <div class="announcement-body">
+                            <p><?= $announcement->announcement_description; ?></p>
+                        </div>
                     </div>
                 <?php
                 }

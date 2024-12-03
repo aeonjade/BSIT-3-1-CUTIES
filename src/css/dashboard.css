@@ -28,6 +28,7 @@ main .left h1 {
 main .left h4.hint {
     font-weight: normal;
     padding-top: 0.5vh;
+    font-size: 1.7vh;
 }
 
 main .left .tasks-pane .task {
@@ -92,10 +93,12 @@ main .right .calendar-pane {
 
 .announcements-pane .announcements-new {
     width: 300px;
+    display: flex;
+    flex-direction: column;
     flex: none;
     overflow: hidden;
     margin: 2% 1% 2% 2%;
-    padding: 2%;
+    padding: 1.5% 2% 2% 2%;
     border-radius: 10px;
     border: 1px solid black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -106,6 +109,39 @@ main .right .calendar-pane {
     scale: 103%;
 }
 
-.announcements-pane .announcements-new h2 {
-    padding-bottom: 5%;
+.announcements-pane .announcements-new .announcement-title {
+    display: flex
+}
+
+.announcements-pane .announcements-new .announcement-title h2 {
+    width: 80%;
+    font-size: 2.4vh;
+    height: 22px;
+    padding: 0.5vh 2vh 1vh 0vh;
+    overflow: hidden;
+}
+
+.announcements-pane .announcements-new .announcement-body {
+    flex: none;
+    padding-top: 2%;
+    margin-bottom: auto;
+    text-overflow: ellipsis;
+}
+
+.announcements-pane .announcements-new p {
+    font-size: 1.7vh;
+}
+
+.close-announcement {
+    margin-left: auto;
+    color: #aaa;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.close-announcement:hover,
+.close-announcement:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
