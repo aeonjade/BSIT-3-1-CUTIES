@@ -115,7 +115,7 @@
                     </div>
 
                     <!-- Images Layout -->
-                    
+
                     <div class="carousel-container">
                         <div class="carousel-images">
                             <img src="images/seminar/434657482_831188179023732_7376574398251475307_n.jpg" alt="Image 1">
@@ -167,12 +167,14 @@
         </section>
 
         <script src="javascript/homepage.js"></script>
+        <?php include "includes/footer.php" ?>
+
     </main>
 
-    <?php include "includes/footer.php" ?>
+
 
     <script src="javascript/carousel.js"></script>
-    
+
 </body>
 
 </html>
