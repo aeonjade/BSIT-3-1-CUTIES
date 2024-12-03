@@ -46,12 +46,8 @@ a.logo img {
 }
 
 nav {
-
-    position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px;
+    padding: 1.5vh;
     background: transparent;
     /* No background */
     color: white;
@@ -65,7 +61,7 @@ nav {
     /* Frosted glass blur effect */
     -webkit-backdrop-filter: blur(10px);
     /* For Safari */
-    position: fixed;
+    position: sticky;
 }
 
 /*navigation links*/
