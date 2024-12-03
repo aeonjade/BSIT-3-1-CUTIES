@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 ?>
 
@@ -6,30 +6,30 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/index.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <title>BSIT 3-1 | CUTIES</title>
-  <link rel="shorthand icon" href="images/VITS LOGO.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>BSIT 3-1 | CUTIES</title>
+    <link rel="shorthand icon" href="images/VITS LOGO.png" />
 
 </head>
 
 <body>
 
-  <?php include "includes/nav.php" ?>
+    <?php include "includes/nav.php" ?>
 
-  <main>
+    <main>
 
         <section class="banner">
-            
+
             <div class="overlay">
                 <div class="left-content">
                     <h1>For the students,<br>by the students.</h1>
                 </div>
                 <div class="right-content">
                     <p class="introduction">
-                        Hello, <?php echo $user_data['user_name']; ?>
+                        Welcome
                     </p>
                     <div class="buttons">
                         <button class="btn">WHAT WE DO</button>
@@ -48,31 +48,31 @@
                 <!-- Content Section -->
                 <div class="content">
                     <!-- Images Section -->
-                     <!-- Carousel Section -->
-                        <section class="carousel-section">
-                            <div class="carousel-container">
-                                <div class="carousel">
-                                    <div class="card">
-                                        <img src="images/bretz.jpg" alt="Image 1">
-                                    </div>
-                                    <div class="card">
-                                        <img src="images/aeons.jpg" alt="Image 2">
-                                    </div>
-                                    <div class="card">
-                                        <img src="images/drews.jpg" alt="Image 3">
-                                    </div>
+                    <!-- Carousel Section -->
+                    <section class="carousel-section">
+                        <div class="carousel-container">
+                            <div class="carousel">
+                                <div class="card">
+                                    <img src="images/bretz.jpg" alt="Image 1">
+                                </div>
+                                <div class="card">
+                                    <img src="images/aeons.jpg" alt="Image 2">
+                                </div>
+                                <div class="card">
+                                    <img src="images/drews.jpg" alt="Image 3">
                                 </div>
                             </div>
-                        </section>
-
-                        <!-- Modal Popup -->
-                        <div class="modal" id="modal">
-                            <div class="modal-content">
-                                <span class="close-btn" id="close-btn">&times;</span>
-                                <img id="modal-image" src="" alt="Modal Image">
-                            </div>
                         </div>
-                        
+                    </section>
+
+                    <!-- Modal Popup -->
+                    <div class="modal" id="modal">
+                        <div class="modal-content">
+                            <span class="close-btn" id="close-btn">&times;</span>
+                            <img id="modal-image" src="" alt="Modal Image">
+                        </div>
+                    </div>
+
                     <!-- Text Section -->
                     <div class="text-content">
                         <h1>THIS IS THEIR PROJECT</h1>
@@ -89,9 +89,9 @@
                 </div>
             </div>
         </section>
-    
-       
-      
+
+
+
         <section class="projecttoowan-showcase">
             <div class="container">
                 <!-- Content Layout -->
@@ -109,7 +109,7 @@
                             <button class="btn btn-see-more">See More</button>
                         </div>
                     </div>
-    
+
                     <!-- Images Layout -->
                     <div class="images">
                         <img src="images\drews.jpg" alt="Image 1" class="side-image left">
@@ -119,9 +119,11 @@
                 </div>
             </div>
         </section>
-   
+
         <section class="developersss">
-            <h2><center>CUTIES | Developer</h2>
+            <h2>
+                <center>CUTIES | Developer
+            </h2>
             <div class="developer-list">
                 <div class="developersss">
                     <div class="circle">AB</div>
@@ -150,11 +152,11 @@
             </div>
         </section>
     </main>
-        
-    
 
 
-<script src="javascript/carousel.js"></script>
+
+
+    <script src="javascript/carousel.js"></script>
 
 
 
