@@ -52,3 +52,26 @@ function save_announcement(params) {
   });
   return false;
 }
+
+function deleteAnnouncement(announcement_id) {
+  $.ajax({
+    url: "./php/remove_announcements.php",
+    type: "POST",
+    dataType: "json",
+    data: { announcement_id },
+    success: function (response) {
+      modal.style.display = "none";
+      if (response.status == true) {
+        alert(response.msg);
+        location.reload();
+      } else {
+        alert(response.msg);
+      }
+    },
+    error: function (xhr, status) {
+      console.log("ajax error = " + xhr.statusText);
+      alert(response.msg);
+    },
+  });
+  return false;
+}

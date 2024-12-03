@@ -94,7 +94,7 @@ $user_data = check_login($con);
                     <div class="announcements-new">
                         <div class="announcement-title">
                             <h2><?= $announcement->announcement_title; ?></h2>
-                            <span class="close-announcement">&times;</span>
+                            <span class="close-announcement" onclick="deleteAnnouncement(<?= $announcement->announcement_id  ?>)">&times;</span>
                         </div>
                         <div class="announcement-body">
                             <p><?= $announcement->announcement_description; ?></p>
