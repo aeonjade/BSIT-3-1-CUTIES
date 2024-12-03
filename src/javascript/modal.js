@@ -46,6 +46,8 @@ function save_announcement(params) {
   return false;
 }
 
+var deleteAnnouncementModal = document.getElementById("delete-confirmation-modal");
+
 function deleteAnnouncement(announcement_id) {
   $.ajax({
     url: "./php/remove_announcements.php",
@@ -55,7 +57,7 @@ function deleteAnnouncement(announcement_id) {
     success: function (response) {
       modal.style.display = "none";
       if (response.status == true) {
-        //place popup here
+        
         location.reload();
       } else {
         alert(response.msg);

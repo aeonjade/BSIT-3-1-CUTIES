@@ -114,6 +114,21 @@ $user_data = check_login($con);
                         </div>
                     </div>
 
+                    <!-- The Modal -->
+                    <div id="delete-confirmation-modal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 style="color: red;">Remove Announcement</h1>
+                                <span id="close-announcement-modal" class="close">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <h2>Do you want to remove this announcement?</h2>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="announcements-new">
                         <div class="announcement-title">
                             <h2 onclick="clickAnnouncement('<?= $announcement->announcement_title  ?>', '<?= $announcement->announcement_description  ?>')"><?= $announcement->announcement_title; ?></h2>
