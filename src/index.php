@@ -43,56 +43,56 @@
             <p>FEATURES OF THE WEEK</p>
         </section>
 
-   <section class="project-showcase">
-    <div class="container">
-        <!-- Content Section -->
-        <div class="content">
-            <!-- Images Section -->
-            <div class="card-container">
-                <!-- Card 1 -->
-                <div class="card" onclick="openModal('images/xtra/ex1.jpg')">
-                    <div class="image-wrapper">
-                        <img src="images/xtra/ex1.jpg" alt="Image 1" class="image">
-                    </div>
-                </div>
+        <section class="project-showcase">
+            <div class="container">
+                <!-- Content Section -->
+                <div class="content">
+                    <!-- Images Section -->
+                    <div class="card-container">
+                        <!-- Card 1 -->
+                        <div class="card" onclick="openModal('images/xtra/ex1.jpg')">
+                            <div class="image-wrapper">
+                                <img src="images/xtra/ex1.jpg" alt="Image 1" class="image">
+                            </div>
+                        </div>
 
-                <!-- Card 2 -->
-                <div class="card" onclick="openModal('images/xtra/ex2.jpg')">
-                    <div class="image-wrapper">
-                        <img src="images/xtra/ex2.jpg" alt="Image 2" class="image">
-                    </div>
-                </div>
+                        <!-- Card 2 -->
+                        <div class="card" onclick="openModal('images/xtra/ex2.jpg')">
+                            <div class="image-wrapper">
+                                <img src="images/xtra/ex2.jpg" alt="Image 2" class="image">
+                            </div>
+                        </div>
 
-                <!-- Card 3 -->
-                <div class="card" onclick="openModal('images/xtra/ex3.jpg')">
-                    <div class="image-wrapper">
-                        <img src="images/xtra/ex3.jpg" alt="Image 3" class="image">
+                        <!-- Card 3 -->
+                        <div class="card" onclick="openModal('images/xtra/ex3.jpg')">
+                            <div class="image-wrapper">
+                                <img src="images/xtra/ex3.jpg" alt="Image 3" class="image">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal for image popup -->
+                    <div id="imageModal" class="modal" onclick="closeModal()">
+                        <span class="close">&times;</span>
+                        <img id="modalImage" class="modal-content" alt="Modal Image">
+                    </div>
+
+                    <!-- Text Section -->
+                    <div class="text-content">
+                        <h1>THIS IS THEIR PROJECT</h1>
+                        <h3>By Rome, Tite, Pepe, Burat, Burnek, Salsalito, Ratbu</h3>
+                        <p>
+                            The project description goes here. Add details to match the content style of the image.
+                        </p>
+                        <!-- Buttons Section -->
+                        <div class="buttons">
+                            <button class="btn btn-exhibits">Other Exhibits</button>
+                            <button class="btn btn-see-more">See More</button>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Modal for image popup -->
-            <div id="imageModal" class="modal" onclick="closeModal()">
-                <span class="close">&times;</span>
-                <img id="modalImage" class="modal-content" alt="Modal Image">
-            </div>
-
-            <!-- Text Section -->
-            <div class="text-content">
-                <h1>THIS IS THEIR PROJECT</h1>
-                <h3>By Rome, Tite, Pepe, Burat, Burnek, Salsalito, Ratbu</h3>
-                <p>
-                    The project description goes here. Add details to match the content style of the image.
-                </p>
-                <!-- Buttons Section -->
-                <div class="buttons">
-                    <button class="btn btn-exhibits">Other Exhibits</button>
-                    <button class="btn btn-see-more">See More</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
 
 

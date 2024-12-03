@@ -1,32 +1,22 @@
 /* Home Page */
 .banner {
-    
-    background: linear-gradient(
-          rgba(0, 0, 255, 0.2), /* Low opacity blue */
-          rgba(238, 130, 238, 0.2) /* Low opacity violet */
-        ), url(../images/threewan/pic1.png); /* Replace with your image */
+    background: linear-gradient(rgba(0, 0, 255, 0.2),
+            /* Low opacity blue */
+            rgba(238, 130, 238, 0.2)
+            /* Low opacity violet */
+        ), url(../images/threewan/pic1.png);
+    /* Replace with your image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    position: relative;
 }
 
 .banner .overlay {
-    height: 20vh;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    margin-top: auto;
     background: rgba(0, 0, 0, 0.6);
     color: white;
     padding: 40px;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
 }
 
 .banner .overlay .left-content {
@@ -220,14 +210,18 @@
 }
 
 @keyframes autoScale {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1);
         opacity: 0.8;
     }
+
     33% {
         transform: scale(1.1);
         opacity: 1;
     }
+
     66% {
         transform: scale(1);
         opacity: 0.8;
@@ -281,7 +275,8 @@
     cursor: pointer;
 }
 
-.close:hover, .close:focus {
+.close:hover,
+.close:focus {
     color: #ccc;
     text-decoration: none;
     cursor: pointer;
@@ -291,14 +286,14 @@
 @media (max-width: 768px) {
 
     .banner {
-        
+
         height: 40vh;
         margin: 0;
         padding: 0;
         overflow: hidden;
         position: relative;
     }
-    
+
     .banner .overlay h1 {
         font-size: 36px;
     }
@@ -335,13 +330,14 @@
     .btn {
         padding: 12px 24px;
         font-size: 14px;
-       
+
     }
 
     .modal-content {
         max-width: 100%;
     }
 }
+
 /* Project Showcase Section */
 .projecttoowan-showcase {
     background-color: #333535;
