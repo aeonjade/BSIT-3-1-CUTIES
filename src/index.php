@@ -43,52 +43,57 @@
             <p>FEATURES OF THE WEEK</p>
         </section>
 
-        <section class="project-showcase">
-            <div class="container">
-                <!-- Content Section -->
-                <div class="content">
-                    <!-- Images Section -->
-                    <!-- Carousel Section -->
-                    <section class="carousel-section">
-                        <div class="carousel-container">
-                            <div class="carousel">
-                                <div class="card">
-                                    <img src="images/bretz.jpg" alt="Image 1">
-                                </div>
-                                <div class="card">
-                                    <img src="images/aeons.jpg" alt="Image 2">
-                                </div>
-                                <div class="card">
-                                    <img src="images/drews.jpg" alt="Image 3">
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Modal Popup -->
-                    <div class="modal" id="modal">
-                        <div class="modal-content">
-                            <span class="close-btn" id="close-btn">&times;</span>
-                            <img id="modal-image" src="" alt="Modal Image">
-                        </div>
+   <section class="project-showcase">
+    <div class="container">
+        <!-- Content Section -->
+        <div class="content">
+            <!-- Images Section -->
+            <div class="card-container">
+                <!-- Card 1 -->
+                <div class="card" onclick="openModal('images/xtra/ex1.jpg')">
+                    <div class="image-wrapper">
+                        <img src="images/xtra/ex1.jpg" alt="Image 1" class="image">
                     </div>
+                </div>
 
-                    <!-- Text Section -->
-                    <div class="text-content">
-                        <h1>THIS IS THEIR PROJECT</h1>
-                        <h3>By Rome, Tite, Pepe, Burat, Burnek, Salsalito, Ratbu</h3>
-                        <p>
-                            The project description goes here. Add details to match the content style of the image.
-                        </p>
-                        <!-- Buttons Section -->
-                        <div class="buttons">
-                            <button class="btn btn-exhibits">Other Exhibits</button>
-                            <button class="btn btn-see-more">See More</button>
-                        </div>
+                <!-- Card 2 -->
+                <div class="card" onclick="openModal('images/xtra/ex2.jpg')">
+                    <div class="image-wrapper">
+                        <img src="images/xtra/ex2.jpg" alt="Image 2" class="image">
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card" onclick="openModal('images/xtra/ex3.jpg')">
+                    <div class="image-wrapper">
+                        <img src="images/xtra/ex3.jpg" alt="Image 3" class="image">
                     </div>
                 </div>
             </div>
-        </section>
+
+            <!-- Modal for image popup -->
+            <div id="imageModal" class="modal" onclick="closeModal()">
+                <span class="close">&times;</span>
+                <img id="modalImage" class="modal-content" alt="Modal Image">
+            </div>
+
+            <!-- Text Section -->
+            <div class="text-content">
+                <h1>THIS IS THEIR PROJECT</h1>
+                <h3>By Rome, Tite, Pepe, Burat, Burnek, Salsalito, Ratbu</h3>
+                <p>
+                    The project description goes here. Add details to match the content style of the image.
+                </p>
+                <!-- Buttons Section -->
+                <div class="buttons">
+                    <button class="btn btn-exhibits">Other Exhibits</button>
+                    <button class="btn btn-see-more">See More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 
 
