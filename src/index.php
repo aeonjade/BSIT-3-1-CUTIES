@@ -96,9 +96,6 @@
             </div>
         </section>
 
-
-
-
         <section class="projecttoowan-showcase">
             <div class="container">
                 <!-- Content Layout -->
@@ -160,13 +157,10 @@
         </section>
     </main>
 
-
-
+    <?php include "includes/footer.php" ?>
 
     <script src="javascript/carousel.js"></script>
-
-
-
+    
 </body>
 
 </html>

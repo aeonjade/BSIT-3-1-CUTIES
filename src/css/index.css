@@ -1,11 +1,8 @@
 /* Home Page */
-.image-container {
-}
-
 .image-container img {
     width: 100%;
-    overflow: hidden;
-    object-fit: cover;
+    height: fit-content;
+    display: block;
 }
 
 .banner {
