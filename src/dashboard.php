@@ -21,33 +21,40 @@ $user_data = check_login($con);
 <body class="dashboard">
     <?php include "includes/navFunction.php" ?>
     <main class="dashboard">
-        <div class="left">
-            <div class="tasks-header">
-                <h1>Tasks</h1>
-                <h4 class="hint">Click a date on the calendar to add.</h4>
-            </div>
-            <div class="tasks-pane">
-                <?php
-                foreach (getTasks() as $tasks) {
-                ?>
-                    <div class="task">
-                        <h2><?= $tasks->task_title; ?></h2>
-                        <h4><?php
-                            $startDate = date("F j, Y", strtotime($tasks->task_start_date));
-                            $endDate = date("F j, Y", strtotime('-1 day', strtotime($tasks->task_end_date)));
+        <div class="left-group">
+            <div class="left">
+                <div class="tasks-header">
+                    <h1>Tasks</h1>
+                </div>
+                <div class="tasks-pane">
+                    <?php
+                    foreach (getTasks() as $tasks) {
+                    ?>
+                        <div class="task">
+                            <h2><?= $tasks->task_title; ?></h2>
+                            <h4><?php
+                                $startDate = date("F j, Y", strtotime($tasks->task_start_date));
+                                $endDate = date("F j, Y", strtotime('-1 day', strtotime($tasks->task_end_date)));
 
-                            if ($startDate == $endDate) {
-                                echo $startDate;
-                            } else {
-                                echo $startDate . ' - ' . $endDate;
-                            }
-                            ?></h4>
-                        <h4><?= date("g A", strtotime($tasks->task_time)); ?></h4>
-                        <p><?= $tasks->task_description; ?></p>
-                    </div>
-                <?php
-                }
-                ?>
+                                if ($startDate == $endDate) {
+                                    echo $startDate;
+                                } else {
+                                    echo $startDate . ' - ' . $endDate;
+                                }
+                                ?></h4>
+                            <h4><?= date("g A", strtotime($tasks->task_time)); ?></h4>
+                            <p><?= $tasks->task_description; ?></p>
+                        </div>
+                    <?php
+                    }
+                    ?>
+                </div>
+            </div>
+            <div class="tasks-footer">
+                <h4 class="hint">Click a date on the calendar to <span style="color: green;">add</span> a task.
+                    <br>Click a task to <span style="color: red;">remove</span> it from the list.
+                    <br>You can also drag and resize tasks!
+                </h4>
             </div>
         </div>
         <div class="right">

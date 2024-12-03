@@ -10,12 +10,19 @@ main.dashboard {
     overflow: hidden;
 }
 
-main .left {
+main .left-group {
     width: 28%;
-    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
 }
 
-main .left .tasks-header {
+main .left-group .left {
+    height: 90%;
+    overflow-y: scroll;
+    position: relative;
+}
+
+main .left-group .left .tasks-header {
     position: sticky;
     top: 0;
     background-color: white;
@@ -25,17 +32,25 @@ main .left .tasks-header {
     z-index: 1;
 }
 
-main .left h1 {
+main .left-group .left .tasks-header h1 {
     font-size: 3vh;
 }
 
-main .left h4.hint {
-    font-weight: normal;
-    padding-top: 0.5vh;
-    font-size: 1.7vh;
+main .left-group .tasks-footer {
+    height: 10%;
+    background-color: white;
+    padding: 1.6vh;
+    box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 1;
 }
 
-main .left .tasks-pane .task {
+main .left-group .tasks-footer h4.hint {
+    font-weight: normal;
+    font-size: 1.6vh;
+    text-align: center;
+}
+
+main .left-group .left .tasks-pane .task {
     margin: 5%;
     padding: 4%;
     border-radius: 10px;
@@ -44,7 +59,7 @@ main .left .tasks-pane .task {
     transition: 0.3s;
 }
 
-main .left .tasks-pane .task:hover {
+main .left-group .left .tasks-pane .task:hover {
     scale: 103%;
 }
 
