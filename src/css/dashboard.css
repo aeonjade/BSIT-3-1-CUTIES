@@ -1,5 +1,9 @@
 /*Dashboard*/
 /*moved 4:50PM*/
+body.dashboard{
+    height: 100vh;
+}
+
 
 main.dashboard {
     display: flex;

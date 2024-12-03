@@ -1,22 +1,25 @@
 /* Home Page */
+.image-container {
+}
+
+.image-container img {
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
 .banner {
-    background: linear-gradient(rgba(0, 0, 255, 0.2),
-            /* Low opacity blue */
-            rgba(238, 130, 238, 0.2)
-            /* Low opacity violet */
-        ), url(../images/threewan/pic1.png);
-    /* Replace with your image */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    position: relative;
 }
 
 .banner .overlay {
-    margin-top: auto;
     background: rgba(0, 0, 0, 0.6);
     color: white;
     padding: 40px;
     display: flex;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
 }
 
 .banner .overlay .left-content {

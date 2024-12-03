@@ -22,7 +22,9 @@
     <main>
 
         <section class="banner">
-
+            <div class="image-container">
+                <img src="./images/threewan/pic1.png">
+            </div>
             <div class="overlay">
                 <div class="left-content">
                     <h1>For the students,<br>by the students.</h1>
