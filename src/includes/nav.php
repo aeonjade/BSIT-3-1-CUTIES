@@ -14,7 +14,7 @@
   </div>
 
   <button id="SignIn-button"><a data-active="logIn" href="logIn.php">Log In</a></button>
-
+  <button id="SignIn-button"><a data-active="logout" href="logout.php">Log Out</a></button>
   <!-- Sidebar toggle button for tablets/mobile -->
   <button class="menu-toggle" id="menu-toggle">☰</button>
 
