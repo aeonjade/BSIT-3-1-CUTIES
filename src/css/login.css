@@ -1,4 +1,3 @@
-
 /*LOGIN PAGE*/
 
 #logIn-header {
@@ -8,6 +7,7 @@
     background-position: center;
     background-size: cover;
 }
+
 /*Form*/
 .background {
     width: 430px;
@@ -20,7 +20,7 @@
 
 .background .shape {
     height: 200px;
-    width: 200px; 
+    width: 200px;
     position: absolute;
     border-radius: 50%;
 }
@@ -124,6 +124,16 @@ label {
     color: black;
 }
 
+p {
+    text-align: center;
+    padding-top: 3vh;
+}
 
+p a {
+    color: white;
+    transition: 0.3s;
+}
 
-
+p a:hover {
+    color: black;
+}

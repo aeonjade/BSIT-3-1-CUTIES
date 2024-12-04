@@ -80,7 +80,7 @@ session_start();
       <input class="input" type="password" placeholder="Password" id="password" name="password" />
  
       <input id="button" type="submit" value="Log In"></input>
-      <span style="color:white;">Wala ka ba account bossing? <a data-active="signup" href="signup.php">Signup ka dito</a></span>
+      <p><a data-active="signup" href="signup.php">Create New Account</a></p>
     </form>
   </section>
   </main>

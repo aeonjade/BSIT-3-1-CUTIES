@@ -1,33 +1,30 @@
-<?php 
+<?php
 session_start();
 
-	include("connection.php");
-	include("./php/functions.php");
+include("connection.php");
+include("./php/functions.php");
 
 
-	if($_SERVER['REQUEST_METHOD'] == "POST")
-	{
-		//something was posted
-		$user_name = $_POST['user_name'];
-		$password = $_POST['password'];
-    $student_number = $_POST['student_number'];
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+  //something was posted
+  $user_name = $_POST['user_name'];
+  $password = $_POST['password'];
+  $student_number = $_POST['student_number'];
 
-		if(!empty($user_name) && !empty($password) && !empty($student_number) && !is_numeric($user_name))
-		{
+  if (!empty($user_name) && !empty($password) && !empty($student_number) && !is_numeric($user_name)) {
 
-			//save to database
-			$user_id = random_num(20);
-			$query = "insert into users (user_id,user_name,password,student_number) values ('$user_id','$user_name','$password','$student_number')";
+    //save to database
+    $user_id = random_num(20);
+    $query = "insert into users (user_id,user_name,password,student_number) values ('$user_id','$user_name','$password','$student_number')";
 
-			mysqli_query($con, $query);
+    mysqli_query($con, $query);
 
-			header("Location: login.php");
-			die;
-		}else
-		{
-			echo "Please enter some valid information!";
-		}
-	}
+    header("Location: login.php");
+    die;
+  } else {
+    echo "Please enter some valid information!";
+  }
+}
 ?>
 
 <!DOCTYPE html>
@@ -68,9 +65,9 @@ session_start();
 
       <label for="password">Password</label>
       <input class="input" type="password" placeholder="Password" id="password" name="password" />
- 
+
       <input id="button" type="submit" value="Sign Up"></input>
-      <span style="color:white;">Baka may account ka na boss? <a data-active="logIn" href="login.php">Log In ka dito</a></span>
+      <p><a data-active="logIn" href="login.php">Already have an account?</a></p>
     </form>
   </section>
   </main>

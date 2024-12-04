@@ -8,11 +8,11 @@
 
   <div class="links">
     <a data-active="index" href="index.php">Home</a>
-    <a data-active="account" href="account.php">Account</a>
     <a data-active="gallery" href="gallery.php">Gallery</a>
     <a data-active="about" href="about.php">About</a>
     <a data-active="dashboard" href="dashboard.php">Dashboard</a>
     <a data-active="bulletin" href="bulletin.php">Bulletin</a>
+    <a data-active="account" href="account.php">Account</a>
   </div>
   <button id="SignIn-button" style="opacity:0;"></button>
 
