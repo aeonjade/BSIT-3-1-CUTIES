@@ -155,11 +155,140 @@ nav .links a.active {
     right: 10px;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 601px) and (max-width: 1024px)  {
     nav button {
         display: none;
         /* Hides the login button on smaller screens */
     }
+
+    
+/*NAVIGATION*/
+
+
+a.logo {
+    padding-right: 30px;
+}
+
+/*logo image properties*/
+a.logo img {
+    width: 50px;
+}
+
+/*site name*/
+.site-name a {
+    padding-right: 20px;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: color 0.5s;
+}
+
+.site-name a:hover {
+    color: #fff;
+}
+
+nav {
+    position: sticky; /* Places the navbar above the section */
+    top: 0;
+    left: 0;
+    width: 100%; /* Stretches the navbar across the page */
+    padding: 1vh;
+    z-index: 10; /* Ensures it stays on top of the section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    background: rgba(155, 131, 131, 0.295);
+    /* Semi-transparent background */
+    backdrop-filter: blur(10px);
+    /* Frosted glass blur effect */
+    -webkit-backdrop-filter: blur(10px);
+    /* For Safari */
+    
+    
+}
+
+/*navigation links*/
+nav .links a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 20px;
+    transition: background-color 0.5s, color 0.3s;
+    color: yellow;
+    font-size: 15px;
+    font-family: Fredoka;
+}
+
+/*hover state for ALL links*/
+nav .links a:hover,
+nav .links a.active {
+    text-decoration: underline;
+    color: #fff;
+}
+
+/*For Login Button*/
+#SignIn-button {
+    margin-left: 100px;
+    margin-right: 15px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+    background: none;
+}
+
+#SignIn-button:hover {
+    border: 1px solid rgb(31, 30, 30);
+    background-color: rgb(31, 30, 30);
+}
+
+/* Sidebar Styles */
+.sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 250px;
+    background-color: rgba(90, 90, 90, 1);
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease;
+    z-index: 1000;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.sidebar a {
+    color: #fff;
+    padding: 15px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    border-bottom: 1px solid #fff;
+}
+
+.sidebar a:hover {
+    color: red;
+}
+
+/* Sidebar Toggle Button */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+    
 }
 
 /* Media Queries */
@@ -230,6 +359,89 @@ nav .links a.active {
     footer p {
         font-size: 14px;
     }
+}
+
+
+@media (min-width: 1025px) {
+
+
+    a.logo {
+        padding-right: 30px;
+    }
+    
+    /*logo image properties*/
+    a.logo img {
+        width: 50px;
+    }
+    
+    /*site name*/
+    .site-name a {
+        padding-right: 20px;
+        font-size: 13px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        transition: color 0.5s;
+    }
+    
+    .site-name a:hover {
+        color: #fff;
+    }
+    
+    nav {
+        position: sticky; /* Places the navbar above the section */
+        top: 0;
+        left: 0;
+        width: 100%; /* Stretches the navbar across the page */
+        padding: 1vh;
+        z-index: 10; /* Ensures it stays on top of the section */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    
+        background: rgba(155, 131, 131, 0.295);
+        /* Semi-transparent background */
+        backdrop-filter: blur(10px);
+        /* Frosted glass blur effect */
+        -webkit-backdrop-filter: blur(10px);
+        /* For Safari */
+        
+        
+    }
+    
+    /*navigation links*/
+    nav .links a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 20px;
+        transition: background-color 0.5s, color 0.3s;
+        color: yellow;
+        font-size: 15px;
+        font-family: Fredoka;
+    }
+    
+    /*hover state for ALL links*/
+    nav .links a:hover,
+    nav .links a.active {
+        text-decoration: underline;
+        color: #fff;
+    }
+    
+    /*For Login Button*/
+    #SignIn-button {
+        margin-left: 100px;
+        margin-right: 15px;
+        padding: 6px 12px;
+        border-radius: 10px;
+        border: 1px solid #fff;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #fff;
+        transition: 0.5s;
+        background: none;
+    }
+    
 }
 
 /* FOOTER */

@@ -522,47 +522,6 @@
     height: 100vh; /* Prevents page height from affecting behavior */
 }
 
-
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-
-  
-
-    .project-showcase .content {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .card-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 250px;
-        height: 220px;
-        margin-bottom: 20px;
-    }
-
-    .project-showcase .text-content h1 {
-        font-size: 28px;
-    }
-
-    .project-showcase .text-content p {
-        font-size: 14px;
-    }
-
-    .btn {
-        padding: 12px 24px;
-        font-size: 14px;
-
-    }
-
-    .modal-contents {
-        max-width: 100%;
-    }
-}
-
 /* Project Showcase Section */
 .projecttoowan-showcase {
     background-color: #333535;
@@ -786,112 +745,463 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Media Queries for Responsive Design */
-@media (max-width: 1024px) {
-    .projecttoowan-showcase .content {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
+/* Media Queries for different screen sizes */
 
-    .projecttoowan-showcase .main-image {
-        width: 250px;
-        height: 300px;
-        transform: translateY(0);
-    }
-
-    .projecttoowan-showcase .side-image {
-        width: 150px;
-        height: 230px;
-    }
-
-    .projecttoowan-showcase .text-content h1 {
-        font-size: 28px;
-    }
-
-    .projecttoowan-showcase .text-content h3 {
-        font-size: 16px;
-    }
-
-    .projecttoowan-showcase .text-content p {
-        font-size: 14px;
-    }
-
-    .projecttoowan-showcase .btn {
-        padding: 12px 24px;
-        font-size: 14px;
-    }
+/* Small Devices (phones, 600px and below) */
+@media (max-width: 600px) {
+   
+.monitor{
+    height: 30vh;
+    width: 40%;
+    position: absolute;
+    background-size: contain;
+    top: 4%;
+    left: 10%;
+    
 }
 
-@media (max-width: 768px) {
-    .projecttoowan-showcase {
-        padding: 40px 10px;
-    }
+.monitor .photo{
+   
 
-    .projecttoowan-showcase .content {
-        grid-template-columns: 1fr;
-    }
-
-    .projecttoowan-showcase .images {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 10px;
-    }
-
-    .projecttoowan-showcase .main-image {
-        width: 200px;
-        height: 260px;
-        transform: translateY(0);
-    }
-
-    .projecttoowan-showcase .side-image {
-        width: 120px;
-        height: 180px;
-        opacity: 0.7;
-    }
-
-    .projecttoowan-showcase .text-content h1 {
-        font-size: 24px;
-    }
-
-    .projecttoowan-showcase .text-content h3 {
-        font-size: 14px;
-    }
-
-    .projecttoowan-showcase .text-content p {
-        font-size: 12px;
-    }
-
-    .projecttoowan-showcase .btn {
-        padding: 10px 20px;
-        font-size: 12px;
-    }
+    position: absolute;
+    top: 10%;
+    right: 7%;
+    width: 85%;
+    height: 17vh;
+    border-radius: 4%;
+    border: solid 1px #fff;
+   
 }
 
-@media (max-width: 480px) {
-    .projecttoowan-showcase .main-image {
-        width: 180px;
-        height: 220px;
-    }
+/*LOAding*/
 
-    .projecttoowan-showcase .side-image {
-        width: 100px;
-        height: 150px;
-    }
+/* Loading container and text */
+.loading-container {
+  
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    top: 15%;
+    right: 20%;
+  }
 
-    .projecttoowan-showcase .text-content h1 {
-        font-size: 20px;
-    }
+  /* Loading bar styles */
+  .loading-bar {
+    position: relative;
+    width: 150px;
+    height: 20px;
+    margin-top: 20px;
+    background-color: white; /* Background for the bar */
+    border: 4px solid #ffd700; /* Gold border */
+    border-radius: 5px;
+    overflow: hidden;
+  }
 
-    .projecttoowan-showcase .text-content h3 {
-        font-size: 12px;
-    }
+  /* Inner animated progress bar */
+  .loading-bar-inner {
+    position: absolute;
+    height: 100%;
+    background-color: #7f00f7; /* Gold progress */
+    width: 0;
+    animation: progress-animation 2s infinite; /* Smooth looping animation */
+  }
 
-    .projecttoowan-showcase .text-content p {
-        font-size: 10px;
-    }
 
-    .projecttoowan-showcase .btn {
-        padding: 8px 16px;
-        font-size: 10px;
-    }
+.banner-text{
+  
+    top: 40%;
+    right: 30%;
+    
+    margin-right: -50%;
 }
+
+.banner-text h1{
+    font-size: 1.50pc;
+    font-family: shrinkhand;
+    color: #ffffff;
+    
+}
+
+.stacked-windows{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    right: 0%;
+   
+}
+
+.stacked-windows img{
+    width: 50vw;
+}
+.content-window{
+    position: absolute; /* Place text on top of the image */
+    top: 50%; /* Center text vertically */
+    left:50%; /* Center text horizontally */
+    transform: translate(-50%, -50%); /* Adjust to perfectly center */
+    text-align: center; /* Center align the text and buttons */
+    color: rgb(0, 0, 0); /* Ensure the text is readable on the image */
+    font-family: Arial, sans-serif;
+    z-index: 2; /* Ensure it layers above the image */
+    
+  
+}
+
+.content-window h4 {
+    font-size: 1rem; /* Adjust heading size */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+
+
+
+.stacked-windows .btn {
+    padding: 5px 7px;
+    margin-top: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: rgb(255, 196, 0);
+    text-decoration: none;
+  
+    
+}
+
+
+
+
+
+.stacked-windows .btn-see-more {
+    background-color: #e0e0e0;
+
+    
+
+}
+
+.stacked-windows .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.stacked-windows .buttons {
+    margin-top: 10px;
+    gap: 20px;
+}
+
+
+.image-container .mouse{
+    position: absolute;
+    bottom: 0%;
+    left: 5%;
+    width: 35%;
+   
+
+}
+
+
+
+/*2nd*/
+
+
+.developerss {
+    font-size: 30px;
+    
+   
+}
+
+/* Project Showcase Section */
+
+
+
+.project-showcase .content {
+   
+    grid-template-columns: 1fr;
+    
+}
+
+/* Cards Section */
+.card-container {
+    display: flex;
+    flex-direction: row; /* Change to row to make elements align horizontally */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    align-items: flex-start; /* Align items to the start of the container */
+    justify-content: center; /* Center the items horizontally */
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.card {
+    width: 250px;
+    height: 320px;
+   
+}
+
+
+
+
+/* General Styling */
+.developersss {
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    padding: 2%;
+}
+
+
+/* Developer Name */
+.developer-card p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Developer Name Styling */
+.developer-card p {
+    margin-top: 30px; /* Adds space to prevent overlap with the circle */
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+
+
+}
+
+/* Medium Devices (tablets, 600px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+      
+.monitor{
+    height: 50vh;
+    width: 50vw;
+    position: absolute;
+    background-size: contain;
+    top: 4%;
+    left: 10%;
+    
+}
+
+.monitor .photo{
+   
+
+    position: absolute;
+    top: 10%;
+    right: 17%;
+    width: 33vw;
+    height: 27vh;
+    border-radius: 4%;
+    border: solid 1px #fff;
+   
+}
+
+/*LOAding*/
+
+/* Loading container and text */
+.loading-container {
+  
+    font-size: 25px;
+    right: 10%;
+    top: 10%;
+  }
+
+  /* Loading bar styles */
+  .loading-bar {
+ 
+    width: 350px;
+    height: 30px;
+    
+  }
+
+  /* Inner animated progress bar */
+  .loading-bar-inner {
+    position: absolute;
+    height: 100%;
+    background-color: #7f00f7; /* Gold progress */
+    width: 0;
+    animation: progress-animation 2s infinite; /* Smooth looping animation */
+  }
+
+
+.banner-text{
+  
+    top: 30%;
+    right: 32%;
+    
+    margin-right: -50%;
+}
+
+.banner-text h1{
+    font-size: 2.50pc;
+    font-family: shrinkhand;
+    color: #ffffff;
+    
+}
+
+.stacked-windows{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    right: 0%;
+   
+}
+
+.stacked-windows img{
+    width: 50vw;
+}
+.content-window{
+    position: absolute; /* Place text on top of the image */
+    top: 50%; /* Center text vertically */
+    left:50%; /* Center text horizontally */
+    transform: translate(-50%, -50%); /* Adjust to perfectly center */
+    text-align: center; /* Center align the text and buttons */
+    color: rgb(0, 0, 0); /* Ensure the text is readable on the image */
+    font-family: Arial, sans-serif;
+    z-index: 2; /* Ensure it layers above the image */
+    
+  
+}
+
+.content-window h4 {
+    font-size: 1.90rem; /* Adjust heading size */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+
+
+
+.stacked-windows .btn {
+    padding: 15px 10px;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: rgb(255, 196, 0);
+    text-decoration: none;
+  
+    
+}
+
+
+
+
+
+.stacked-windows .btn-see-more {
+    background-color: #e0e0e0;
+
+    
+
+}
+
+.stacked-windows .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.stacked-windows .buttons {
+    margin-top: 35px;
+    width: 30vw;
+    gap: 20px;
+}
+
+
+.image-container .mouse{
+    position: absolute;
+    bottom: 0%;
+    left: 5%;
+    width: 35%;
+   
+
+}
+
+
+
+/*2nd*/
+
+
+.developerss {
+    font-size: 40px;
+    
+   
+}
+
+/* Project Showcase Section */
+
+
+
+.project-showcase .content {
+   
+    grid-template-columns: 1fr;
+    
+}
+
+/* Cards Section */
+.card-container {
+    display: flex;
+    flex-direction: row; /* Change to row to make elements align horizontally */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    align-items: flex-start; /* Align items to the start of the container */
+    justify-content: center; /* Center the items horizontally */
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.card {
+    width: 250px;
+    height: 320px;
+   
+}
+
+
+
+
+/* General Styling */
+.developersss {
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    padding: 2%;
+}
+
+
+/* Developer Name */
+.developer-card p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Developer Name Styling */
+.developer-card p {
+    margin-top: 30px; /* Adds space to prevent overlap with the circle */
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+
+
+
+}
+
+/* Large Devices (desktops, 1024px and above) */
+
+    
+   
+    
+
+
+/*g----------------------------------------------------------*/

@@ -50,7 +50,7 @@ $user_data = check_login($con);
                         <div class="content-window">
                             <h4>For the Students, by the Students</h4>
 
-                            <div class="buttons">
+                            <div class="buttons"> 
                                 <a href="#" class="btn btn-exhibits">Other Exhibits</a>
                                 <a href="#" class="btn btn-see-more">See More</a>
                             </div>
