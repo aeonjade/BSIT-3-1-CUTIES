@@ -1,4 +1,8 @@
 <?php
+session_start();
+include "php/functions.php";
+include("connection.php"); 
+$user_data = check_login($con);
 
 ?>
 
@@ -17,7 +21,7 @@
 
 <body>
 
-    <?php include "includes/nav.php" ?>
+    <?php include "includes/navFunction.php" ?>
 
     <main>
 

@@ -1,3 +1,10 @@
+<?php
+session_start();
+include "php/functions.php";
+include("connection.php");
+$user_data = check_login($con);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +17,7 @@
 </head>
 
 <body>
-    <?php include "includes/nav.php" ?>
+    <?php include "includes/navFunction.php" ?>
 
 
 

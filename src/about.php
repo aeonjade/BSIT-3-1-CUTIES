@@ -1,3 +1,10 @@
+<?php
+session_start();
+include "php/functions.php";
+include("connection.php");
+$user_data = check_login($con);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +18,7 @@
 
 <body id="main-bg">
    
-<?php include "includes/nav.php" ?>
+<?php include "includes/navFunction.php" ?>
 
     <main class="about">
         <section class="header">
@@ -69,7 +76,7 @@
                             <img src="<?= $officer['image'] ?>" alt="<?= $officer['role'] ?>" />
                         </div>
                         <div class="description"><?= $officer['description'] ?></div>
-                    </div>
+                    </div> 
                 <?php } ?>
             </div>
         </section>

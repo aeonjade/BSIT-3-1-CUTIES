@@ -30,8 +30,20 @@ function getAnnouncements()
     return $result;
 }
 
-function check_login($con)
+function check_login($con) 
 {
+    // Allow access to index.php without logging in
+    if (basename($_SERVER['PHP_SELF']) == "index.php") {
+        return null; // Allow access without returning user data
+    }
+
+    if (basename($_SERVER['PHP_SELF']) == "gallery.php") {
+        return null; // Allow access without returning user data
+    }
+
+    if (basename($_SERVER['PHP_SELF']) == "about.php") {
+        return null; // Allow access without returning user data
+    }
 
     if (isset($_SESSION['user_id'])) {
 

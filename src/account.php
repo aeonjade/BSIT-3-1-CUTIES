@@ -59,8 +59,7 @@ $password = $user_data['password'];
     </div>
     
     <div class="actions">
-      <button class="edit-btn">Edit Password</button>
-      <button class="logout-btn">Log Out</button>
+      <button class="logout-btn" ><a data-active="logout" href="logout.php">Log Out</a></button>
     </div>
   </div>
 

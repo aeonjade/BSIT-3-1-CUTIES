@@ -178,17 +178,11 @@ input:focus {
   cursor: pointer;
 }
 
-.edit-btn {
-  background: #007bff;
-  color: white;
-}
-.logout-btn {
+button .logout-btn {
   background: #dc3545;
   color: white;
 }
-.edit-btn:hover {
-  background: #0056b3;
-}
+
 .logout-btn:hover {
   background: #b02a37;
 }

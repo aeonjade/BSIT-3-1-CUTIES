@@ -17,7 +17,7 @@
   <!--<button id="SignIn-button"><a data-active="logIn" href="logIn.php">Log In</a></button>
   <button id="SignIn-button"><a data-active="logout" href="logout.php">Log Out</a></button>-->
 
-  <!-- Conditionally display the Log In or Log Out button -->
+  <!-- Conditionally display the Log In or Log Out button --> 
   <?php if (isset($_SESSION['user_id'])): ?>
       <button id="SignIn-button">
         <a data-active="logout" href="logout.php">Log Out</a>
