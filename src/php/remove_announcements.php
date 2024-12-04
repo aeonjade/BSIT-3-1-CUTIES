@@ -6,7 +6,7 @@ $conn = new PDO("mysql:host=$servername;dbname=cutiesdb", $username, $password);
 // set the PDO error mode to exception
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-$id = $_POST['announcement_id'];
+$id = $_POST['current_id'];
 
 $sql = "DELETE FROM announcements where announcement_id = '$id'";
 

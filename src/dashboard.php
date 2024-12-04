@@ -121,10 +121,15 @@ $user_data = check_login($con);
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h1 style="color: red;">Remove Announcement</h1>
-                                <span id="close-announcement-modal" class="close">&times;</span>
+                                <span id="remove-announcement-modal" class="close">&times;</span>
                             </div>
                             <div class="modal-body">
-                                <h2>Do you want to remove this announcement?</h2>
+                                <h2 class="expanded-title" id="remove-announcement-modal-title"><?= $announcement->announcement_title  ?></h2>
+                                <h3 class="expanded-description" id="remove-announcement-modal-description"><?= $announcement->announcement_description  ?></h3>
+                                <center>
+                                    <h3 style="color: red;">Are you sure you want to remove this announcement?</h3>
+                                </center>
+                                <button onclick="deleteAnnouncementConfirm()">Confirm</button>
                             </div>
                         </div>
                     </div>
@@ -132,7 +137,7 @@ $user_data = check_login($con);
                     <div class="announcements-new">
                         <div class="announcement-title">
                             <h2 onclick="clickAnnouncement('<?= $announcement->announcement_title  ?>', '<?= $announcement->announcement_description  ?>')"><?= $announcement->announcement_title; ?></h2>
-                            <span class="delete-announcement" onclick="deleteAnnouncement(<?= $announcement->announcement_id  ?>)">&times;</span>
+                            <span class="delete-announcement" onclick="deleteAnnouncement('<?= $announcement->announcement_id  ?>', '<?= $announcement->announcement_title  ?>', '<?= $announcement->announcement_description  ?>')">&times;</span>
                         </div>
                         <div onclick="clickAnnouncement('<?= $announcement->announcement_title  ?>', '<?= $announcement->announcement_description  ?>')" class="announcement-body">
                             <p><?= $announcement->announcement_description; ?></p>

@@ -46,18 +46,34 @@ function save_announcement(params) {
   return false;
 }
 
-var deleteAnnouncementModal = document.getElementById("delete-confirmation-modal");
+var deleteAnnouncementModal = document.getElementById(
+  "delete-confirmation-modal"
+);
 
-function deleteAnnouncement(announcement_id) {
+var current_id;
+
+function deleteAnnouncement(
+  announcement_id,
+  announcement_title,
+  announcement_description
+) {
+  document.getElementById("remove-announcement-modal-title").innerHTML =
+    announcement_title;
+  document.getElementById("remove-announcement-modal-description").innerHTML =
+    announcement_description;
+  deleteAnnouncementModal.style.display = "block";
+  current_id = announcement_id;
+}
+
+function deleteAnnouncementConfirm() {
   $.ajax({
     url: "./php/remove_announcements.php",
     type: "POST",
     dataType: "json",
-    data: { announcement_id },
+    data: { current_id },
     success: function (response) {
       modal.style.display = "none";
       if (response.status == true) {
-        
         location.reload();
       } else {
         alert(response.msg);
@@ -84,4 +100,12 @@ function clickAnnouncement(announcement_title, announcement_description) {
 
 announcementSpan.onclick = function () {
   announcementModal.style.display = "none";
+};
+
+var removeAnnouncementSpan = document.getElementById(
+  "remove-announcement-modal"
+);
+
+removeAnnouncementSpan.onclick = function () {
+  deleteAnnouncementModal.style.display = "none";
 };
