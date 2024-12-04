@@ -5,6 +5,8 @@
     display: block;
 }
 
+.image-container {}
+
 .banner {
     position: relative;
 }
@@ -239,6 +241,28 @@
     animation-delay: 6s;
 }
 
+/* Modal Styles */
+.modal-section2 {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contents {
+    display: block;
+    max-width: 90%;
+    max-height: 80%;
+    margin: auto;
+    border-radius: 10px;
+}
+
 /* Close Button */
 .close {
     color: #fff;
@@ -258,6 +282,13 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+/* Disable scrolling on the body */
+.no-scroll {
+    overflow: hidden;
+    height: 100vh; /* Prevents page height from affecting behavior */
+}
+
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
@@ -312,7 +343,7 @@
 
     }
 
-    .modal-content {
+    .modal-contents {
         max-width: 100%;
     }
 }
@@ -420,11 +451,9 @@
 
 /* Modal content (image inside modal) */
 .modal-content {
-    display: block;
     max-width: 90%;
     max-height: 80%;
     border-radius: 10px;
-    margin: auto;
 }
 
 /* Close button style */

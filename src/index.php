@@ -22,9 +22,7 @@
     <main>
 
         <section class="banner">
-            <div class="image-container">
-                <img src="./images/threewan/pic1.png">
-            </div>
+
             <div class="overlay">
                 <div class="left-content">
                     <h1>For the students,<br>by the students.</h1>
@@ -74,9 +72,9 @@
                     </div>
 
                     <!-- Modal for image popup -->
-                    <div id="imageModal" class="modal" onclick="closeModal()">
+                    <div id="imageModal" class="modal-section2" onclick="closeModal()">
                         <span class="close">&times;</span>
-                        <img id="modalImage" class="modal-content" alt="Modal Image">
+                        <img id="modalImage" class="modal-contents" alt="Modal Image">
                     </div>
 
                     <!-- Text Section -->
@@ -95,6 +93,9 @@
                 </div>
             </div>
         </section>
+
+
+
 
         <section class="projecttoowan-showcase">
             <div class="container">
@@ -115,7 +116,7 @@
                     </div>
 
                     <!-- Images Layout -->
-
+                    
                     <div class="carousel-container">
                         <div class="carousel-images">
                             <img src="images/seminar/434657482_831188179023732_7376574398251475307_n.jpg" alt="Image 1">
@@ -167,13 +168,14 @@
         </section>
 
         <script src="javascript/homepage.js"></script>
-        <?php include "includes/footer.php" ?>
-
     </main>
 
 
 
+
     <script src="javascript/carousel.js"></script>
+
+
 
 </body>
 
