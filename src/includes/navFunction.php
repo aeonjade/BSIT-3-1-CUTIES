@@ -7,6 +7,7 @@
 
   <div class="links">
     <a data-active="index" href="index.php">Home</a>
+    <a data-active="account" href="account.php">Account</a>
     <a data-active="gallery" href="gallery.php">Gallery</a>
     <a data-active="about" href="about.php">About</a>
     <a data-active="dashboard" href="dashboard.php">Dashboard</a>
@@ -33,6 +34,7 @@
   <!-- Sidebar Menu -->
   <div class="sidebar" id="sidebar">
     <a href="index.php">Home</a>
+    <a data-active="account" href="account.php">Account</a>
     <a href="gallery.php">Gallery</a>
     <a href="about.php">About</a>
     <a href="dashboard.php">Dashboard</a>

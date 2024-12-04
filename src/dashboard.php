@@ -3,7 +3,7 @@ session_start();
 include "php/functions.php";
 include("connection.php");
 $user_data = check_login($con);
-?>
+?> 
 
 <!DOCTYPE html>
 <html lang="en">
