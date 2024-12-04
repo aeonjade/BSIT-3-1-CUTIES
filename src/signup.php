@@ -10,13 +10,14 @@ session_start();
 		//something was posted
 		$user_name = $_POST['user_name'];
 		$password = $_POST['password'];
+    $student_number = $_POST['student_number'];
 
-		if(!empty($user_name) && !empty($password) && !is_numeric($user_name))
+		if(!empty($user_name) && !empty($password) && !empty($student_number) && !is_numeric($user_name))
 		{
 
 			//save to database
 			$user_id = random_num(20);
-			$query = "insert into users (user_id,user_name,password) values ('$user_id','$user_name','$password')";
+			$query = "insert into users (user_id,user_name,password,student_number) values ('$user_id','$user_name','$password','$student_number')";
 
 			mysqli_query($con, $query);
 
@@ -61,6 +62,9 @@ session_start();
 
       <label for="username">Username</label>
       <input class="input" type="text" placeholder="Email or Phone" id="username" name="user_name" />
+
+      <label for="student_number">Student Number</label>
+      <input class="input" type="text" placeholder="Student Number" id="studentnumber" name="student_number" />
 
       <label for="password">Password</label>
       <input class="input" type="password" placeholder="Password" id="password" name="password" />

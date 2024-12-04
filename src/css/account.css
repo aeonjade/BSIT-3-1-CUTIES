@@ -161,11 +161,7 @@ input:focus {
   background: #0056b3;
 }
 
-.profile input[type="file"] {
-  display: none;
-}
-
-.actions {
+.actions { 
   text-align: center;
   margin-top: 20px;
 }
@@ -178,7 +174,12 @@ input:focus {
   cursor: pointer;
 }
 
-button .logout-btn {
+.logout-btn > a{
+  text-decoration: none;
+  background: none;
+}
+
+.logout-btn {
   background: #dc3545;
   color: white;
 }
@@ -187,5 +188,23 @@ button .logout-btn {
   background: #b02a37;
 }
 
+.upload-pictures > #image{
+  height: 25px;
+  padding: 0;
+}
 
+.upload-pictures > #submit{
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  transition: 0.5s;
 
+}
+
+.upload-pictures > #submit:hover{
+  border: 1px solid rgb(31, 30, 30);
+  background-color: rgb(31, 30, 30);
+}

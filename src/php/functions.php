@@ -30,7 +30,7 @@ function getAnnouncements()
     return $result;
 }
 
-function check_login($con) 
+function check_login($con)
 {
     // Allow access to index.php without logging in
     if (basename($_SERVER['PHP_SELF']) == "index.php") {
@@ -80,3 +80,4 @@ function random_num($length)
 
     return $text;
 }
+ 
