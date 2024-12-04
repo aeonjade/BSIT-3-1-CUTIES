@@ -26,23 +26,43 @@ $user_data = check_login($con);
     <main>
 
         <section class="banner">
-        <div class="image-container">
-                <img src="./images/threewan/pic1.png">
-            </div>
-            <div class="overlay">
-                <div class="left-content">
-                    <h1>For the students,<br>by the students.</h1>
-                </div>
-                <div class="right-content">
-                    <p class="introduction">
-                        Welcome
-                    </p>
-                    <div class="buttons">
-                        <button class="btn">WHAT WE DO</button>
-                        <button class="btn" >WHO WE ARE</button>
+            <div class="image-container">
+                    <img src="./images/threewan/bg.png " >
+
+                    <div class="monitor">
+                            <img src="./images/threewan/pic1.png" alt="Group Photo" class="photo">
+                
                     </div>
-                </div>
-            </div>
+                                
+                    <div class="loading-container">
+                        <div>LOADING...</div>
+                        <div class="loading-bar">
+                        <div class="loading-bar-inner"></div>
+                        </div>
+                    </div>
+
+                     <div class="banner-text">
+                            <h1>Welcome to BSIT 3-1</h1>
+                    </div>   
+                    
+                    <div class="stacked-windows">
+                        <img src="./images/assets/windiw.png" alt="Window" class="window" />
+                        <div class="content-window">
+                            <h4>For the Students, by the Students</h4>
+
+                            <div class="buttons">
+                                <a href="#" class="btn btn-exhibits">Other Exhibits</a>
+                                <a href="#" class="btn btn-see-more">See More</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+
+                    <img src="./images/assets/keyboard-mouse.png" alt="" class="mouse">
+
+<!-------------------------------------------------------------------------------->   
+                
         </section>
 
         <section class="developerss">
@@ -95,7 +115,7 @@ $user_data = check_login($con);
                             
                            
                             <a href="gallery.php" class="btn btn-exhibits">Other Exhibits</a>
-                            <a href="gallery.php" class="btn btn-see-more">See More</a
+                            <a href="gallery.php" class="btn btn-see-more">See More</a>
                         </div>
                     </div>
                 </div>
@@ -145,7 +165,7 @@ $user_data = check_login($con);
                                 <img src="images/drews.jpg" alt="Image 3" class="image">
                             </div>
                         </div>
-                    </div>`
+                    </div>
 
                     <!-- Modal for image popup -->
                     <div id="imageModal" class="modal-section2" onclick="closeModal()">
@@ -204,15 +224,15 @@ $user_data = check_login($con);
 
 
 
-        <script src="javascript/homepage.js"></script>
+        
     </main>
 
 
 
-
+    <script src="javascript/homepage.js"></script>
     <script src="javascript/carousel.js"></script>
 
-
+    <?php include "includes/footer.php" ?>
 
 </body>
 

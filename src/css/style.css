@@ -1,13 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+@font-face{
+    font-family: shrinkhand;
+    src: url(../font/Shrikhand-Regular.ttf);
+}
+
 body {
     display: flex;
     flex-direction: column;
     font-family: sans-serif;
+    background-color: rgb(136, 78, 252);
 }
 
 main {
@@ -36,7 +45,7 @@ a.logo img {
     padding-right: 50px;
     font-size: 20px;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     transition: color 0.5s;
 }
 
@@ -45,22 +54,25 @@ a.logo img {
 }
 
 nav {
+    position: sticky; /* Places the navbar above the section */
     top: 0;
+    left: 0;
+    width: 100%; /* Stretches the navbar across the page */
     padding: 1vh;
-    background: transparent;
-    /* No background */
-    color: white;
-    z-index: 2;
+    z-index: 10; /* Ensures it stays on top of the section */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.39);
+    color: white;
+
+    background: rgba(155, 131, 131, 0.295);
     /* Semi-transparent background */
     backdrop-filter: blur(10px);
     /* Frosted glass blur effect */
     -webkit-backdrop-filter: blur(10px);
     /* For Safari */
-    position: sticky;
+    
+    
 }
 
 /*navigation links*/
@@ -69,20 +81,21 @@ nav .links a {
     display: inline-block;
     padding: 8px 20px;
     transition: background-color 0.5s, color 0.3s;
-    color: #fff;
-    font-size: 14px;
+    color: yellow;
+    font-size: 24px;
+    font-family: Fredoka;
 }
 
 /*hover state for ALL links*/
 nav .links a:hover,
 nav .links a.active {
     text-decoration: underline;
-    color: red;
+    color: #fff;
 }
 
 /*For Login Button*/
 #SignIn-button {
-    margin-left: auto;
+    margin-left: 100px;
     margin-right: 15px;
     padding: 6px 12px;
     border-radius: 10px;
