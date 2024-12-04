@@ -120,7 +120,7 @@ $user_data = check_login($con);
                         <!-- Modal content -->
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h1 style="color: red;">Remove Announcement?</h1>
+                                <h1>Remove Announcement?</h1>
                                 <span onclick="removeAnnouncementModal()" class="close">&times;</span>
                             </div>
                             <div class="modal-body">

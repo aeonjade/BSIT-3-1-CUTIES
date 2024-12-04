@@ -23,7 +23,7 @@ function getAnnouncements()
     $conn = new PDO("mysql:host=$servername;dbname=cutiesdb", $username, $password);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $stmt = $conn->prepare("SELECT announcement_id, announcement_title, announcement_description FROM announcements");
+    $stmt = $conn->prepare("SELECT announcement_id, announcement_title, announcement_description FROM announcements ORDER BY announcement_date_added DESC");
     $stmt->execute();
 
     $result = $stmt->fetchAll(PDO::FETCH_OBJ);
