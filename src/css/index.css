@@ -1198,13 +1198,7 @@
     line-height: 1.5;
 }
 
-.projecttoowan-showcase .content {
-    display: grid;
-    grid-template-columns: 1fr ;
-    gap: 40px;
-    align-items: center;
-    width: 100%;
-}
+
 
 
 }

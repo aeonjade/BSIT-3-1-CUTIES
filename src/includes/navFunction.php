@@ -25,6 +25,7 @@
     <?php else: ?>
       <button id="SignIn-button">
         <a data-active="logIn" href="logIn.php">Log In</a>
+
       </button>
   <?php endif; ?>
 
@@ -40,6 +41,15 @@
     <a href="dashboard.php">Dashboard</a>
     <a href="bulletin.php">Bulletin</a>
     <a href="logIn.php">Log In</a>
+
+   
+       <!-- Conditionally display the Log In or Log Out button inside the sidebar -->
+    <?php if (isset($_SESSION['user_id'])): ?>
+      <a data-active="logout" href="logout.php">Log Out</a>
+    <?php else: ?>
+      <a data-active="logIn" href="logIn.php">Log In</a>
+    <?php endif; ?>
+        
   </div>
 </nav>
 

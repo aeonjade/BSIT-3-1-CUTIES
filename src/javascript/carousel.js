@@ -17,3 +17,5 @@ function closeModal() {
     // Remove class from body to re-enable scrolling
     document.body.classList.remove('no-scroll');
 }
+
+

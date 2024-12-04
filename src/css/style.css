@@ -118,10 +118,11 @@ nav .links a.active {
     display: none;
     position: fixed;
     top: 0;
+    
     left: -100%;
-    height: 100%;
+    height: 100vh;
     width: 250px;
-    background-color: rgba(90, 90, 90, 1);
+    background-color: rgb(166, 73, 243);
     box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
     transition: 0.3s ease;
     z-index: 1000;
@@ -155,11 +156,15 @@ nav .links a.active {
     right: 10px;
 }
 
-@media (min-width: 601px) and (max-width: 1024px)  {
+@media (min-width: 600px) and (max-width: 1024px)  {
     nav button {
         display: none;
         /* Hides the login button on smaller screens */
     }
+    
+    .log-out-btn {
+        display: none;
+      }
 
     
 /*NAVIGATION*/
@@ -466,10 +471,18 @@ footer p.quote {
 }
 
 /*BULLETIN*/
-#main-bg {
+#main-bg  {
     min-height: 160vh;
     width: 100%;
-    background: linear-gradient(rgba(50, 11, 221, 0.829), rgba(186, 186, 55, 0.595));
+    background: url(../images/threewan/bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#about-bg  {
+    min-height: 160vh;
+    width: 100%;
+    background: url(../images/threewan/bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -480,3 +493,5 @@ footer p.quote {
     background-color: #ffffff;
     border-radius: 10px;
 }
+
+

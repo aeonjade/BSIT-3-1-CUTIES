@@ -16,7 +16,7 @@ $user_data = check_login($con);
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body id="main-bg">
+<body id="about-bg">
    
 <?php include "includes/navFunction.php" ?>
 
@@ -27,7 +27,7 @@ $user_data = check_login($con);
                 <div class="about-text">
                     <h1>3-1 CUTIES</h1>
                     <p class="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sed nemo magnam quia minus distinctio voluptas aut eaque. Quod inventore iusto aliquam unde, iste animi exercitationem ipsam perspiciatis quo saepe quos velit dignissimos tenetur consequuntur,
+                          our one-stop destination for creativity, innovation, and inspiration.
                 </div>
             </div>
         </section>
@@ -35,28 +35,88 @@ $user_data = check_login($con);
 
         <!-- Meet the Developers Section -->
         <section class="developers">
-            <h2>Meet the Developers</h2>
-            <div class="developer-grid">
-                <?php
-                // Developers array with image and description
-                $developers = [
-                    ['image' => 'images/bretz.jpg', 'description' => 'Jhonn Michael Bretana  <br> <span> The Food Expert </span> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, eligendi nam qui nesciunt unde corrupti sed praesentium repellendus iure! '],
-                    ['image' => 'images/pongs.jpeg', 'description' => 'Kurt Arthur Pantaleon  <br> <span> The NBA Referee </span> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, eligendi nam qui nesciunt unde corrupti sed praesentium repellendus iure! '],
-                    ['image' => 'images/aeons.jpg', 'description' => 'Aeon Jade Vicentuan  <br> <span> The Backend Expert </span> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, eligendi nam qui nesciunt unde corrupti sed praesentium repellendus iure! '],
-                    ['image' => 'images/vics.jpg', 'description' => 'Vic Vincent Centeno <br> <span> The Fullstack Wizard </span> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, eligendi nam qui nesciunt unde corrupti sed praesentium repellendus iure! '],
-                    ['image' => 'images/drews.jpg', 'description' => 'Andrew Bautista  <br> <span> The Backend Expert </span> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, eligendi nam qui nesciunt unde corrupti sed praesentium repellendus iure! '],
-                    ['image' => 'images/zads.jpg', 'description' => 'Zadkiel Ondivella  <br> <span> The Document Expert </span> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, eligendi nam qui nesciunt unde corrupti sed praesentium repellendus iure!  ']
-                ];
-                foreach ($developers as $developer) { ?>
-                    <div class="developer-card">
-                        <div class="picture">
-                            <img src="<?= $developer['image'] ?>" alt="Developer" />
-                        </div>
-                        <div class="description"><?= $developer['description'] ?></div>
-                    </div>
-                <?php } ?>
+    <h2>Meet the Developers</h2>
+    <div class="developer-grid">
+        <div class="developer-card">
+            <div class="card-content">
+                <div class="picture">
+                    <img src="images/bretz.jpg" alt="Jhonn Michael Bretana" />
+                </div>
+                <div class="description">
+                    <h3>Jhonn Michael Bretana</h3>
+                    <span>The Food Expert</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, eligendi nam qui nesciunt unde corrupti sed praesentium repellendus iure!</p>
+                </div>
             </div>
-        </section>
+        </div>
+
+        <div class="developer-card">
+            <div class="card-content">
+                <div class="picture">
+                    <img src="images/pongs.jpeg" alt="Kurt Arthur Pantaleon" />
+                </div>
+                <div class="description">
+                    <h3>Kurt Arthur Pantaleon</h3>
+                    <span>The NBA Referee</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, eligendi nam qui nesciunt unde corrupti sed praesentium repellendus iure!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="developer-card">
+            <div class="card-content">
+                <div class="picture">
+                    <img src="images/aeons.jpg" alt="Aeon Jade Vicentuan" />
+                </div>
+                <div class="description">
+                    <h3>Aeon Jade Vicentuan</h3>
+                    <span>The Backend Expert</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, eligendi nam qui nesciunt unde corrupti sed praesentium repellendus iure!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="developer-card">
+            <div class="card-content">
+                <div class="picture">
+                    <img src="images/vics.jpg" alt="Vic Vincent Centeno" />
+                </div>
+                <div class="description">
+                    <h3>Vic Vincent Centeno</h3>
+                    <span>The Fullstack Wizard</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, eligendi nam qui nesciunt unde corrupti sed praesentium repellendus iure!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="developer-card">
+            <div class="card-content">
+                <div class="picture">
+                    <img src="images/drews.jpg" alt="Andrew Bautista" />
+                </div>
+                <div class="description">
+                    <h3>Andrew Bautista</h3>
+                    <span>The Backend Expert</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, eligendi nam qui nesciunt unde corrupti sed praesentium repellendus iure!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="developer-card">
+            <div class="card-content">
+                <div class="picture">
+                    <img src="images/zads.jpg" alt="Zadkiel Ondivella" />
+                </div>
+                <div class="description">
+                    <h3>Zadkiel Ondivella</h3>
+                    <span>The Document Expert</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, eligendi nam qui nesciunt unde corrupti sed praesentium repellendus iure!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
         <!-- The 3-1 Officers Section -->
         <section class="officers">
