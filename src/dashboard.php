@@ -120,16 +120,17 @@ $user_data = check_login($con);
                         <!-- Modal content -->
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h1 style="color: red;">Remove Announcement</h1>
-                                <span id="remove-announcement-modal" class="close">&times;</span>
+                                <h1 style="color: red;">Remove Announcement?</h1>
+                                <span onclick="removeAnnouncementModal()" class="close">&times;</span>
                             </div>
                             <div class="modal-body">
                                 <h2 class="expanded-title" id="remove-announcement-modal-title"><?= $announcement->announcement_title  ?></h2>
                                 <h3 class="expanded-description" id="remove-announcement-modal-description"><?= $announcement->announcement_description  ?></h3>
-                                <center>
-                                    <h3 style="color: red;">Are you sure you want to remove this announcement?</h3>
-                                </center>
-                                <button onclick="deleteAnnouncementConfirm()">Confirm</button>
+                                <h4>Are you sure you want to remove this announcement?</h4>
+                                <div class="modal-buttons">
+                                    <button onclick="removeAnnouncementModal()">No</button>
+                                    <button onclick="deleteAnnouncementConfirm()">Yes</button>
+                                </div>
                             </div>
                         </div>
                     </div>

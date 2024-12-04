@@ -106,6 +106,6 @@ var removeAnnouncementSpan = document.getElementById(
   "remove-announcement-modal"
 );
 
-removeAnnouncementSpan.onclick = function () {
+function removeAnnouncementModal() {
   deleteAnnouncementModal.style.display = "none";
 };

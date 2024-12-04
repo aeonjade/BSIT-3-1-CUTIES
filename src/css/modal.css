@@ -93,6 +93,24 @@
     font-weight: normal;
 }
 
+.modal-content .modal-body .modal-buttons {
+    display: flex;
+
+}
+
+.modal-content .modal-body h4 {
+    padding: 5vh 0vh 2vh 0vh;
+    color: red;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-content .modal-body .modal-buttons button {
+    width: 50%;
+    margin: 2vh;
+    height: 5vh;
+}
+
 /* The Close Button */
 .close {
     margin-left: auto;
