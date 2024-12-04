@@ -5,7 +5,9 @@
     display: block;
 }
 
-.image-container {}
+.image-container {
+    
+}
 
 .banner {
     position: relative;
@@ -64,6 +66,16 @@
 
 .banner .overlay .btn:hover {
     background-color: #ccc;
+}
+
+
+.developerss {
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    padding: 2%;
 }
 
 /* Project Showcase Section */
@@ -129,10 +141,14 @@
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
     background-color: white;
+    text-decoration: none;
+    
 }
 
 .project-showcase .btn-see-more {
     background-color: #e0e0e0;
+    
+
 }
 
 .project-showcase .btn:hover {
@@ -140,21 +156,15 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Developer Section */
-.developerss {
-    font-size: 50px;
+
+/* General Styling */
+.developersss {
+    font-size: 30px;
     text-align: center;
     font-weight: bold;
     background-color: black;
     color: white;
     padding: 2%;
-}
-
-.developers {
-    background-color: #000;
-    padding: 20px;
-    text-align: center;
-    font-weight: bold;
 }
 
 .developer-list {
@@ -164,12 +174,68 @@
     gap: 20px;
 }
 
-.developersss {
+/* Developer Card */
+.developer-card {
     text-align: center;
     color: #fff;
     font-weight: bold;
     background-color: #000;
-    padding: 1%;
+    padding: 10px;
+}
+
+/* Border Animation Container */
+.circle-border {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotate-border 3s linear infinite;
+
+    /* Glow Effect */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+/* Inner Circle */
+.circle {
+    width: 40px;
+    height: 40px;
+    background-color: #000; /* Inner circle stays static */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Text color */
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    z-index: 1; /* Ensure it stays above the rotating border */
+}
+
+/* Animation for Rotating Border */
+@keyframes rotate-border {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Developer Name */
+.developer-card p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Developer Name Styling */
+.developer-card p {
+    margin-top: 30px; /* Adds space to prevent overlap with the circle */
+    font-size: 14px;
+    line-height: 1.5;
 }
 
 /* Cards Section */
@@ -522,6 +588,7 @@
 /* Text Content */
 .projecttoowan-showcase .text-content {
     text-align: left;
+    
 }
 
 .projecttoowan-showcase .text-content h1 {

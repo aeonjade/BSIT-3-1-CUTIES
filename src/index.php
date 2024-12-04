@@ -35,7 +35,7 @@
                     </p>
                     <div class="buttons">
                         <button class="btn">WHAT WE DO</button>
-                        <button class="btn">WHO WE ARE</button>
+                        <button class="btn" >WHO WE ARE</button>
                     </div>
                 </div>
             </div>
@@ -88,8 +88,10 @@
                         </p>
                         <!-- Buttons Section -->
                         <div class="buttons">
-                            <button class="btn btn-exhibits">Other Exhibits</button>
-                            <button class="btn btn-see-more">See More</button>
+                            
+                           
+                            <a href="gallery.php" class="btn btn-exhibits">Other Exhibits</a>
+                            <a href="gallery.php" class="btn btn-see-more">See More</a
                         </div>
                     </div>
                 </div>
@@ -118,56 +120,85 @@
                     </div>
 
                     <!-- Images Layout -->
-                    
-                    <div class="carousel-container">
-                        <div class="carousel-images">
-                            <img src="images/seminar/434657482_831188179023732_7376574398251475307_n.jpg" alt="Image 1">
-                            <img src="images/seminar/434659768_831224775686739_112226980921197929_n.jpg" alt="Image 2">
-                            <img src="images/seminar/434668960_831183939024156_1935776699275189465_n.jpg" alt="Image 3">
-                            <!-- Add more images as needed -->
+                    <div class="card-container">
+                        <!-- Card 1 -->
+                        <div class="card" onclick="openModal('images/aeons.jpg')">
+                            <div class="image-wrapper">
+                                <img src="images/aeons.jpg" alt="Image 1" class="image">
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Modal (Popup) -->
-                    <div class="modal">
-                        <button class="close-btn">×</button>
-                        <img src="" alt="Image in Modal" class="modal-content">
+                        <!-- Card 2 -->
+                        <div class="card" onclick="openModal('images/bretz.jpg')">
+                            <div class="image-wrapper">
+                                <img src="images/bretz.jpg" alt="Image 2" class="image">
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="card" onclick="openModal('images/drews.jpg')">
+                            <div class="image-wrapper">
+                                <img src="images/drews.jpg" alt="Image 3" class="image">
+                            </div>
+                        </div>
+                    </div>`
+
+                    <!-- Modal for image popup -->
+                    <div id="imageModal" class="modal-section2" onclick="closeModal()">
+                        <span class="close">&times;</span>
+                        <img id="modalImage" class="modal-contents" alt="Modal Image">
                     </div>
+                    
+
                 </div>
             </div>
         </section>
 
         <section class="developersss">
             <h2>
-                <center>CUTIES | Developer
+                <center>CUTIES | Developer</center>
             </h2>
             <div class="developer-list">
-                <div class="developersss">
-                    <div class="circle">AB</div>
+                <div class="developer-card">
+                    <div class="circle-border">
+                        <div class="circle">AB</div>
+                    </div>
                     <p>Andrew <br>Bautista</p>
                 </div>
-                <div class="developersss">
-                    <div class="circle">MB</div>
+                <div class="developer-card">
+                    <div class="circle-border">
+                        <div class="circle">MB</div>
+                    </div>
                     <p>Michael <br>Bretana</p>
                 </div>
-                <div class="developersss">
-                    <div class="circle">VC</div>
+                <div class="developer-card">
+                    <div class="circle-border">
+                        <div class="circle">VC</div>
+                    </div>
                     <p>Vincent<br>Centeno</p>
                 </div>
-                <div class="developersss">
-                    <div class="circle">ZO</div>
+                <div class="developer-card">
+                    <div class="circle-border">
+                        <div class="circle">ZO</div>
+                    </div>
                     <p>Zadkiel<br> Ondevilla</p>
                 </div>
-                <div class="developersss">
-                    <div class="circle">KP</div>
+                <div class="developer-card">
+                    <div class="circle-border">
+                        <div class="circle">KP</div>
+                    </div>
                     <p>Kurt <br>Pantaleon</p>
                 </div>
-                <div class="developersss">
-                    <div class="circle">JV</div>
+                <div class="developer-card">
+                    <div class="circle-border">
+                        <div class="circle">JV</div>
+                    </div>
                     <p>Jade<br> Vicentuan</p>
                 </div>
             </div>
         </section>
+
+
 
         <script src="javascript/homepage.js"></script>
     </main>
