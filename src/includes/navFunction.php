@@ -47,7 +47,7 @@
     <?php if (isset($_SESSION['user_id'])): ?>
       <a data-active="logout" href="logout.php">Log Out</a>
     <?php else: ?>
-      <a data-active="logIn" href="logIn.php">Log In</a>
+      <a data-active="logIn" style="opacity:0;" href="logIn.php">Log In</a>
     <?php endif; ?>
         
   </div>
