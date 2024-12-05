@@ -76,23 +76,23 @@ $user_data = check_login($con);
                     <!-- Images Section -->
                     <div class="card-container">
                         <!-- Card 1 -->
-                        <div class="card" onclick="openModal('images/xtra/ex1.jpg')">
+                        <div class="card" onclick="openModal('images/works/house.png')">
                             <div class="image-wrapper">
-                                <img src="images/xtra/ex1.jpg" alt="Image 1" class="image">
+                                <img src=images\works\house.png alt="Image 1" class="image">
                             </div>
                         </div>
 
                         <!-- Card 2 -->
-                        <div class="card" onclick="openModal('images/xtra/ex2.jpg')">
+                        <div class="card" onclick="openModal('images/works/srs.png')">
                             <div class="image-wrapper">
-                                <img src="images/xtra/ex2.jpg" alt="Image 2" class="image">
+                                <img src=images\works\srs.png alt="Image 2" class="image">
                             </div>
                         </div>
 
                         <!-- Card 3 -->
-                        <div class="card" onclick="openModal('images/xtra/ex3.jpg')">
+                        <div class="card" onclick="openModal('images/works/VAF.png')">
                             <div class="image-wrapper">
-                                <img src="images/xtra/ex3.jpg" alt="Image 3" class="image">
+                                <img src=images\works\VAF.png alt="Image 3" class="image">
                             </div>
                         </div>
                     </div>
@@ -105,10 +105,12 @@ $user_data = check_login($con);
 
                     <!-- Text Section -->
                     <div class="text-content">
-                        <h1>THIS IS THEIR PROJECT</h1>
-                        <h3>By Rome, Tite, Pepe, Burat, Burnek, Salsalito, Ratbu</h3>
+                        <h1>2D to 3D Christmas Theme Cutie</h1>
+                        <h3>By Bautistia, Bretana, Centeno, Ondevilla, Pantaleon, Vicentuan</h3>
                         <p>
-                            The project description goes here. Add details to match the content style of the image.
+                        These cuties made a scene of Christmas-themed 3D
+                         designs through Blender, exhibiting creativity over a 
+                         predefined theme. 
                         </p>
                         <!-- Buttons Section -->
                         <div class="buttons">
@@ -131,10 +133,10 @@ $user_data = check_login($con);
                 <div class="content">
                     <!-- Text Content -->
                     <div class="text-content">
-                        <h1>THIS IS THEIR PROJECT</h1>
-                        <h3>By Rome, Tite, Pepe, Burat, Burnek, Salsalito, Ratbu</h3>
+                        <h1>Website</h1>
+                        <h3>By: Bautistia, Bretana, Centeno, Ondevilla, Pantaleon, Vicentuan</h3>
                         <p>
-                            The project description goes here. Add relevant details for a professional look.
+                        These cuties made a PHP website for ThreeWanCuties Student Portal.
                         </p>
                         <!-- Buttons Section -->
                         <div class="buttons">
