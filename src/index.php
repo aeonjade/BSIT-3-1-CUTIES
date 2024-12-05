@@ -1,7 +1,7 @@
 <?php
 session_start();
 include "php/functions.php";
-include("connection.php"); 
+include("connection.php");
 $user_data = check_login($con);
 
 ?>
@@ -27,42 +27,42 @@ $user_data = check_login($con);
 
         <section class="banner">
             <div class="image-container">
-                    <img src="./images/threewan/bg.png " >
+                <img src="./images/threewan/bg.png ">
 
-                    <div class="monitor">
-                            <img src="./images/threewan/pic1.png" alt="Group Photo" class="photo">
-                
-                    </div>
-                                
-                    <div class="loading-container">
-                        <div>LOADING...</div>
-                        <div class="loading-bar">
+                <div class="monitor">
+                    <img src="./images/threewan/pic1.png" alt="Group Photo" class="photo">
+
+                </div>
+
+                <div class="loading-container">
+                    <div>LOADING...</div>
+                    <div class="loading-bar">
                         <div class="loading-bar-inner"></div>
-                        </div>
                     </div>
+                </div>
 
-                     <div class="banner-text">
-                            <h1>Welcome to BSIT 3-1</h1>
-                    </div>   
-                    
-                    <div class="stacked-windows">
-                        <img src="./images/assets/windiw.png" alt="Window" class="window" />
-                        <div class="content-window">
-                            <h4>For the Students, by the Students</h4>
+                <div class="banner-text">
+                    <h1>Welcome to BSIT 3-1</h1>
+                </div>
 
-                            <div class="buttons"> 
-                                <a href="#" class="btn btn-exhibits">Other Exhibits</a>
-                                <a href="#" class="btn btn-see-more">See More</a>
-                            </div>
-                            
+                <div class="stacked-windows">
+                    <img src="./images/assets/windiw.png" alt="Window" class="window" />
+                    <div class="content-window">
+                        <h4>For the Students, by the Students</h4>
+
+                        <div class="buttons">
+                            <a href="#" class="btn btn-exhibits">Other Exhibits</a>
+                            <a href="#" class="btn btn-see-more">See More</a>
                         </div>
+
                     </div>
+                </div>
 
 
-                    <img src="./images/assets/keyboard-mouse.png" alt="" class="mouse">
+                <img src="./images/assets/keyboard-mouse.png" alt="" class="mouse">
 
-<!-------------------------------------------------------------------------------->   
-                
+                <!-------------------------------------------------------------------------------->
+
         </section>
 
         <section class="developerss">
@@ -112,8 +112,8 @@ $user_data = check_login($con);
                         </p>
                         <!-- Buttons Section -->
                         <div class="buttons">
-                            
-                           
+
+
                             <a href="gallery.php" class="btn btn-exhibits">Other Exhibits</a>
                             <a href="gallery.php" class="btn btn-see-more">See More</a>
                         </div>
@@ -172,7 +172,7 @@ $user_data = check_login($con);
                         <span class="close">&times;</span>
                         <img id="modalImage" class="modal-contents" alt="Modal Image">
                     </div>
-                    
+
 
                 </div>
             </div>
@@ -224,7 +224,7 @@ $user_data = check_login($con);
 
 
 
-        
+
     </main>
 
 

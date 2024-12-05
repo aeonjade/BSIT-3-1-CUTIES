@@ -8,9 +8,9 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 $id = $_POST['current_id'];
 
-$sql = "DELETE FROM announcements where announcement_id = '$id'";
+$stmt = $conn->prepare("DELETE FROM announcements WHERE announcement_id = ?");
 
-if ($conn->exec($sql)) {
+if ($stmt->execute([$id])) {
     $data = array(
         'status' => true,
         'msg' => 'Announcement removed successfully!'

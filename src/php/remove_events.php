@@ -8,9 +8,9 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 $id = $_POST['id'];
 
-$sql = "DELETE FROM tasks WHERE task_id = '$id'";
+$stmt = $conn->prepare("DELETE FROM tasks WHERE task_id = ?");
 
-if ($conn->exec($sql)) {
+if ($stmt->execute([$id])) {
     $data = array(
         'status' => true,
         'msg' => 'Event removed successfully!'

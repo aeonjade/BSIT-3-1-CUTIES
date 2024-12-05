@@ -9,11 +9,10 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $title = $_POST['announcement_title'];
 $desc = $_POST['announcement_description'];
 
-$sql = "INSERT INTO announcements (announcement_title, announcement_description)
-VALUES ('" . $title . "', '" . $desc . "')
-";
+$stmt = $conn->prepare("INSERT INTO announcements (announcement_title, announcement_description)
+VALUES (?, ?)");
 
-if ($conn->exec($sql)) {
+if ($stmt->execute([$title, $desc])) {
     $data = array(
         'status' => true,
         'msg' => 'Announcement added successfully!'

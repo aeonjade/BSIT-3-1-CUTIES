@@ -10,9 +10,9 @@ $id = $_POST['id'];
 $start = $_POST['start'];
 $end = $_POST['end'];
 
-$sql = " UPDATE tasks SET task_start_date = '$start', task_end_date = '$end' WHERE task_id = '$id'";
+$stmt = $conn->prepare("UPDATE tasks SET task_start_date = ?, task_end_date = ? WHERE task_id = ?");
 
-if ($conn->exec($sql)) {
+if ($stmt->execute([$start, $end, $id])) {
     $data = array(
         'status' => true,
         'msg' => 'Event updated successfully!'
