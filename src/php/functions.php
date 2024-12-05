@@ -5,7 +5,7 @@ function getTasks()
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $conn = new PDO("mysql:host=$servername;dbname=cutiesdb", $username, $password);
+    $conn = new PDO("mysql:host=$servername;dbname=czvqqzbp_cutiesdb", $username, $password);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $stmt = $conn->prepare("SELECT task_title, task_start_date, task_end_date, task_time, task_description FROM tasks ORDER BY task_start_date, task_time");
@@ -20,7 +20,7 @@ function getAnnouncements()
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $conn = new PDO("mysql:host=$servername;dbname=cutiesdb", $username, $password);
+    $conn = new PDO("mysql:host=$servername;dbname=czvqqzbp_cutiesdb", $username, $password);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $stmt = $conn->prepare("SELECT announcement_id, announcement_title, announcement_description FROM announcements ORDER BY announcement_date_added DESC");
@@ -34,7 +34,7 @@ function getPosts() {
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $conn = new PDO("mysql:host=$servername;dbname=cutiesdb", $username, $password);
+    $conn = new PDO("mysql:host=$servername;dbname=czvqqzbp_cutiesdb", $username, $password);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $stmt = $conn->prepare("SELECT * FROM posts ORDER BY post_date DESC");
