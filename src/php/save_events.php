@@ -6,9 +6,9 @@ $conn = new PDO("mysql:host=$servername;dbname=cutiesdb", $username, $password);
 // set the PDO error mode to exception
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-$title = $_POST['title'];
+$title = filter_var($_POST['title'], FILTER_SANITIZE_SPECIAL_CHARS);
 $time = $_POST['time'];
-$desc = $_POST['desc'];
+$desc = filter_var($_POST['desc'], FILTER_SANITIZE_SPECIAL_CHARS);
 $startDate = date("y-m-d", strtotime($_POST['startDate']));
 $endDate = date("y-m-d", strtotime($_POST['endDate']));
 
