@@ -1,4 +1,4 @@
-<?php
+<p?php
 session_start();
 include "php/functions.php";
 include("connection.php"); 
@@ -26,10 +26,10 @@ $user_data = check_login($con);
                 <img class="abt-img" src="images/logo.png" alt="Logo">
                 <div class="about-text">
                     <h1>3-1 CUTIES</h1>
-                    <p class="description">
+                    <div class="description">
                     We are a passionate group of BSIT 3-1 students committed to creating a platform that reflects our needs, ideas, and shared goals. 
                     ThreeWanCuties is built by students, for students! This website was published on December 2, 2024, as a project for partial
-                     fulfillment in Event-Driven Programming. Its developers are: Bautistia, Bretana, Centeno, Ondevilla, Pantaleon, Vicentuan.
+                     fulfillment in Event-Driven Programming. Its developers are: Bautistia, Bretana, Centeno, Ondevilla, Pantaleon, Vicentuan.</p>
 
             </div>
         </section>
@@ -46,8 +46,10 @@ $user_data = check_login($con);
                         </div>
                         <div class="description">
                             <h3>Jhonn Michael Bretana</h3>
-                            <span>The Food Expert</span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, eligendi nam qui nesciunt unde corrupti sed praesentium repellendus iure!</p>
+                            <span>PHP Magician</span>
+                            <p> Bretz makes PHP like his bread and butter.
+                                 He cooks PHP code and succesfully makes a great 
+                                 work aligning with our goals.</p>
                         </div>
                     </div>
                 </div>
@@ -59,8 +61,10 @@ $user_data = check_login($con);
                         </div>
                         <div class="description">
                             <h3>Kurt Arthur Pantaleon</h3>
-                            <span>The NBA Referee</span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, eligendi nam qui nesciunt unde corrupti sed praesentium repellendus iure!</p>
+                            <span>PHP Maestro</span>
+                            <p> Kurt is a reliable PHP meister. 
+                                He manages to get PHP code to work and even ensure 
+                                that most of its bugs get optimized.</p>
                         </div>
                     </div>
                 </div>
@@ -72,8 +76,10 @@ $user_data = check_login($con);
                         </div>
                         <div class="description">
                             <h3>Aeon Jade Vicentuan</h3>
-                            <span>The Backend Expert</span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, eligendi nam qui nesciunt unde corrupti sed praesentium repellendus iure!</p>
+                            <span>Back-end GOAT Leader</span>
+                            <p> Aeon Jade supervises the management 
+                                of the team. He’s PHP and back-end expert, 
+                                and can mange whether it be the team or the database.</p>
                         </div>
                     </div>
                 </div>
@@ -85,8 +91,9 @@ $user_data = check_login($con);
                         </div>
                         <div class="description">
                             <h3>Vic Vincent Centeno</h3>
-                            <span>The Fullstack Wizard</span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, eligendi nam qui nesciunt unde corrupti sed praesentium repellendus iure!</p>
+                            <span>Front-end Wizard</span>
+                            <p>Vic breathes life into the website with his eye for aesthetics 
+                                and practicality of designs. He makes life look beautiful.</p>
                         </div>
                     </div>
                 </div>
@@ -98,8 +105,10 @@ $user_data = check_login($con);
                         </div>
                         <div class="description">
                             <h3>Andrew Bautista</h3>
-                            <span>The Backend Expert</span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, eligendi nam qui nesciunt unde corrupti sed praesentium repellendus iure!</p>
+                            <span>Front-end Sorcerer</span>
+                            <p>Andrew comes and conquers designs with his intuitive mind, 
+                                aspiring to make the website look as much appealing as
+                                 possible to everyone.</p>
                         </div>
                     </div>
                 </div>
@@ -111,8 +120,10 @@ $user_data = check_login($con);
                         </div>
                         <div class="description">
                             <h3>Zadkiel Ondivella</h3>
-                            <span>The Document Expert</span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, eligendi nam qui nesciunt unde corrupti sed praesentium repellendus iure!</p>
+                            <span>Generalist</span>
+                            <p>Zadkiel handles a variety of tasks of which help the team work
+                                 efficiently and methodically. 
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -139,7 +150,7 @@ $user_data = check_login($con);
                         <div class="description"><//?= $officer['description'] ?></div>
                     </div> 
                 <//?php } ?>-->
-                <h2>Officers of IT 3-1</h2>
+                <h4>Officers of IT 3-1</h4>
                 <div class="team-container">
                     <!-- Officer 1 -->
                     <div class="team-member">
