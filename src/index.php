@@ -76,21 +76,21 @@ $user_data = check_login($con);
                     <!-- Images Section -->
                     <div class="card-container">
                         <!-- Card 1 -->
-                        <div class="card" onclick="openModal('images/xtra/ex1.jpg')">
+                        <div class="card" onclick="openModal('images/works/house.png')">
                             <div class="image-wrapper">
                                 <img src=images\works\house.png alt="Image 1" class="image">
                             </div>
                         </div>
 
                         <!-- Card 2 -->
-                        <div class="card" onclick="openModal('images/xtra/ex2.jpg')">
+                        <div class="card" onclick="openModal('images/works/srs.png')">
                             <div class="image-wrapper">
                                 <img src=images\works\srs.png alt="Image 2" class="image">
                             </div>
                         </div>
 
                         <!-- Card 3 -->
-                        <div class="card" onclick="openModal('images/xtra/ex3.jpg')">
+                        <div class="card" onclick="openModal('images/works/VAF.png')">
                             <div class="image-wrapper">
                                 <img src=images\works\VAF.png alt="Image 3" class="image">
                             </div>
@@ -105,10 +105,10 @@ $user_data = check_login($con);
 
                     <!-- Text Section -->
                     <div class="text-content">
-                        <h1>Title: 2D to 3D Christmas Theme Cutie</h1>
+                        <h1>2D to 3D Christmas Theme Cutie</h1>
                         <h3>By Bautistia, Bretana, Centeno, Ondevilla, Pantaleon, Vicentuan</h3>
                         <p>
-                        Description: These cuties made a scene of Christmas-themed 3D
+                        These cuties made a scene of Christmas-themed 3D
                          designs through Blender, exhibiting creativity over a 
                          predefined theme. 
                         </p>
@@ -133,10 +133,10 @@ $user_data = check_login($con);
                 <div class="content">
                     <!-- Text Content -->
                     <div class="text-content">
-                        <h1>Title: Website</h1>
+                        <h1>Website</h1>
                         <h3>By: Bautistia, Bretana, Centeno, Ondevilla, Pantaleon, Vicentuan</h3>
                         <p>
-                        Description: These cuties made a PHP website for ThreeWanCuties Student Portal.
+                        These cuties made a PHP website for ThreeWanCuties Student Portal.
                         </p>
                         <!-- Buttons Section -->
                         <div class="buttons">
