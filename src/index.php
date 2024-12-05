@@ -30,7 +30,7 @@ $user_data = check_login($con);
                 <img src="./images/threewan/bg.png ">
 
                 <div class="monitor">
-                    <img src="./images/threewan/pic1.png" alt="Group Photo" class="photo">
+                    <img src="./images/assets/tv.png" alt="Group Photo" class="photo">
 
                 </div>
 
@@ -42,7 +42,7 @@ $user_data = check_login($con);
                 </div>
 
                 <div class="banner-text">
-                    <h1>Welcome to BSIT 3-1</h1>
+                    <h1>Welcome Cuties!</h1>
                 </div>
 
                 <div class="stacked-windows">
