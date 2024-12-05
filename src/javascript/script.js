@@ -75,6 +75,19 @@ document.getElementById("menu-toggle").addEventListener("click", function () {
   }
 });
 
+var task_title;
+var task_time;
+var task_description;
+
+function save_task(params) {
+  task_title = $("#task_title").val();
+  task_description = $("#task_description").val();
+  if (task_title == "") {
+    alert("Please enter title and time to make a task.");
+    return false;
+  }
+}
+
 // Initialize the FullCalendar instance
 document.addEventListener("DOMContentLoaded", function () {
   const calendarEl = document.getElementById("calendar");
@@ -92,34 +105,50 @@ document.addEventListener("DOMContentLoaded", function () {
     events: "./php/display_events.php", // Fetch events dynamically
     select: function (info) {
       // Create a new event
-      const title = prompt("Enter Task Title");
-      const time = prompt("Enter Task Time");
-      const desc = prompt("Enter Task Description");
-      const startDate = info.startStr;
-      const endDate = info.endStr;
-      if (title) {
-        calendar.addEvent({
-          title: title,
-          start: info.startStr,
-          end: info.endStr,
-        });
-
-        // Optional: Save event to backend
-        $.ajax({
-          url: "./php/save_events.php",
-          type: "POST",
-          dataType: "json",
-          data: { title, time, desc, startDate, endDate },
-          success: function (response) {
-            if (response.status == true) {
-              //place popup here
-              location.reload();
-            } else {
-              alert(response.msg);
-            }
-          },
-        });
+      task_title = "";
+      task_time = "";
+      task_description = "";
+      document.getElementById("add-task-modal").style.display = "block";
+      document.getElementById("close-add-task-modal").onclick = function () {
+        document.getElementById("add-task-modal").style.display = "none";
       }
+      document.getElementById("save_task").onclick = function () {
+        task_title = $("#task_title").val();
+        task_time = $("#task_time").val();
+        task_description = $("#task_description").val();
+        if (task_title == "" || task_time == "") {
+          alert("Please enter title and time to make a task.");
+          return false;
+        }
+        const title = task_title;
+        const time = task_time;
+        const desc = task_description;
+        const startDate = info.startStr;
+        const endDate = info.endStr;
+        if (title) {
+          calendar.addEvent({
+            title: title,
+            start: info.startStr,
+            end: info.endStr,
+          });
+
+          // Optional: Save event to backend
+          $.ajax({
+            url: "./php/save_events.php",
+            type: "POST",
+            dataType: "json",
+            data: { title, time, desc, startDate, endDate },
+            success: function (response) {
+              if (response.status == true) {
+                //place popup here
+                location.reload();
+              } else {
+                alert(response.msg);
+              }
+            },
+          });
+        }
+      };
     },
     eventClick: function (info) {
       // Delete event
@@ -187,4 +216,3 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   calendar.render();
 });
-

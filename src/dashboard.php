@@ -3,7 +3,7 @@ session_start();
 include "php/functions.php";
 include("connection.php");
 $user_data = check_login($con);
-?> 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -23,6 +23,30 @@ $user_data = check_login($con);
     <main class="dashboard">
         <div class="left-group">
             <div class="left">
+                <!-- The Modal -->
+                <div id="add-task-modal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1>Add Task</h1>
+                            <span id="close-add-task-modal" class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <label for="task_title">Task Title:</label>
+                            <input type="text" name="task_title" id="task_title" class="announcement_title" maxlength="50" placeholder="Enter task title...">
+                            <label for="task_time">Task Time:</label>
+                            <input type="time" name="task_time" id="task_time" class="announcement_title">
+                            <label for="task_description">Announcement Description:</label>
+                            <textarea name="task_description" id="task_description" class="announcement_description" maxlength="300" placeholder="Enter task description..."></textarea>
+                        </div>
+                        <div class="modal-submit">
+                            <button type="button" id="save_task" class="submit-button">Add Task</button>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- MODAL END -->
                 <div class="tasks-header">
                     <h1>Tasks</h1>
                 </div>
@@ -42,7 +66,7 @@ $user_data = check_login($con);
                                     echo $startDate . ' - ' . $endDate;
                                 }
                                 ?></h4>
-                            <h4><?= date("g A", strtotime($tasks->task_time)); ?></h4>
+                            <h4><?= date("g:i A", strtotime($tasks->task_time)); ?></h4>
                             <p><?= htmlspecialchars($tasks->task_description); ?></p>
                         </div>
                     <?php
@@ -76,7 +100,7 @@ $user_data = check_login($con);
                     <div class="modal-content">
                         <div class="modal-header">
                             <h1>Add Announcement</h1>
-                            <span class="close">&times;</span>
+                            <span id="close-add-announcement" class="close">&times;</span>
                         </div>
                         <div class="modal-body">
                             <label for="announcement_title">Announcement Title:</label>
