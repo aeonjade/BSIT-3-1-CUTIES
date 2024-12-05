@@ -17,6 +17,9 @@ body {
     flex-direction: column;
     font-family: sans-serif;
     background-color: rgb(136, 78, 252);
+    background: url(../images/threewan/bg.png);
+    background-size: cover;
+    background-repeat: repeat;
 }
 
 main {
@@ -473,7 +476,6 @@ footer p.quote {
 
 /*BULLETIN*/
 #main-bg  {
-    min-height: 160vh;
     width: 100%;
     background: url(../images/threewan/bg.png);
     background-position: center;

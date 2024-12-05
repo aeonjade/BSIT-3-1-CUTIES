@@ -16,7 +16,7 @@ $user_data = check_login($con);
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body id="main-bg">
+<body style="height: 100vh;">
 
     <?php include "includes/navFunction.php" ?>
 
