@@ -30,6 +30,21 @@ function getAnnouncements()
     return $result;
 }
 
+function getPosts() {
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $conn = new PDO("mysql:host=$servername;dbname=cutiesdb", $username, $password);
+    // set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $stmt = $conn->prepare("SELECT * FROM posts ORDER BY post_date DESC");
+    $stmt->execute();
+
+    $result = $stmt->fetchAll(PDO::FETCH_OBJ);
+    return $result;
+
+}
+
 function check_login($con)
 {
     // Allow access to index.php without logging in
