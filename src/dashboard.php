@@ -112,7 +112,7 @@ $user_data = check_login($con);
 
                 <!-- MODAL START -->
                 <!-- Trigger/Open The Modal -->
-                <button id="myBtn">Add</button>
+                <button id="myBtn">Add</button> 
 
                 <!-- The Modal -->
                 <div id="myModal" class="modal">
