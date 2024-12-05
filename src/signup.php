@@ -8,7 +8,7 @@ include("./php/functions.php");
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
   //something was posted
   $user_name = $_POST['user_name'];
-  $password = $_POST['password'];
+  $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
   $student_number = $_POST['student_number'];
 
   if (!empty($user_name) && !empty($password) && !empty($student_number) && !is_numeric($user_name)) {

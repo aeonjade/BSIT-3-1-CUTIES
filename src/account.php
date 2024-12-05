@@ -5,7 +5,6 @@ include("connection.php");
 $user_data = check_login($con);
 
 $user_name = $user_data['user_name'];
-$password = $user_data['password'];
 $student_number = $user_data['student_number'];
 ?>
 
@@ -18,7 +17,7 @@ $student_number = $user_data['student_number'];
   <link rel="shorthand icon" href="images/VITS LOGO.png" />
   <title>Login - VITS</title>
   <link rel="stylesheet" href="css/account.css" />
-	<link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -35,42 +34,38 @@ $student_number = $user_data['student_number'];
     </div>
 
     <div class="container">
-    <h3>Account Settings</h3> 
-    
-    <div class="profile">
-      <img id="profilePicture" src="https://via.placeholder.com/100" alt="Profile Picture"><!--Default profile pic-->
+      <h3>Account Settings</h3>
 
-      <form class="upload-pictures" action="upload.php" methods="post" enctype="multipart/form-data">
-        <input id="image" type="file" name="image" id="">
-        <input id="submit" type="submit" value="Upload" name="submit">
-      </form>
-    </div>
-    
-    <div class="info">
-      <div>
-        <label for="full-name">User Name:</label>
-        <input type="text" id="full-name" value="<?php echo htmlspecialchars($user_name); ?>" readonly>
+      <div class="profile">
+        <img id="profilePicture" src="https://via.placeholder.com/100" alt="Profile Picture"><!--Default profile pic-->
+
+        <form class="upload-pictures" action="upload.php" methods="post" enctype="multipart/form-data">
+          <input id="image" type="file" name="image" id="">
+          <input id="submit" type="submit" value="Upload" name="submit">
+        </form>
       </div>
-      <div>
-        <label for="course-section">Student Number</label>
-        <input type="text" id="course-section" value="<?php echo htmlspecialchars($student_number); ?>" readonly>
+
+      <div class="info">
+        <div>
+          <label for="full-name">User Name:</label>
+          <input type="text" id="full-name" value="<?php echo htmlspecialchars($user_name); ?>" readonly>
+        </div>
+        <div>
+          <label for="course-section">Student Number</label>
+          <input type="text" id="course-section" value="<?php echo htmlspecialchars($student_number); ?>" readonly>
+        </div>
       </div>
-      <div>
-        <label for="password">Password:</label>
-        <input type="password" id="password" value="<?php echo htmlspecialchars($password); ?>" readonly>
+
+      <div class="actions">
+        <button class="logout-btn"><a data-active="logout" href="logout.php">Log Out</a></button>
       </div>
     </div>
-    
-    <div class="actions">
-      <button class="logout-btn"><a data-active="logout" href="logout.php">Log Out</a></button>
-    </div>
-  </div>
 
   </section>
   </main>
   <?php include "includes/footer.php" ?>
 
-  
+
   <script>
     function updateProfilePicture(event) {
       const file = event.target.files[0];
