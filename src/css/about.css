@@ -143,6 +143,10 @@
 
 /* The 3-1 Officers Section */
 /* The 3-1 Officers Section */
+
+.officers {
+    margin-top: 20vh;
+}
 .officers h2 {
     font-size: 3rem;
     color: #fcb61f;
