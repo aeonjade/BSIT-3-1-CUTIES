@@ -52,15 +52,29 @@ main .left-group .tasks-footer h4.hint {
 main .left-group .left .tasks-pane .task {
   margin: 5%;
   padding: 10%;
-  border-radius: 10px;
-
   transition: 0.3s;
   display: flex;
   flex-direction: column;
   background: url(../images/others/others/windiw.png);
   background-repeat: no-repeat;
   background-size: contain;
-  height: 10.417vw;
+  height: 26vh;
+  overflow: hidden;
+}
+
+main .left-group .left .tasks-pane .task h2{
+  font-size: 2.4vh;
+  padding-bottom: 1vh;
+}
+
+main .left-group .left .tasks-pane .task h4{
+  font-size: 1.6vh;
+  padding-bottom: 0.5vh;
+}
+
+main .left-group .left .tasks-pane .task p{
+  font-size: 1.6vh;
+  padding-top: 1vh;
 }
 
 main .left-group .left .tasks-pane .task:hover {
@@ -127,8 +141,6 @@ main .right .calendar-pane {
   background: url(../images/others/others/windiw.png);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 20vw;
-  height: 60vh;
   transition: 0.3s;
 }
 
