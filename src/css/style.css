@@ -454,7 +454,8 @@ footer {
     display: flex;
     justify-content: space-between;
     min-width: 100%;
-    background-color: rgb(201, 199, 199);
+    background-color: #1d1b55;
+    color: white;
 }
 
 footer p {
