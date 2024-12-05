@@ -115,31 +115,36 @@ $user_data = check_login($con);
             </div>
         </div>
     </div>
-</section>
-
-
-        <!-- The 3-1 Officers Section -->
-        <section class="officers">
-            <h2>The 3-1 Officers</h2>
-            <div class="officer-grid">
-                <?php
-                // Officers array with image, role, and description
-                $officers = [
-                    ['role' => 'P', 'image' => 'images/officer1.jpg', 'description' => 'President '],
-                    ['role' => 'VP', 'image' => 'images/officer2.jpg', 'description' => 'Vice President '],
-                    ['role' => 'S', 'image' => 'images/officer3.jpg', 'description' => 'Secretary '],
-                    ['role' => 'T', 'image' => 'images/officer4.jpg', 'description' => 'Treasurer ']
-                ];
-                foreach ($officers as $officer) { ?>
-                    <div class="officer-card">
-                        <div class="picture">
-                            <img src="<?= $officer['image'] ?>" alt="<?= $officer['role'] ?>" />
-                        </div>
-                        <div class="description"><?= $officer['description'] ?></div>
-                    </div> 
-                <?php } ?>
+<section class="officers">
+        <h2>The 3-1 Officers</h2>
+        <div class="officer-grid">
+            <div class="officer-card">
+                <div class="pictures">
+                    <img src="images/officers/President.jpeg" alt="President">
+                </div>
+                <div class="descriptions">President</div>
             </div>
-        </section>
+            <div class="officer-card">
+                <div class="pictures">
+                    <img src="images/officers/VicePresident.jpeg" alt="Vice President">
+                </div>
+                <div class="descriptions">Vice President</div>
+            </div>
+            <div class="officer-card">
+                <div class="pictures">
+                    <img src="images/officers/Secretary.jpeg" alt="Secretary">
+                </div>
+                <div class="descriptions">Secretary</div>
+            </div>
+            <div class="officer-card">
+                <div class="pictures">
+                    <img src="images/officers/Treasurer.jpeg" alt="Treasurer">
+                </div>
+                <div class="descriptions">Treasurer</div>
+            </div>
+        </div>
+    </section>
+
     </main>
 
     <?php include "includes/footer.php" ?>
