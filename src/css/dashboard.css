@@ -1,251 +1,259 @@
 /*Dashboard*/
 /*moved 4:50PM*/
 body.dashboard {
-    height: 100vh;
+  height: 100vh;
 }
 
-
 main.dashboard {
-    display: flex;
-    overflow: hidden;
+  display: flex;
+  overflow: hidden;
 }
 
 main .left-group {
-    width: 28%;
-    display: flex;
-    flex-direction: column;
+  width: 22%;
+  display: flex;
+  flex-direction: column;
 }
 
 main .left-group .left {
-    height: 90%;
-    overflow-y: scroll;
-    position: relative;
+  height: 90%;
+  overflow-y: scroll;
+  position: relative;
 }
 
 main .left-group .left .tasks-header {
-    position: sticky;
-    top: 0;
-    background-color: white;
-    margin-bottom: 2%;
-    padding: 3% 5% 3%;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    z-index: 1;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  margin-bottom: 2%;
+  padding: 3% 5% 3%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 1;
 }
 
 main .left-group .left .tasks-header h1 {
-    font-size: 3vh;
+  font-size: 3vh;
 }
 
 main .left-group .tasks-footer {
-    height: 10%;
-    background-color: white;
-    padding: 1.6vh;
-    box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    z-index: 1;
+  height: 10%;
+  background-color: white;
+  padding: 1.6vh;
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 1;
 }
 
 main .left-group .tasks-footer h4.hint {
-    font-weight: normal;
-    font-size: 1.6vh;
-    text-align: center;
+  font-weight: normal;
+  font-size: 1.6vh;
+  text-align: center;
 }
 
 main .left-group .left .tasks-pane .task {
-    margin: 5%;
-    padding: 4%;
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transition: 0.3s;
+  margin: 5%;
+  padding: 10%;
+  border-radius: 10px;
+
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  background: url(../images/others/others/windiw.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 10.417vw;
 }
 
 main .left-group .left .tasks-pane .task:hover {
-    scale: 103%;
+  scale: 103%;
 }
 
 main .right {
-    display: flex;
-    flex-direction: column;
-    width: 72%;
+  display: flex;
+  flex-direction: column;
+  width: 78%;
 }
 
 main .right .calendar-pane {
-    display: flex;
-    flex: none;
-    padding: 2vh;
-    height: 65%;
-    background-color: rgb(255, 255, 255);
+  display: flex;
+  flex: none;
+  padding: 2vh;
+  height: 65%;
+  background-color: rgb(255, 255, 255);
 }
 
 .announcement-header {
-    height: 5%;
-    display: flex;
-    flex-direction: row;
+  height: 5%;
+  display: flex;
+  flex-direction: row;
 }
 
 .announcement-header h1 {
-    margin-left: 1.5vw;
-    padding: 0.8vh;
-    font-size: 3vh;
+  margin-left: 1.5vw;
+  padding: 0.8vh;
+  font-size: 3vh;
 }
 
 .announcement-header a {
-    margin-left: auto;
-    margin-right: 2vw;
-    padding: 1vh;
-    font-size: 2vh;
-    text-decoration: none;
-    color: black;
-    transition: 0.5s;
+  margin-left: auto;
+  margin-right: 2vw;
+  padding: 1vh;
+  font-size: 2vh;
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
 }
 
 .announcement-header a:hover {
-    color: red;
+  color: red;
 }
 
 .announcements-pane {
-    height: 30%;
-    display: flex;
-    flex-direction: row;
-    overflow-x: scroll;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  overflow-y: hidden;
 }
 
 .announcements-pane .announcements-new {
-    width: 32.5vh;
-    display: flex;
-    flex-direction: column;
-    flex: none;
-    overflow: hidden;
-    margin: 2% 1% 2% 2%;
-    padding: 1.5% 2% 2% 2%;
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transition: 0.3s;
+  width: 32.5vh;
+  display: flex;
+  flex-direction: column;
+  flex: none;
+  overflow: hidden;
+  margin: 2% 1% 2% 2%;
+  padding: 3% 3% 3% 3%;
+  border-radius: 10px;
+
+  background: url(../images/others/others/windiw.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20vw;
+  height: 60vh;
+  transition: 0.3s;
 }
 
 .announcements-pane .announcements-new:hover {
-    scale: 103%;
+  scale: 103%;
 }
 
 .announcements-pane .announcements-new .announcement-title {
-    display: flex;
+  display: flex;
 }
 
 .announcements-pane .announcements-new .announcement-title h2 {
-    display: inline-block;
-    font-size: 2.6vh;
-    padding: 0.5vh 2vh 1vh 0vh;
-    overflow: hidden;
-    text-wrap: nowrap;
-    text-overflow: ellipsis;
+  display: inline-block;
+  font-size: 2.6vh;
+  padding: 0.5vh 2vh 1vh 0vh;
+  overflow: hidden;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
 }
 
 .announcements-pane .announcements-new .announcement-title h2:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .announcements-pane .announcements-new .announcement-body {
-    padding-top: 2%;
-    overflow: hidden;
-    height: 100%;
+  padding-top: 2%;
+  overflow: hidden;
+  height: 100%;
 }
 
 .announcements-pane .announcements-new .announcement-body {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .announcements-pane .announcements-new p {
-    font-size: 1.7vh;
+  font-size: 1.7vh;
 }
 
 .delete-announcement {
-    margin-left: auto;
-    color: #aaa;
-    font-size: 3vh;
-    font-weight: bold;
+  margin-left: auto;
+  color: #aaa;
+  font-size: 3vh;
+  font-weight: bold;
 }
 
 .delete-announcement:hover,
 .delete-announcement:focus {
-    color: red;
-    text-decoration: none;
-    cursor: pointer;
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 #myBtn {
-    padding: .6vh 1.2vh;
-    margin-left: 2vw;
-    margin-top: 8px;
-    border-radius: 1.5vh;
-    border: 1px solid #fff;
-    font-size: 1.4vh;
-    font-weight: bold;
-    text-decoration: none;
-    color: #fff;
-    transition: 0.5s;
-    background: none;
-    cursor: pointer;
+  padding: 0.6vh 1.2vh;
+  margin-left: 2vw;
+  margin-top: 8px;
+  border-radius: 1.5vh;
+  border: 1px solid #fff;
+  font-size: 1.4vh;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+  background: none;
+  cursor: pointer;
 }
 
 #myBtn:hover {
-    border: 1px solid rgb(31, 30, 30);
-    background-color: rgb(31, 30, 30);
+  border: 1px solid rgb(31, 30, 30);
+  background-color: rgb(31, 30, 30);
 }
 
 .submit-button {
-    padding: .6vh 1.2vh;
-    margin-left: 2vw;
-    border-radius: 1.5vh;
-    border: 1px solid black;
-    font-size: 1.4vh;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
-    transition: 0.5s;
-    background: none;
-    cursor: pointer;
+  padding: 0.6vh 1.2vh;
+  margin-left: 2vw;
+  border-radius: 1.5vh;
+  border: 1px solid black;
+  font-size: 1.4vh;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+  background: none;
+  cursor: pointer;
 }
 
 .submit-button:hover {
-    color: white;
-    background-color: rgb(31, 30, 30);
+  color: white;
+  background-color: rgb(31, 30, 30);
 }
 
 .no {
-    padding: .6vh 1.2vh;
-    margin-left: 2vw;
-    border-radius: 1.5vh;
-    border: 1px solid black;
-    font-size: 1.4vh;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
-    transition: 0.5s;
-    background: none;
-    cursor: pointer;
+  padding: 0.6vh 1.2vh;
+  margin-left: 2vw;
+  border-radius: 1.5vh;
+  border: 1px solid black;
+  font-size: 1.4vh;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+  background: none;
+  cursor: pointer;
 }
 
 .no:hover {
-    color: white;
-    background-color: red;
+  color: white;
+  background-color: red;
 }
 
 .yes {
-    padding: .6vh 1.2vh;
-    margin-left: 2vw;
-    border-radius: 1.5vh;
-    border: 1px solid black;
-    font-size: 1.4vh;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
-    transition: 0.5s;
-    background: none;
-    cursor: pointer;
+  padding: 0.6vh 1.2vh;
+  margin-left: 2vw;
+  border-radius: 1.5vh;
+  border: 1px solid black;
+  font-size: 1.4vh;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+  background: none;
+  cursor: pointer;
 }
 
 .yes:hover {
-    color: white;
-    background-color: green;
+  color: white;
+  background-color: green;
 }
