@@ -156,7 +156,7 @@ nav .links a.active {
     right: 10px;
 }
 
-@media (min-width: 450px) and (max-width: 1024px)  {
+@media (min-width: 400px) and (max-width: 1024px)  {
     nav button {
         display: none;
         /* Hides the login button on smaller screens */
