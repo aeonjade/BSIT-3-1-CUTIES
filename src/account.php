@@ -6,6 +6,18 @@ $user_data = check_login($con);
 
 $user_name = $user_data['user_name'];
 $student_number = $user_data['student_number'];
+$user_id = $user_data['id']; // Get the user's ID from session or user data
+
+// Prepare the SQL query to fetch the logged-in user's image
+$query = "SELECT filename FROM users WHERE id = ?";
+$stmt = $con->prepare($query);
+$stmt->bind_param("i", $user_id); // Bind the logged-in user's ID to the query
+$stmt->execute();
+$result = $stmt->get_result();
+$row = $result->fetch_assoc();
+
+// Use a default image if no filename is found
+$profilePicture = !empty($row['filename']) ? "uploads/" . $row['filename'] : "https://via.placeholder.com/100";
 ?>
 
 <!DOCTYPE html>
@@ -37,9 +49,9 @@ $student_number = $user_data['student_number'];
       <h3>Account Settings</h3>
 
       <div class="profile">
-        <img id="profilePicture" src="https://via.placeholder.com/100" alt="Profile Picture"><!--Default profile pic-->
+        <img id="profilePicture" src="<?php echo htmlspecialchars($profilePicture); ?>" alt="Profile Picture"><!--Default profile pic-->
 
-        <form class="upload-pictures" action="upload.php" methods="post" enctype="multipart/form-data">
+        <form class="upload-pictures" action="upload.php" method="post" enctype="multipart/form-data">
           <input id="image" type="file" name="image" id="">
           <input id="submit" type="submit" value="Upload" name="submit">
         </form>
