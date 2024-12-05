@@ -33,9 +33,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 			}
 		}
 
-		echo "wrong username or password!";
+		echo "<script>alert('Wrong username or password!')</script>";
 	} else {
-		echo "wrong username or password!";
+		echo "<script>alert('Wrong username or password!')</script>";
 	}
 }
 
@@ -81,6 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	</section>
 	</main>
 	<?php include "includes/footer.php" ?>
+
 </body>
 
 </html>
