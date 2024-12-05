@@ -35,11 +35,10 @@ $user_data = check_login($con);
 
 <section class="section2">
 
-        <center>
             <div class="text-exhibit">
                 <h3> See the works of BSIT 3 - 1 </h3>
             </div>
-        </center>
+        
 
 
 
