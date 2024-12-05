@@ -3,6 +3,9 @@
     src: url(/src/font/Shrikhand-Regular.ttf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+
+
 /*About*/
 /*4:14PM moved to about.css*/
 
@@ -60,8 +63,10 @@
     max-width: fit-content;
     /* Optional: Limit description width */
     line-height: 1.6;
-    font-size: 18px;
+    font-size: 20px;
     padding: 10px;
+    font-family: parkinsans;
+    color: white;
 }
 
 
