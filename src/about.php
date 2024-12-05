@@ -27,8 +27,10 @@ $user_data = check_login($con);
                 <div class="about-text">
                     <h1>3-1 CUTIES</h1>
                     <p class="description">
-                          our one-stop destination for creativity, innovation, and inspiration.
-                </div>
+                    We are a passionate group of BSIT 3-1 students committed to creating a platform that reflects our needs, ideas, and shared goals. 
+                    ThreeWanCuties is built by students, for students! This website was published on December 2, 2024, as a project for partial
+                     fulfillment in Event-Driven Programming. Its developers are: Bautistia, Bretana, Centeno, Ondevilla, Pantaleon, Vicentuan.
+
             </div>
         </section>
 
