@@ -19,7 +19,7 @@ $user_data = check_login($con);
 <body id="about-bg">
    
 <?php include "includes/navFunction.php" ?>
-
+    
     <main class="about">
         <section class="header">
             <div class="about-container">
@@ -35,117 +35,157 @@ $user_data = check_login($con);
 
         <!-- Meet the Developers Section -->
         <section class="developers">
-    <h2>Meet the Developers</h2>
-    <div class="developer-grid">
-        <div class="developer-card">
-            <div class="card-content">
-                <div class="picture">
-                    <img src="images/bretz.jpg" alt="Jhonn Michael Bretana" />
+            <h2>Meet the Developers</h2>
+            <div class="developer-grid">
+                <div class="developer-card">
+                    <div class="card-content">
+                        <div class="picture">
+                            <img src="images/bretz.jpg" alt="Jhonn Michael Bretana" />
+                        </div>
+                        <div class="description">
+                            <h3>Jhonn Michael Bretana</h3>
+                            <span>The Food Expert</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, eligendi nam qui nesciunt unde corrupti sed praesentium repellendus iure!</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="description">
-                    <h3>Jhonn Michael Bretana</h3>
-                    <span>The Food Expert</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, eligendi nam qui nesciunt unde corrupti sed praesentium repellendus iure!</p>
-                </div>
-            </div>
-        </div>
 
-        <div class="developer-card">
-            <div class="card-content">
-                <div class="picture">
-                    <img src="images/pongs.jpeg" alt="Kurt Arthur Pantaleon" />
+                <div class="developer-card">
+                    <div class="card-content">
+                        <div class="picture">
+                            <img src="images/pongs.jpeg" alt="Kurt Arthur Pantaleon" />
+                        </div>
+                        <div class="description">
+                            <h3>Kurt Arthur Pantaleon</h3>
+                            <span>The NBA Referee</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, eligendi nam qui nesciunt unde corrupti sed praesentium repellendus iure!</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="description">
-                    <h3>Kurt Arthur Pantaleon</h3>
-                    <span>The NBA Referee</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, eligendi nam qui nesciunt unde corrupti sed praesentium repellendus iure!</p>
-                </div>
-            </div>
-        </div>
 
-        <div class="developer-card">
-            <div class="card-content">
-                <div class="picture">
-                    <img src="images/aeons.jpg" alt="Aeon Jade Vicentuan" />
+                <div class="developer-card">
+                    <div class="card-content">
+                        <div class="picture">
+                            <img src="images/aeons.jpg" alt="Aeon Jade Vicentuan" />
+                        </div>
+                        <div class="description">
+                            <h3>Aeon Jade Vicentuan</h3>
+                            <span>The Backend Expert</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, eligendi nam qui nesciunt unde corrupti sed praesentium repellendus iure!</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="description">
-                    <h3>Aeon Jade Vicentuan</h3>
-                    <span>The Backend Expert</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, eligendi nam qui nesciunt unde corrupti sed praesentium repellendus iure!</p>
-                </div>
-            </div>
-        </div>
 
-        <div class="developer-card">
-            <div class="card-content">
-                <div class="picture">
-                    <img src="images/vics.jpg" alt="Vic Vincent Centeno" />
+                <div class="developer-card">
+                    <div class="card-content">
+                        <div class="picture">
+                            <img src="images/vics.jpg" alt="Vic Vincent Centeno" />
+                        </div>
+                        <div class="description">
+                            <h3>Vic Vincent Centeno</h3>
+                            <span>The Fullstack Wizard</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, eligendi nam qui nesciunt unde corrupti sed praesentium repellendus iure!</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="description">
-                    <h3>Vic Vincent Centeno</h3>
-                    <span>The Fullstack Wizard</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, eligendi nam qui nesciunt unde corrupti sed praesentium repellendus iure!</p>
-                </div>
-            </div>
-        </div>
 
-        <div class="developer-card">
-            <div class="card-content">
-                <div class="picture">
-                    <img src="images/drews.jpg" alt="Andrew Bautista" />
+                <div class="developer-card">
+                    <div class="card-content">
+                        <div class="picture">
+                            <img src="images/drews.jpg" alt="Andrew Bautista" />
+                        </div>
+                        <div class="description">
+                            <h3>Andrew Bautista</h3>
+                            <span>The Backend Expert</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, eligendi nam qui nesciunt unde corrupti sed praesentium repellendus iure!</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="description">
-                    <h3>Andrew Bautista</h3>
-                    <span>The Backend Expert</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, eligendi nam qui nesciunt unde corrupti sed praesentium repellendus iure!</p>
-                </div>
-            </div>
-        </div>
 
-        <div class="developer-card">
-            <div class="card-content">
-                <div class="picture">
-                    <img src="images/zads.jpg" alt="Zadkiel Ondivella" />
-                </div>
-                <div class="description">
-                    <h3>Zadkiel Ondivella</h3>
-                    <span>The Document Expert</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, eligendi nam qui nesciunt unde corrupti sed praesentium repellendus iure!</p>
+                <div class="developer-card">
+                    <div class="card-content">
+                        <div class="picture">
+                            <img src="images/zads.jpg" alt="Zadkiel Ondivella" />
+                        </div>
+                        <div class="description">
+                            <h3>Zadkiel Ondivella</h3>
+                            <span>The Document Expert</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, eligendi nam qui nesciunt unde corrupti sed praesentium repellendus iure!</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-<section class="officers">
-        <h2>The 3-1 Officers</h2>
-        <div class="officer-grid">
-            <div class="officer-card">
-                <div class="pictures">
-                    <img src="images/officers/President.jpeg" alt="President">
-                </div>
-                <div class="descriptions">President</div>
-            </div>
-            <div class="officer-card">
-                <div class="pictures">
-                    <img src="images/officers/VicePresident.jpeg" alt="Vice President">
-                </div>
-                <div class="descriptions">Vice President</div>
-            </div>
-            <div class="officer-card">
-                <div class="pictures">
-                    <img src="images/officers/Secretary.jpeg" alt="Secretary">
-                </div>
-                <div class="descriptions">Secretary</div>
-            </div>
-            <div class="officer-card">
-                <div class="pictures">
-                    <img src="images/officers/Treasurer.jpeg" alt="Treasurer">
-                </div>
-                <div class="descriptions">Treasurer</div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    </main>
+
+        <!-- The 3-1 Officers Section -->
+        <section class="officers">
+            
+                <!--</*?php
+                // Officers array with image, role, and description
+                $officers = [
+                    ['role' => 'P', 'image' => 'images/officer1.jpg', 'description' => 'President '],
+                    ['role' => 'VP', 'image' => 'images/officer2.jpg', 'description' => 'Vice President '],
+                    ['role' => 'S', 'image' => 'images/officer3.jpg', 'description' => 'Secretary '],
+                    ['role' => 'T', 'image' => 'images/officer4.jpg', 'description' => 'Treasurer ']
+                ];
+                foreach ($officers as $officer) { ?>
+                    <div class="officer-card">
+                        <div class="picture">
+                            <img src="<//?= $officer['image'] ?>" alt="<//?= $officer['role'] ?>" />
+                        </div>
+                        <div class="description"><//?= $officer['description'] ?></div>
+                    </div> 
+                <//?php } ?>-->
+                <h2>Officers of IT 3-1</h2>
+                <div class="team-container">
+                    <!-- Officer 1 -->
+                    <div class="team-member">
+                        <img src="images/officers/President.jpeg" alt="Officer 1">
+                        <div class="member-info">
+                            <h2>Name:</h2> 
+                            <p>Alcober, Heather Mae</p>
+                            <h2>Position:</h2>
+                            <p>President</p>
+                        </div>
+                    </div>
+
+                    <!-- Officer 2 -->
+                    <div class="team-member">
+                        <img src="images/officers/VicePresident.jpeg" alt="Officer 2">
+                        <div class="member-info">
+                            <h2>Name:</h2> 
+                            <p>Frias, Bryx</p>
+                            <h2>Position:</h2>
+                            <p>Vice President</p>
+                        </div>
+                    </div>
+
+                    <!-- Officer 3 -->
+                    <div class="team-member">
+                        <img src="images/officers/Secretary.jpeg" alt="Officer 3">
+                        <div class="member-info">
+                            <h2>Name:</h2> 
+                            <p>Lalantacon, John Roy</p>
+                            <h2>Position:</h2>
+                            <p>Secretary</p>
+                        </div>
+                    </div>
+
+                    <!-- Officer 4 -->
+                    <div class="team-member">
+                        <img src="images/officers/Treasurer.jpeg"alt="Officer 4">
+                        <div class="member-info">
+                            <h2>Name:</h2> 
+                            <p>Deguzman, Jasmine</p>
+                            <h2>Position:</h2>
+                            <p>Treasurer</p>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+                    
 
     <?php include "includes/footer.php" ?>
 
