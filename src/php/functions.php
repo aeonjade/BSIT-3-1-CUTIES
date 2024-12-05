@@ -14,7 +14,7 @@ function getTasks()
     $result = $stmt->fetchAll(PDO::FETCH_OBJ);
     return $result;
 }
-
+ 
 function getAnnouncements()
 {
     $servername = "localhost";

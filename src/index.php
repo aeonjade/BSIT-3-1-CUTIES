@@ -9,7 +9,7 @@ $user_data = check_login($con);
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head> 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/index.css" />
@@ -51,8 +51,18 @@ $user_data = check_login($con);
                         <h4>For the Students, by the Students</h4>
 
                         <div class="buttons">
-                            <a href="#" class="btn btn-exhibits">Other Exhibits</a>
-                            <a href="#" class="btn btn-see-more">See More</a>
+                            <?php
+                            // Check if the user is logged in by verifying the presence of user data
+                            if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
+                                // User is logged in, provide links to Dashboard and Bulletin
+                                echo '<a href="dashboard.php" style="margin:10px;" class="btn btn-exhibits">Dashboard</a>';
+                                echo '<a href="bulletin.php" class="btn btn-see-more">Bulletin</a>';
+                            } else {
+                                // User is not logged in, provide links to Sign Up and Log In
+                                echo '<a href="signup.php" style="margin:10px;" class="btn btn-exhibits">Sign Up</a>';
+                                echo '<a href="login.php" class="btn btn-see-more">Log In</a>';
+                            }
+                            ?>
                         </div>
 
                     </div>
