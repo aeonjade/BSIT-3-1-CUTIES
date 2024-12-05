@@ -31,7 +31,7 @@ $user_data = check_login($con);
                     foreach (getTasks() as $tasks) {
                     ?>
                         <div class="task">
-                            <h2><?= $tasks->task_title; ?></h2>
+                            <h2><?= htmlspecialchars($tasks->task_title); ?></h2>
                             <h4><?php
                                 $startDate = date("F j, Y", strtotime($tasks->task_start_date));
                                 $endDate = date("F j, Y", strtotime('-1 day', strtotime($tasks->task_end_date)));
@@ -43,7 +43,7 @@ $user_data = check_login($con);
                                 }
                                 ?></h4>
                             <h4><?= date("g A", strtotime($tasks->task_time)); ?></h4>
-                            <p><?= $tasks->task_description; ?></p>
+                            <p><?= htmlspecialchars($tasks->task_description); ?></p>
                         </div>
                     <?php
                     }
@@ -137,10 +137,10 @@ $user_data = check_login($con);
 
                     <div class="announcements-new">
                         <div class="announcement-title">
-                            <h2 onclick="clickAnnouncement('<?= $announcement->announcement_title  ?>', '<?= $announcement->announcement_description  ?>')"><?= $announcement->announcement_title; ?></h2>
-                            <span class="delete-announcement" onclick="deleteAnnouncement('<?= $announcement->announcement_id  ?>', '<?= $announcement->announcement_title  ?>', '<?= $announcement->announcement_description  ?>')">&times;</span>
+                            <h2 onclick="clickAnnouncement('<?= htmlspecialchars($announcement->announcement_title)  ?>', '<?= htmlspecialchars($announcement->announcement_description)  ?>')"><?= htmlspecialchars($announcement->announcement_title); ?></h2>
+                            <span class="delete-announcement" onclick="deleteAnnouncement('<?= $announcement->announcement_id  ?>', '<?= htmlspecialchars($announcement->announcement_title)  ?>', '<?= htmlspecialchars($announcement->announcement_description)  ?>')">&times;</span>
                         </div>
-                        <div onclick="clickAnnouncement('<?= $announcement->announcement_title  ?>', '<?= $announcement->announcement_description  ?>')" class="announcement-body">
+                        <div onclick="clickAnnouncement('<?= htmlspecialchars($announcement->announcement_title)  ?>', '<?= htmlspecialchars($announcement->announcement_description)  ?>')" class="announcement-body">
                             <p><?= $announcement->announcement_description; ?></p>
                         </div>
                     </div>
