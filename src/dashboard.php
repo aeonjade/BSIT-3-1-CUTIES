@@ -67,7 +67,7 @@ $user_data = check_login($con);
 
                 <!-- MODAL START -->
                 <!-- Trigger/Open The Modal -->
-                <button id="myBtn">Add Announcement</button>
+                <button id="myBtn">Add</button>
 
                 <!-- The Modal -->
                 <div id="myModal" class="modal">
@@ -128,8 +128,8 @@ $user_data = check_login($con);
                                 <h3 class="expanded-description" id="remove-announcement-modal-description"><?= $announcement->announcement_description  ?></h3>
                                 <h4>Are you sure you want to remove this announcement?</h4>
                                 <div class="modal-buttons">
-                                    <button onclick="removeAnnouncementModal()">No</button>
-                                    <button onclick="deleteAnnouncementConfirm()">Yes</button>
+                                    <button class="no" onclick="removeAnnouncementModal()">No</button>
+                                    <button class="yes" onclick="deleteAnnouncementConfirm()">Yes</button>
                                 </div>
                             </div>
                         </div>

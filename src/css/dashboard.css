@@ -141,7 +141,7 @@ main .right .calendar-pane {
     text-overflow: ellipsis;
 }
 
-.announcements-pane .announcements-new .announcement-title h2:hover{
+.announcements-pane .announcements-new .announcement-title h2:hover {
     cursor: pointer;
 }
 
@@ -171,4 +171,80 @@ main .right .calendar-pane {
     color: red;
     text-decoration: none;
     cursor: pointer;
+}
+
+#myBtn {
+    padding: .6vh 1.2vh;
+    margin-left: 2vw;
+    border-radius: 1.5vh;
+    border: 1px solid #fff;
+    font-size: 1.4vh;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+    background: none;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    border: 1px solid rgb(31, 30, 30);
+    background-color: rgb(31, 30, 30);
+}
+
+.submit-button {
+    padding: .6vh 1.2vh;
+    margin-left: 2vw;
+    border-radius: 1.5vh;
+    border: 1px solid black;
+    font-size: 1.4vh;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+    background: none;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    color: white;
+    background-color: rgb(31, 30, 30);
+}
+
+.no {
+    padding: .6vh 1.2vh;
+    margin-left: 2vw;
+    border-radius: 1.5vh;
+    border: 1px solid black;
+    font-size: 1.4vh;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+    background: none;
+    cursor: pointer;
+}
+
+.no:hover {
+    color: white;
+    background-color: red;
+}
+
+.yes {
+    padding: .6vh 1.2vh;
+    margin-left: 2vw;
+    border-radius: 1.5vh;
+    border: 1px solid black;
+    font-size: 1.4vh;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+    background: none;
+    cursor: pointer;
+}
+
+.yes:hover {
+    color: white;
+    background-color: green;
 }
