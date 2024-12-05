@@ -4,12 +4,14 @@
 .posts {
     margin: 20px;
 }
-.posts h2{
- text-align: center;
- margin-bottom: 10px;
 
-
+.posts h2 {
+    color: yellow;
+    text-align: center;
+    margin-bottom: 10px;
+    
 }
+
 .post-grid {
     display: flex;
     justify-content: center;
@@ -27,7 +29,7 @@
     width: 300px;
     /* Adjusted for a cleaner look */
     height: 30vh;
-    padding: 20px;
+    padding: 3vh;
     border-radius: 15px;
     /* Slightly rounded corners */
     text-align: left;
@@ -38,6 +40,10 @@
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2),
         0 4px 12px rgba(0, 0, 0, 0.1);
     /* Modern shadow effect */
+    display: flex;
+    flex-direction: column;
+    flex: none;
+    overflow: hidden;
 }
 
 .post:hover {
@@ -50,6 +56,8 @@
 
 /* Post Title */
 .post h3 {
+    display: inline-block;
+    text-overflow: ellipsis;
     font-size: 24px;
     color: #333;
     /* Darker text */
@@ -57,11 +65,18 @@
 }
 
 /* Post Date */
-.post p:first-of-type {
+.p-container {
+    display: inline-block;
+    text-overflow: ellipsis;
+    height: 90%;
+}
+
+.post p {
     font-size: 14px;
     color: #666;
+    padding-bottom: 1vh;
     /* Subtle color for the date */
-    margin-bottom: 15px;
+    
 }
 
 /* Post Content */

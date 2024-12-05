@@ -80,6 +80,7 @@
     padding: 1vh;
     font-size: 1em;
     resize: none;
+    overflow: hidden;
 }
 
 .modal-content .modal-body .expanded-title {
@@ -97,6 +98,7 @@
     font-size: 0.938vw;
     padding-top: 1.6vh;
     font-weight: normal;
+    overflow: hidden;
 }
 
 .modal-content .modal-body .modal-buttons {
