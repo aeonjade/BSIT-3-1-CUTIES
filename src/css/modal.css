@@ -87,6 +87,12 @@
     padding: 2vh 0vh 1vh 0vh;
 }
 
+.modal-content .modal-body .expanded-title-task {
+    text-align: center;
+    font-size: 1.25vw;
+    padding: 6vh 0vh 1vh 0vh;
+}
+
 .modal-content .modal-body .expanded-description {
     font-size: 0.938vw;
     padding-top: 1.6vh;

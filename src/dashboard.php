@@ -23,6 +23,27 @@ $user_data = check_login($con);
     <main class="dashboard">
         <div class="left-group">
             <div class="left">
+
+                <!-- The Modal -->
+                <div id="delete-task-modal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1>Remove Task?</h1>
+                            <span id="close-remove-task-modal" class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <h2 class="expanded-title-task" id="remove-task-modal-title"></h2>
+                            <h4>Are you sure you want to remove this task?</h4>
+                            <div class="modal-buttons">
+                                <button class="no" id="no-option">No</button>
+                                <button class="yes" id="yes-option">Yes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- The Modal -->
                 <div id="add-task-modal" class="modal">
 

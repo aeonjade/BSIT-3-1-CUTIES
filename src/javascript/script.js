@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("add-task-modal").style.display = "block";
       document.getElementById("close-add-task-modal").onclick = function () {
         document.getElementById("add-task-modal").style.display = "none";
-      }
+      };
       document.getElementById("save_task").onclick = function () {
         task_title = $("#task_title").val();
         task_time = $("#task_time").val();
@@ -152,7 +152,15 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     eventClick: function (info) {
       // Delete event
-      if (confirm(`Do you want to delete the event '${info.event.title}'?`)) {
+      document.getElementById("remove-task-modal-title").innerHTML =
+        info.event.title;
+      document.getElementById("close-remove-task-modal").onclick = function () {
+        document.getElementById("delete-task-modal").style.display = "none";
+      };
+      document.getElementById("no-option").onclick = function () {
+        document.getElementById("delete-task-modal").style.display = "none";
+      };
+      document.getElementById("yes-option").onclick = function () {
         const id = info.event.id;
         info.event.remove();
 
@@ -164,14 +172,14 @@ document.addEventListener("DOMContentLoaded", function () {
           data: { id },
           success: function (response) {
             if (response.status == true) {
-              //place popup here
               location.reload();
             } else {
               alert(response.msg);
             }
           },
         });
-      }
+      };
+      document.getElementById("delete-task-modal").style.display = "block";
     },
     eventResize: function (info) {
       // Update event duration on resize
