@@ -2,7 +2,7 @@
 session_start();
 include "php/functions.php";
 include("connection.php");
-$user_data = check_login($con);
+$user_data = check_login($con); 
 
 $user_name = $user_data['user_name'];
 $student_number = $user_data['student_number'];
@@ -18,6 +18,9 @@ $row = $result->fetch_assoc();
 
 // Use a default image if no filename is found
 $profilePicture = !empty($row['filename']) ? "uploads/" . $row['filename'] : "https://via.placeholder.com/100";
+
+// Set button text based on whether the user has a profile picture
+$buttonText = !empty($row['filename']) ? "Change Profile Picture" : "Upload Profile Picture";
 ?>
 
 <!DOCTYPE html>
@@ -53,7 +56,7 @@ $profilePicture = !empty($row['filename']) ? "uploads/" . $row['filename'] : "ht
 
         <form class="upload-pictures" action="upload.php" method="post" enctype="multipart/form-data">
           <input id="image" type="file" name="image" id="">
-          <input id="submit" type="submit" value="Upload" name="submit">
+          <input id="submit" type="submit" value="<?php echo $buttonText; ?>" name="submit">
         </form>
       </div>
 
