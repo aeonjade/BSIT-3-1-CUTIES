@@ -26,11 +26,12 @@ $user_data = check_login($con);
     <div class="text-graphics">
         <h1> BSIT 3 - 1 Exhibit</h1>
         <div class="three-wan">
-            <img src="./images/threewan/threewan.png" alt="">
+            <img src="./images/threewan/treewan.png" alt="">
         </div>
     </div>
 </div>
 </section>
+
 
 <section class="section2">
 
@@ -108,7 +109,6 @@ $user_data = check_login($con);
     </div>
 </div>
 </section>
-
 
 
 
