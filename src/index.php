@@ -85,7 +85,7 @@ $user_data = check_login($con);
                         <!-- Card 2 -->
                         <div class="card" onclick="openModal('images/works/srs.png')">
                             <div class="image-wrapper">
-                                <img src=images\works\srs.png alt="Image 2" class="image">
+                                <img src=.images\works\srs.png alt="Image 2" class="image">
                             </div>
                         </div>
 

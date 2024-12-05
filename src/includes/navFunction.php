@@ -1,9 +1,9 @@
 <nav>
   <a class="logo" href=""><img class="logo" src="images/logo.png" /></a>
 
-  <div class="site-name">
-    <a href="index.php"><b>CUTIES | </b>BSIT 3-1</a>
-  </div>
+    <!--   <div class="site-name">
+       <a href="index.php"><b>CUTIES | </b>BSIT 3-1</a>
+      </div> --->
 
   <div class="links">
     <a data-active="index" href="index.php">Home</a>
