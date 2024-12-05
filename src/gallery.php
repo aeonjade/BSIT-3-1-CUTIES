@@ -26,7 +26,7 @@ $user_data = check_login($con);
     <div class="text-graphics">
         <h1> BSIT 3 - 1 Exhibit</h1>
         <div class="three-wan">
-            <img src="images/threewan/tLOreewan.png" alt="">
+            <img src="./images/threewan/threewan.png" alt="">
         </div>
     </div>
 </div>
@@ -43,7 +43,7 @@ $user_data = check_login($con);
 
 
 <div class="container2">
-    <img class="works" src="images/works/house.png" alt="">
+    <img class="works" src="./images/works/house.png" alt="">
     <div class="content-text">
         <h1 id="titles"> CUTIE HOUSE </h1>
         <p><strong> Date: </strong> November 26, 2024 11:00AM </p>
@@ -54,7 +54,7 @@ $user_data = check_login($con);
 </div>
 
 <div class="container2">
-    <img class="works" src="images/works/srs.png" alt="">
+    <img class="works" src="./images/works/srs.png" alt="">
     <div class="content-text">
         <h1 id="titles"> REINDEER, SLEIGH AND SANTA CUTIE </h1>
         <p><strong> Date: </strong> November 30, 2024 02:00PM </p>
@@ -65,7 +65,7 @@ $user_data = check_login($con);
 </div>
 
 <div class="container2">
-    <img class="works" src="images/works/house.png" alt="">
+    <img class="works" src="./images/works/house.png" alt="">
     <div class="content-text">
         <h1 id="titles"> CHRISTMAS TREE AND GIFTS CUTIE </h1>
         <p><strong> Date: </strong> November 30, 2024 03:00PM </p>
@@ -76,7 +76,7 @@ $user_data = check_login($con);
 </div>
 
 <div class="container2">
-    <img class="works" src="images/works/VAF.png" alt="">
+    <img class="works" src="./images/works/VAF.png" alt="">
     <div class="content-text">
         <h1 id="titles"> FORT & VERA CUTIE </h1>
         <p><strong> Date: </strong> November 30, 2024 07:00PM </p>
@@ -87,7 +87,7 @@ $user_data = check_login($con);
 </div>
 
 <div class="container2">
-    <img class="works" src="images/works/VAF.png" alt="">
+    <img class="works" src="./images/works/VAF.png" alt="">
     <div class="content-text">
         <h1 id="titles"> CUTIE HOUSE </h1>
         <p><strong> Date: </strong> November 26, 2024 11:00AM </p>
@@ -98,7 +98,7 @@ $user_data = check_login($con);
 </div>
 
 <div class="container2">
-    <img class="works" src="images/works/house.png" alt="">
+    <img class="works" src="./images/works/house.png" alt="">
     <div class="content-text">
         <h1 id="titles"> CUTIE HOUSE </h1>
         <p><strong> Date: </strong> November 26, 2024 11:00AM </p>
